@@ -29,6 +29,14 @@ Route20_EventScript_RegisterNicole::
 Route20_EventScript_RematchNicole::
 	trainerbattle_rematch TRAINER_NICOLE_HNS, Route20_Text_NicoleRematchIntro, Route20_Text_NicoleRematchDefeat
 	msgbox Route20_Text_NicolePostRematch, MSGBOX_AUTOCLOSE
+	goto_if_defeated TRAINER_NICOLE_2_HNS, Route20_EventScript_RematchNicoleTryGiveItem
+	end
+
+Route20_EventScript_RematchNicoleTryGiveItem::
+	checkitem ITEM_HEART_SCALE
+	goto_if_eq VAR_RESULT, TRUE, Common_EventScript_NoOp
+	giveitem ITEM_HEART_SCALE
+	closemessage
 	end
 
 Route20_EventScript_Lori::

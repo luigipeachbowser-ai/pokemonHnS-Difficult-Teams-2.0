@@ -30,7 +30,8 @@ DragonsDen_Cavern_Trigger_ClairLeft::
 	setflag FLAG_TEMP_HIDE_FOLLOWER 
 	playse SE_PIN
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_DRAGONSDEN2_CLAIR
 	call DragonsDen_Cavern_EventScript_Clair
 	applymovement OBJ_EVENT_ID_PLAYER, DragonsDen_Cavern_Movement_ClairLeaveLeftPLAYER
 	waitmovement 0
@@ -48,7 +49,8 @@ DragonsDen_Cavern_Trigger_ClairMid::
 	lock 
 	playse SE_PIN
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_DRAGONSDEN2_CLAIR
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
 	call DragonsDen_Cavern_EventScript_Clair
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, DragonsDen_Cavern_Movement_ClairLeaveMid
@@ -64,7 +66,8 @@ DragonsDen_Cavern_Trigger_ClairRight::
 	lock 
 	playse SE_PIN
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_DRAGONSDEN2_CLAIR
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
 	waitmovement 0
 	applymovement2 LOCALID_DRAGONSDEN2_CLAIR, Common_Movement_WalkRight1
@@ -78,12 +81,11 @@ DragonsDen_Cavern_Trigger_ClairRight::
 	release
 	end
 
-
 DragonsDen_Cavern_EventScript_Clair::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	msgbox DragonsDen_Cavern_Text_ClairGiveDragonclaw, MSGBOX_DEFAULT
+	msgbox DragonsDen_Cavern_Text_Clair_GiveTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM_DRAGON_PULSE
-	msgbox DragonsDen_Cavern_Text_ClairDescribeDragonclaw, MSGBOX_DEFAULT
+	msgbox DragonsDen_Cavern_Text_Clair_ExplainTM, MSGBOX_DEFAULT
 	closemessage
 	delay 30
 	msgbox DragonsDen_Cavern_Text_ClairWhatsTheMatter, MSGBOX_DEFAULT
@@ -133,12 +135,12 @@ DragonsDen_Cavern_Movement_ClairLeaveRight:
 	walk_up
 	step_end
 
-DragonsDen_Cavern_Text_ClairGiveDragonclaw:
+DragonsDen_Cavern_Text_Clair_GiveTM:
     .string "CLAIR: WAIT!\p"
 	.string "I'm sorry about this.\n"
     .string "Here, take this as my apology.$"
 
-DragonsDen_Cavern_Text_ClairDescribeDragonclaw:
+DragonsDen_Cavern_Text_Clair_ExplainTM:
     .string "DRAGON PULSE is a kind of er...\n"
 	.string "never mind!\p"
 	.string "It's a huge energy of some kind.\p"

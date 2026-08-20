@@ -65,7 +65,8 @@ RuinsOfAlph_Lab_EventScript_NoticeRootFossil::
 	closemessage
 	playse SE_PIN
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
-	waitmovement 0
+	delay 55
+	waitmovement LOCALID_RUINS_FOSSIL_SCIENTIST
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
 	msgbox RuinsOfAlph_Lab_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
@@ -94,7 +95,8 @@ RuinsOfAlph_Lab_EventScript_NoticeClawFossil::
 	closemessage
 	playse SE_PIN
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
-	waitmovement 0
+	delay 55
+	waitmovement LOCALID_RUINS_FOSSIL_SCIENTIST
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
 	msgbox RuinsOfAlph_Lab_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
@@ -123,7 +125,8 @@ RuinsOfAlph_Lab_EventScript_NoticeHelixFossil::
 	closemessage
 	playse SE_PIN
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
-	waitmovement 0
+	delay 55
+	waitmovement LOCALID_RUINS_FOSSIL_SCIENTIST
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
 	msgbox RuinsOfAlph_Lab_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
@@ -152,7 +155,8 @@ RuinsOfAlph_Lab_EventScript_NoticeDomeFossil::
 	closemessage
 	playse SE_PIN
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
-	waitmovement 0
+	delay 55
+	waitmovement LOCALID_RUINS_FOSSIL_SCIENTIST
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
 	msgbox RuinsOfAlph_Lab_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
@@ -181,7 +185,8 @@ RuinsOfAlph_Lab_EventScript_NoticeOldAmber::
 	closemessage
 	playse SE_PIN
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_ExclamationMark
-	waitmovement 0
+	delay 55
+	waitmovement LOCALID_RUINS_FOSSIL_SCIENTIST
 	applymovement LOCALID_RUINS_FOSSIL_SCIENTIST, Common_Movement_Delay48
 	waitmovement 0
 	msgbox RuinsOfAlph_Lab_Text_WantToBringFossilBackToLife, MSGBOX_YESNO
@@ -557,7 +562,7 @@ RuinsOfAlph_Lab_EventScript_FinishReceivingAero::
 RuinsOfAlph_Lab_EventScript_ChooseFossil::
 	message RuinsOfAlph_Lab_Text_TwoFossilsPickOne
 	waitmessage
-	multichoice 17, 0, MULTI_FOSSIL, FALSE
+	multichoice 17, 0, MULTI_FOSSIL_HNS, FALSE
 	switch VAR_RESULT
 	case 0, RuinsOfAlph_Lab_EventScript_ChooseClawFossil
 	case 1, RuinsOfAlph_Lab_EventScript_ChooseRootFossil

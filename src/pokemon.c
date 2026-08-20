@@ -69,6 +69,7 @@
 #include "constants/items.h"
 #include "constants/layouts.h"
 #include "constants/moves.h"
+#include "constants/opponents.h"
 #include "constants/party_menu.h"
 #include "constants/regions.h"
 #include "constants/songs.h"
@@ -3729,7 +3730,7 @@ void CalculateMonStats(struct Pokemon *mon)
 
     u8 nature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
 
-    if (FlagGet(FLAG_LIMIT_TO_50) == TRUE && level > 50)
+    if (FlagGet(FLAG_LIMIT_TO_50) == TRUE && level != 50)
         level = 50;
 
     SetMonData(mon, MON_DATA_LEVEL, &level);
@@ -7075,7 +7076,7 @@ static bool32 IsSpeciesAlreadyEvolved(u32 species)
         int k;
         for (k = 0; evos[k].method != EVOLUTIONS_END; k++)
         {
-            if (SanitizeSpeciesId(evos[k].targetSpecies) == species)
+            if (IsSpeciesEnabled(evos[k].targetSpecies) && SanitizeSpeciesId(evos[k].targetSpecies) == species)
                 return TRUE;
         }
     }
@@ -7719,7 +7720,6 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
     {
         u8 friendshipLevel = 0;
         s32 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, 0);
-        enum TrainerClassID opponentTrainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
 
         if (friendship > 99)
             friendshipLevel++;
@@ -7737,6 +7737,11 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
             // Only if it's a trainer battle with league progression significance
             if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
                 return;
+            
+            if (IsSpecialTrainer(TRAINER_BATTLE_PARAM.opponentA))
+                return;
+
+            enum TrainerClassID opponentTrainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
             if (!(opponentTrainerClass == TRAINER_CLASS_LEADER
                 || opponentTrainerClass == TRAINER_CLASS_ELITE_FOUR
                 || opponentTrainerClass == TRAINER_CLASS_CHAMPION))
@@ -7789,7 +7794,8 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
     u8 bonus;
     u32 currentEVCap = GetCurrentEVCap();
 
-    if (gSaveBlock3Ptr->challengeSettings.tx_Challenges_NoEVs)
+    // No EVs challenge is lifted once Red is defeated, matching the EV item check in ItemUseCB_Medicine
+    if (gSaveBlock3Ptr->challengeSettings.tx_Challenges_NoEVs && !FlagGet(FLAG_DEFEATED_RED))
         return;
 
     heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
@@ -8044,8 +8050,15 @@ u16 GetBattleBGM(void)
             return MUS_HG_VS_GYM_LEADER_KANTO;
         case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
-        case TRAINER_CLASS_CHAMPION_HNS:
         case TRAINER_CLASS_PKMN_TRAINER_1_HNS:
+        #if IS_HNS
+            // Steven is an Emerald guest, so he keeps the Emerald champion theme.
+            if (!(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL))
+             && TRAINER_BATTLE_PARAM.opponentA == TRAINER_STEVEN_HNS)
+                return MUS_VS_CHAMPION;
+        #endif
+            return MUS_HG_VS_CHAMPION;
+        case TRAINER_CLASS_CHAMPION_HNS:
             return MUS_HG_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
@@ -8053,6 +8066,12 @@ u16 GetBattleBGM(void)
             if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return MUS_VS_TRAINER;
             return MUS_VS_RIVAL;
+        case TRAINER_CLASS_RIVAL_HNS:
+            return MUS_HG_VS_RIVAL;
+        case TRAINER_CLASS_ROCKET_ADMIN_HNS:
+            return MUS_HG_VS_ROCKET;
+        case TRAINER_CLASS_TEAM_ROCKET_HNS:
+            return MUS_HG_VS_ROCKET;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_CHAMPION_FRLG:
@@ -8069,6 +8088,13 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_FACTORY_HEAD:
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
+        case TRAINER_CLASS_SALON_MAIDEN_HNS:
+        case TRAINER_CLASS_DOME_ACE_HNS:
+        case TRAINER_CLASS_PALACE_MAVEN_HNS:
+        case TRAINER_CLASS_ARENA_TYCOON_HNS:
+        case TRAINER_CLASS_FACTORY_HEAD_HNS:
+        case TRAINER_CLASS_PIKE_QUEEN_HNS:
+        case TRAINER_CLASS_PYRAMID_KING_HNS:
             return MUS_VS_FRONTIER_BRAIN;
         default:
         #if IS_HNS
@@ -9335,7 +9361,12 @@ bool32 TryBoxMonFormChange(struct BoxPokemon *boxMon, enum FormChanges method)
 
 u16 SanitizeSpeciesId(u16 species)
 {
-    assertf(species <= NUM_SPECIES && (species == SPECIES_NONE || IsSpeciesEnabled(species)), "invalid species: %d", species)
+    assertf(species <= NUM_SPECIES, "invalid species: %d", species)
+    {
+        return SPECIES_NONE;
+    }
+
+    assertf(species == SPECIES_NONE || IsSpeciesEnabled(species), "disabled species: %d", species)
     {
         return SPECIES_NONE;
     }
@@ -9669,12 +9700,12 @@ u32 GiveScriptedMonToPlayer(struct Pokemon *mon, u8 slot)
     }
     else
     {
-        for (i = 0; i < PARTY_SIZE; i++)
+        for (i = 0; i < GetMaxPartySize(); i++) // tx_randomizer_and_challenges: party limit
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
         }
-        if (i >= PARTY_SIZE)
+        if (i >= GetMaxPartySize())
         {
             sentToPc = CopyMonToPC(mon);
         }

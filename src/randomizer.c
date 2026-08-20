@@ -13,6 +13,7 @@
 #include "data/randomizer/special_form_tables.h"
 #include "constants/abilities.h"
 #include "data/randomizer/ability_whitelist.h"
+#include "move.h"
 
 const u16 gStarterAndGiftMonTable[STARTER_AND_GIFT_MON_COUNT] =
 {
@@ -1001,7 +1002,7 @@ u16 RandomizeMove(u16 move, u16 species)
     do
     {
         result = RandomizerNextRange(&state, MOVES_COUNT - 1) + 1;
-    } while (result >= MOVES_COUNT);
+    } while (result >= MOVES_COUNT || GetMoveRandomizerInvalid(result));
 
     return result;
 }
@@ -1021,7 +1022,7 @@ u16 RandomizeEvolution(u16 targetSpecies, u16 originalSpecies)
     do
     {
         result = RandomizerNextRange(&state, RANDOMIZER_MAX_MON) + 1;
-    } while (result > RANDOMIZER_MAX_MON || result == SPECIES_NONE);
+    } while (result > RANDOMIZER_MAX_MON || result == SPECIES_NONE || !IsSpeciesPermitted(result));
 
     return result;
 }
@@ -1096,7 +1097,7 @@ u16 RandomizeEvoMethod(u16 species)
     do
     {
         result = RandomizerNextRange(&state, RANDOMIZER_MAX_MON) + 1;
-    } while (result > RANDOMIZER_MAX_MON || result == SPECIES_NONE);
+    } while (result > RANDOMIZER_MAX_MON || result == SPECIES_NONE || !IsSpeciesPermitted(result));
 
     return result;
 }

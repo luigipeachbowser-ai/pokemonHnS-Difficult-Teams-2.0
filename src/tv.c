@@ -88,6 +88,7 @@ static void ClearPokeNews(void);
 static u8 GetTVGroupByShowId(u8);
 static u8 FindFirstActiveTVShowThatIsNotAMassOutbreak(void);
 static void SetTVMetatilesOnMap(int, int, u16);
+static u16 GetTVMetatileId(bool8 on);
 static u8 FindAnyPokeNewsOnTheAir(void);
 static void TakeGabbyAndTyOffTheAir(void);
 static bool8 BernoulliTrial(u16 ratio);
@@ -839,7 +840,7 @@ void UpdateTVScreensOnMap(int width, int height)
     switch (CheckForPlayersHouseNews())
     {
     case PLAYERS_HOUSE_TV_LATI:
-        SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
+        SetTVMetatilesOnMap(width, height, GetTVMetatileId(TRUE));
         break;
     case PLAYERS_HOUSE_TV_MOVIE:
         // Don't flash TV for movie text in player's house
@@ -850,15 +851,25 @@ void UpdateTVScreensOnMap(int width, int height)
          && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F))
         {
             // NPC in Lilycove Hotel is always watching TV
-            SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
+            SetTVMetatilesOnMap(width, height, GetTVMetatileId(TRUE));
         }
         else if (FlagGet(FLAG_SYS_TV_START) && (FindAnyTVShowOnTheAir() != 0xFF || FindAnyPokeNewsOnTheAir() != 0xFF || IsGabbyAndTyShowOnTheAir()))
         {
             FlagClear(FLAG_SYS_TV_WATCH);
-            SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
+            SetTVMetatilesOnMap(width, height, GetTVMetatileId(TRUE));
         }
         break;
     }
+}
+
+// The TV metatile id depends on which tileset the current map's layout uses,
+// not on the build target; HnS-layout maps use the Johto building tileset.
+static u16 GetTVMetatileId(bool8 on)
+{
+    if (gMapHeader.mapLayout->layoutVersion == LAYOUT_VERSION_HNS)
+        return on ? METATILE_JohtoBuildingHns_TV_On : METATILE_JohtoBuildingHns_TV_Off;
+
+    return on ? METATILE_Building_TV_On : METATILE_Building_TV_Off;
 }
 
 static void SetTVMetatilesOnMap(int width, int height, u16 metatileId)
@@ -878,13 +889,13 @@ static void SetTVMetatilesOnMap(int width, int height, u16 metatileId)
 
 void TurnOffTVScreen(void)
 {
-    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, IS_HNS ? METATILE_JohtoBuildingHns_TV_Off : METATILE_Building_TV_Off);
+    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, GetTVMetatileId(FALSE));
     DrawWholeMapView();
 }
 
 void TurnOnTVScreen(void)
 {
-    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, IS_HNS ? METATILE_JohtoBuildingHns_TV_On : METATILE_Building_TV_On);
+    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, GetTVMetatileId(TRUE));
     DrawWholeMapView();
 }
 
@@ -3071,24 +3082,30 @@ static u16 GetRandomDifferentSpeciesAndNameSeenByPlayer(u8 varIdx, u16 excludedS
 
 static u16 GetRandomDifferentSpeciesSeenByPlayer(u16 excludedSpecies)
 {
-    u16 species = Random() % (NUM_SPECIES - 1) + 1;
-    u16 initSpecies = species;
-
-    while (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN) != TRUE || species == excludedSpecies)
+    enum NationalDexOrder selectedNatDex;
+    enum NationalDexOrder excludexNatDex = SpeciesToNationalPokedexNum(excludedSpecies);
+    enum NationalDexOrder *natDexArray = Alloc(POKEMON_SLOTS_NUMBER * sizeof(enum NationalDexOrder));
+    u32 count = 0;
+    for (u32 i = 0; i < NUM_DEX_FLAG_BYTES; i++)
     {
-        if (species == SPECIES_NONE + 1)
-            species = NUM_SPECIES - 1;
-        else
-            species--;
-
-        if (species == initSpecies)
+        u32 tmp = gSaveBlock1Ptr->dexSeen[i];
+        for (u32 j = 0; j < 8; j++)
         {
-            // Looped back to initial species (only Pokémon seen), must choose excluded species
-            species = excludedSpecies;
-            return species;
+            if (tmp & 1)
+                natDexArray[count++] = i * 8 + j + 1;
+            tmp >>= 1;
         }
-    };
-    return species;
+    }
+    if (count <= 1)
+    {
+        Free(natDexArray);
+        return excludedSpecies;
+    }
+    do {
+        selectedNatDex = natDexArray[RandomUniform(RNG_NONE, 0, count - 1)];
+    } while (selectedNatDex == excludexNatDex);
+    Free(natDexArray);
+    return NationalPokedexNumToSpecies(selectedNatDex);
 }
 
 static void Script_FindFirstEmptyNormalTVShowSlot(void)
@@ -3351,6 +3368,8 @@ u8 CheckForPlayersHouseNews(void)
     return PLAYERS_HOUSE_TV_LATI;
 }
 
+// References to gText_Dad_ all removed for HnS due to lack of a "Dad" character in the game.
+// The code is left in place for potential future use if a "Dad" character is added or Hoenn version created
 void GetMomOrDadStringForTVMessage(void)
 {
     // If the player is checking the TV in their house it will only refer to their Mom.
@@ -3379,7 +3398,8 @@ void GetMomOrDadStringForTVMessage(void)
     }
     else if (VarGet(VAR_TEMP_3) == 2)
     {
-        StringCopy(gStringVar1, gText_Dad);
+        StringCopy(gStringVar1, gText_Mom); // Added for Hns
+//        StringCopy(gStringVar1, gText_Dad); // Removed for HnS
     }
     else if (VarGet(VAR_TEMP_3) > 2)
     {
@@ -3387,7 +3407,8 @@ void GetMomOrDadStringForTVMessage(void)
         if (VarGet(VAR_TEMP_3) % 2 == 0)
             StringCopy(gStringVar1, gText_Mom);
         else
-            StringCopy(gStringVar1, gText_Dad);
+            StringCopy(gStringVar1, gText_Mom); // Added for Hns
+//        StringCopy(gStringVar1, gText_Dad); // Removed for HnS
     }
     else
     {
@@ -3401,7 +3422,8 @@ void GetMomOrDadStringForTVMessage(void)
         }
         else
         {
-            StringCopy(gStringVar1, gText_Dad);
+            StringCopy(gStringVar1, gText_Mom); // Added for Hns
+//            StringCopy(gStringVar1, gText_Dad); // Removed for HnS
             VarSet(VAR_TEMP_3, 2);
         }
     }

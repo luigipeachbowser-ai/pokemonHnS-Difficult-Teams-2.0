@@ -38,8 +38,10 @@ static const u8 sLastCursorPositions[] =
     [POKENAV_MENU_TYPE_UNLOCK_MC]         = 3,
     [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS] = 4,
 #if IS_HNS
-    [POKENAV_MENU_TYPE_UNLOCK_MC_RADIO]          = 4,
-    [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS_RADIO]  = 5,
+    [POKENAV_MENU_TYPE_UNLOCK_MC_RADIO]                = 4,
+    [POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS_RADIO]        = 5,
+    [POKENAV_MENU_TYPE_DEFAULT_NO_COND]                = 1,
+    [POKENAV_MENU_TYPE_UNLOCK_MC_NO_COND]              = 2,
 #endif
     [POKENAV_MENU_TYPE_CONDITION]         = 2,
     [POKENAV_MENU_TYPE_CONDITION_SEARCH]  = 5
@@ -86,6 +88,17 @@ static const u8 sMenuItems[][MAX_POKENAV_MENUITEMS] =
         POKENAV_MENUITEM_RIBBONS,
         POKENAV_MENUITEM_SWITCH_OFF
     },
+    [POKENAV_MENU_TYPE_DEFAULT_NO_COND] =
+    {
+        POKENAV_MENUITEM_MAP,
+        [1 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
+    },
+    [POKENAV_MENU_TYPE_UNLOCK_MC_NO_COND] =
+    {
+        POKENAV_MENUITEM_MAP,
+        POKENAV_MENUITEM_MATCH_CALL,
+        [2 ... MAX_POKENAV_MENUITEMS - 1] = POKENAV_MENUITEM_SWITCH_OFF
+    },
 #endif
     [POKENAV_MENU_TYPE_CONDITION] =
     {
@@ -104,6 +117,21 @@ static const u8 sMenuItems[][MAX_POKENAV_MENUITEMS] =
         POKENAV_MENUITEM_CONDITION_SEARCH_CANCEL
     },
 };
+
+// The cursor position is a row index into sMenuItems, which is not the same as
+// the menu item ID once optional entries (Radio, no-Condition) shift the rows.
+static s16 GetCursorPosOfMenuItem(u8 menuType, u8 menuItem)
+{
+    u32 i;
+
+    for (i = 0; i <= sLastCursorPositions[menuType]; i++)
+    {
+        if (sMenuItems[menuType][i] == menuItem)
+            return i;
+    }
+
+    return 0;
+}
 
 static u8 GetPokenavMainMenuType(void)
 {
@@ -125,6 +153,14 @@ static u8 GetPokenavMainMenuType(void)
         else if (menuType == POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS)
             menuType = POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS_RADIO;
     }
+
+    if (!FlagGet(FLAG_ENABLE_CONDITION))
+    {
+        if (menuType == POKENAV_MENU_TYPE_DEFAULT)
+            menuType = POKENAV_MENU_TYPE_DEFAULT_NO_COND;
+        else if (menuType == POKENAV_MENU_TYPE_UNLOCK_MC)
+            menuType = POKENAV_MENU_TYPE_UNLOCK_MC_NO_COND;
+    }
 #endif
 
     return menuType;
@@ -137,7 +173,7 @@ bool32 PokenavCallback_Init_MainMenuCursorOnMap(void)
         return FALSE;
 
     menu->menuType = GetPokenavMainMenuType();
-    menu->cursorPos = POKENAV_MENUITEM_MAP;
+    menu->cursorPos = GetCursorPosOfMenuItem(menu->menuType, POKENAV_MENUITEM_MAP);
     menu->currMenuItem = POKENAV_MENUITEM_MAP;
     menu->helpBarIndex = HELPBAR_NONE;
     SetMenuInputHandler(menu);
@@ -151,7 +187,7 @@ bool32 PokenavCallback_Init_MainMenuCursorOnMatchCall(void)
         return FALSE;
 
     menu->menuType = GetPokenavMainMenuType();
-    menu->cursorPos = POKENAV_MENUITEM_MATCH_CALL;
+    menu->cursorPos = GetCursorPosOfMenuItem(menu->menuType, POKENAV_MENUITEM_MATCH_CALL);
     menu->currMenuItem = POKENAV_MENUITEM_MATCH_CALL;
     menu->helpBarIndex = HELPBAR_NONE;
     SetMenuInputHandler(menu);
@@ -165,11 +201,27 @@ bool32 PokenavCallback_Init_MainMenuCursorOnRibbons(void)
         return FALSE;
 
     menu->menuType = GetPokenavMainMenuType();
-    menu->cursorPos = POKENAV_MENUITEM_RIBBONS;
+    menu->cursorPos = GetCursorPosOfMenuItem(menu->menuType, POKENAV_MENUITEM_RIBBONS);
     menu->currMenuItem = POKENAV_MENUITEM_RIBBONS;
     SetMenuInputHandler(menu);
     return TRUE;
 }
+
+#if IS_HNS
+bool32 PokenavCallback_Init_MainMenuCursorOnRadio(void)
+{
+    struct Pokenav_Menu *menu = AllocSubstruct(POKENAV_SUBSTRUCT_MAIN_MENU_HANDLER, sizeof(struct Pokenav_Menu));
+    if (!menu)
+        return FALSE;
+
+    menu->menuType = GetPokenavMainMenuType();
+    menu->cursorPos = GetCursorPosOfMenuItem(menu->menuType, POKENAV_MENUITEM_RADIO);
+    menu->currMenuItem = POKENAV_MENUITEM_RADIO;
+    menu->helpBarIndex = HELPBAR_NONE;
+    SetMenuInputHandler(menu);
+    return TRUE;
+}
+#endif
 
 bool32 PokenavCallback_Init_ConditionMenu(void)
 {
@@ -211,6 +263,8 @@ static void SetMenuInputHandler(struct Pokenav_Menu *menu)
 #if IS_HNS
     case POKENAV_MENU_TYPE_UNLOCK_MC_RADIO:
     case POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS_RADIO:
+    case POKENAV_MENU_TYPE_DEFAULT_NO_COND:
+    case POKENAV_MENU_TYPE_UNLOCK_MC_NO_COND:
 #endif
         menu->callback = GetMainMenuInputHandler();
         break;
@@ -491,7 +545,7 @@ static u32 GetMenuId(struct Pokenav_Menu *menu)
 static void ReturnToMainMenu(struct Pokenav_Menu *menu)
 {
     menu->menuType = GetPokenavMainMenuType();
-    menu->cursorPos = 1;
+    menu->cursorPos = GetCursorPosOfMenuItem(menu->menuType, POKENAV_MENUITEM_CONDITION);
     menu->currMenuItem = sMenuItems[menu->menuType][menu->cursorPos];
     menu->callback = HandleMainMenuInput;
 }

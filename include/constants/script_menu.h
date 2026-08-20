@@ -184,6 +184,8 @@
 #define MULTI_MOM_MENU                     173
 #define MULTI_LINK_SERVICES_HNS            174
 #define MULTI_BATTLE_MODE_HNS              175
+#define MULTI_FOSSIL_HNS                   176
+#define MULTI_GAME_CORNER_DOLLS2           177
 
 #define MULTI_NONE 255
 

@@ -159,6 +159,7 @@ static const struct CaptureStar sCaptureStars[] =
 #define TAG_PARTICLES_PARK_BALL    65055
 #define TAG_PARTICLES_BEAST_BALL   65056
 #define TAG_PARTICLES_CHERISH_BALL 65057
+#define TAG_PARTICLES_GS_BALL      65058
 
 static const union AnimCmd sAnim_RegularBall[] =
 {
@@ -455,6 +456,14 @@ static const struct PokeBallParticles sBallParticles[POKEBALL_COUNT] =
     {
         POKE_BALL_ANIMATION(TAG_PARTICLES_CHERISH_BALL, gBattleAnimSpriteGfx_Particles2, gBattleAnimSpritePal_Particles2),
         .openFadeColor = RGB(25, 4, 3),
+        .animNums = 0,
+        .particleAnimationFunc = MasterBallOpenParticleAnimation,
+    },
+
+    [BALL_GS] =
+    {
+        POKE_BALL_ANIMATION(TAG_PARTICLES_GS_BALL, gBattleAnimSpriteGfx_Particles, gBattleAnimSpritePal_CircleImpact),
+        .openFadeColor = RGB(31, 22, 30),
         .animNums = 0,
         .particleAnimationFunc = MasterBallOpenParticleAnimation,
     },
@@ -830,7 +839,7 @@ void AnimTask_ThrowBall_StandingTrainer(u8 taskId)
     else
     {
         x = 23;
-        y = 5;
+        y = 10;
     }
 
     ballId = ItemIdToBallId(gLastUsedItem);
@@ -1371,7 +1380,7 @@ static void SpriteCB_Ball_Capture_Step(struct Sprite *sprite)
         gDoingBattleAnim = FALSE;
         UpdateOamPriorityInAllHealthboxes(1, FALSE);
         m4aMPlayAllStop();
-        PlaySE(MUS_RG_CAUGHT_INTRO);
+        PlaySE(IS_HNS ? MUS_HG_EVOLVED : MUS_RG_CAUGHT_INTRO);
     }
     else if (sprite->sTimer == 315)
     {

@@ -168,7 +168,7 @@ static const struct RegionMapLocation sRegionMapEntries_Johto[] = {
     [MAPSEC_NEW_BARK_TOWN]     = { 13, 11, 1, 1, COMPOUND_STRING("NEW BARK TOWN") },
     [MAPSEC_INDIGO_PLATEAU]    = { 16, 2,  1, 2, COMPOUND_STRING("INDIGO PLATEAU") },
     [MAPSEC_BATTLE_FRONTIER]   = { 12, 14, 1, 1, COMPOUND_STRING("BATTLE FRONTIER") },
-    [MAPSEC_ROUTE_26]          = { 16, 7,  1, 4, COMPOUND_STRING("ROUTE 26") },
+    [MAPSEC_ROUTE_26]          = { 16, 8,  1, 4, COMPOUND_STRING("ROUTE 26") },
     [MAPSEC_ROUTE_27]          = { 14, 11, 3, 1, COMPOUND_STRING("ROUTE 27") },
     [MAPSEC_ROUTE_28]          = { 15, 7,  1, 1, COMPOUND_STRING("ROUTE 28") },
     [MAPSEC_ROUTE_29]          = { 10, 11, 3, 1, COMPOUND_STRING("ROUTE 29") },
@@ -192,7 +192,7 @@ static const struct RegionMapLocation sRegionMapEntries_Johto[] = {
     [MAPSEC_ROUTE_47]          = { 0,  9,  1, 1, COMPOUND_STRING("ROUTE 47") },
     [MAPSEC_ROUTE_48]          = { 0,  8,  1, 1, COMPOUND_STRING("ROUTE 48") },
     [MAPSEC_SAFARI_ZONE]       = { 0,  6,  1, 1, COMPOUND_STRING("SAFARI ZONE") },
-    [MAPSEC_VICTORY_ROAD]      = { 16, 4,  1, 4, COMPOUND_STRING("VICTORY ROAD") },
+    [MAPSEC_VICTORY_ROAD_HNS]  = { 16, 4,  1, 4, COMPOUND_STRING("VICTORY ROAD") },
     [MAPSEC_PALLET_TOWN]       = { 19, 11, 1, 1, COMPOUND_STRING("PALLET TOWN") },
     [MAPSEC_VIRIDIAN_CITY]     = { 19, 7,  1, 1, COMPOUND_STRING("VIRIDIAN CITY") },
     [MAPSEC_PEWTER_CITY]       = { 19, 2,  1, 1, COMPOUND_STRING("PEWTER CITY") },
@@ -209,7 +209,7 @@ static const struct RegionMapLocation sRegionMapEntries_Johto[] = {
     [MAPSEC_ROUTE_1]           = { 19, 8,  1, 3, COMPOUND_STRING("ROUTE 1") },
     [MAPSEC_ROUTE_2]           = { 19, 3,  1, 4, COMPOUND_STRING("ROUTE 2") },
     [MAPSEC_ROUTE_3]           = { 20, 2,  2, 1, COMPOUND_STRING("ROUTE 3") },
-    [MAPSEC_ROUTE_4]           = { 22, 2,  2, 1, COMPOUND_STRING("ROUTE 4") },
+    [MAPSEC_ROUTE_4]           = { 21, 2,  1, 1, COMPOUND_STRING("ROUTE 4") },
     [MAPSEC_ROUTE_5]           = { 24, 3,  1, 2, COMPOUND_STRING("ROUTE 5") },
     [MAPSEC_ROUTE_6]           = { 24, 6,  1, 1, COMPOUND_STRING("ROUTE 6") },
     [MAPSEC_ROUTE_7]           = { 23, 5,  1, 1, COMPOUND_STRING("ROUTE 7") },
@@ -231,9 +231,9 @@ static const struct RegionMapLocation sRegionMapEntries_Johto[] = {
     [MAPSEC_ROUTE_24]          = { 24, 0,  1, 2, COMPOUND_STRING("ROUTE 24") },
     [MAPSEC_ROUTE_25]          = { 25, 0,  1, 1, COMPOUND_STRING("ROUTE 25") },
     [MAPSEC_VIRIDIAN_FOREST]   = { 19, 4,  1, 2, COMPOUND_STRING("VIRIDIAN FOREST") },
-    [MAPSEC_MT_MOON]           = { 21, 2,  2, 1, COMPOUND_STRING("MT. MOON") },
+    [MAPSEC_MT_MOON]           = { 22, 2,  1, 1, COMPOUND_STRING("MT. MOON") },
     [MAPSEC_DIGLETTS_CAVE]     = { 20, 3,  6, 4, COMPOUND_STRING("DIGLETT'S CAVE") },
-    [MAPSEC_ROCKET_HIDEOUT]    = { 9,  3,  1, 1, COMPOUND_STRING("ROCKET HIDEOUT") },
+    [MAPSEC_ROCKET_HIDEOUT_HNS] = { 9,  3,  1, 1, COMPOUND_STRING("ROCKET HIDEOUT") },
     [MAPSEC_ROCK_TUNNEL]       = { 27, 3,  1, 1, COMPOUND_STRING("ROCK TUNNEL") },
     [MAPSEC_SEAFOAM_ISLANDS]   = { 22, 13, 1, 1, COMPOUND_STRING("SEAFOAM ISLANDS") },
     [MAPSEC_CERULEAN_CAVE]     = { 23, 1,  1, 1, COMPOUND_STRING("CERULEAN CAVE") },
@@ -264,11 +264,11 @@ static const struct RegionMapLocation sRegionMapEntries_Johto[] = {
     [MAPSEC_EMBEDDED_TOWER]    = { 1,  10, 1, 1, COMPOUND_STRING("EMBEDDED TOWER") },
     [MAPSEC_OLIVINE_LIGHTHOUSE] = { 3, 6,  1, 1, COMPOUND_STRING("LIGHTHOUSE") },
     [MAPSEC_TRAINER_HILL]      = { 2,  5,  1, 1, COMPOUND_STRING("TRAINER HILL") },
-    [MAPSEC_MELEMELE_ISLAND]   = { 26, 13, 1, 1, COMPOUND_STRING("MELEMELE ISLAND") },
-    [MAPSEC_AKALA_ISLAND]     = { 27, 12, 1, 1, COMPOUND_STRING("AKALA ISLAND") },
-    [MAPSEC_ULAULA_ISLAND]    = { 27, 13, 1, 1, COMPOUND_STRING("ULA'ULA ISLAND") },
-    [MAPSEC_PONI_ISLAND]      = { 25, 13, 1, 1, COMPOUND_STRING("PONI ISLAND") },
-    [MAPSEC_ALOLA_OCEAN]      = { 25, 12, 1, 1, COMPOUND_STRING("ALOLA OCEAN") },
+    [MAPSEC_MELEMELE_ISLAND]   = { 26, 13, 1, 1, COMPOUND_STRING("MELEMELE ISLE") },
+    [MAPSEC_AKALA_ISLAND]     = { 27, 12, 1, 1, COMPOUND_STRING("AKALA ISLE") },
+    [MAPSEC_ULAULA_ISLAND]    = { 27, 13, 1, 1, COMPOUND_STRING("ULA'ULA ISLE") },
+    [MAPSEC_PONI_ISLAND]      = { 25, 13, 1, 1, COMPOUND_STRING("PONI ISLE") },
+    [MAPSEC_ALOLA_OCEAN]      = { 25, 12, 1, 1, COMPOUND_STRING("ALOLA SEA") },
     [MAPSEC_AKALA_CAVE]       = { 27, 14, 1, 1, COMPOUND_STRING("AKALA CAVE") },
     [MAPSEC_AKALA_FOREST]     = { 27, 11, 1, 1, COMPOUND_STRING("AKALA FOREST") },
     [MAPSEC_PONI_CAVE]        = { 25, 14, 1, 1, COMPOUND_STRING("PONI CAVE") },
@@ -710,7 +710,7 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_UNDERGROUND_PATH_2] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_DIGLETTS_CAVE] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_KANTO_VICTORY_ROAD] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
-    [MAPSEC_ROCKET_HIDEOUT] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
+    [MAPSEC_ROCKET_HIDEOUT_HNS] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_SILPH_CO] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_POKEMON_MANSION] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
     [MAPSEC_KANTO_SAFARI_ZONE] = {MAP_GROUP(MAP_PALLET_TOWN), MAP_NUM(MAP_PALLET_TOWN), HEAL_LOCATION_NONE},
@@ -786,7 +786,7 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_INDIGO_PLATEAU] = {MAP_GROUP(MAP_INDIGO_PLATEAU_HNS), MAP_NUM(MAP_INDIGO_PLATEAU_HNS), HEAL_LOCATION_INDIGO_PLATEAU_HNS},
     [MAPSEC_BATTLE_FRONTIER] = {MAP_GROUP(MAP_BATTLE_FRONTIER_OUTSIDE_EAST_HNS), MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_EAST_HNS), HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST_HNS},
     [MAPSEC_NEW_SINJOH] = {MAP_GROUP(MAP_NEW_SINJOH_HNS), MAP_NUM(MAP_NEW_SINJOH_HNS), HEAL_LOCATION_NEW_SINJOH_HNS},
-    [MAPSEC_ROUTE_26] = {MAP_GROUP(MAP_ROUTE26_HNS), MAP_NUM(MAP_ROUTE26_HNS), HEAL_LOCATION_NONE},
+    [MAPSEC_ROUTE_26] = {MAP_GROUP(MAP_ROUTE26_HNS), MAP_NUM(MAP_ROUTE26_HNS), HEAL_LOCATION_ROUTE26NORTH_HNS},
     [MAPSEC_ROUTE_27] = {MAP_GROUP(MAP_ROUTE27_HNS), MAP_NUM(MAP_ROUTE27_HNS), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_28] = {MAP_GROUP(MAP_ROUTE28_HNS), MAP_NUM(MAP_ROUTE28_HNS), HEAL_LOCATION_NONE},
     [MAPSEC_ROUTE_29] = {MAP_GROUP(MAP_ROUTE29_HNS), MAP_NUM(MAP_ROUTE29_HNS), HEAL_LOCATION_NONE},
@@ -819,6 +819,8 @@ static const u8 sMapHealLocations[][3] =
     [MAPSEC_SAFFRON_CITY] = {MAP_GROUP(MAP_SAFFRON_CITY_HNS), MAP_NUM(MAP_SAFFRON_CITY_HNS), HEAL_LOCATION_SAFFRON_CITY_HNS},
     [MAPSEC_FUCHSIA_CITY] = {MAP_GROUP(MAP_FUCHSIA_CITY_HNS), MAP_NUM(MAP_FUCHSIA_CITY_HNS), HEAL_LOCATION_FUCHSIA_CITY_HNS},
     [MAPSEC_CINNABAR_ISLAND] = {MAP_GROUP(MAP_CINNABAR_ISLAND_HNS), MAP_NUM(MAP_CINNABAR_ISLAND_HNS), HEAL_LOCATION_CINNABAR_ISLAND_HNS},
+    [MAPSEC_ROUTE_10] = {MAP_GROUP(MAP_ROUTE10), MAP_NUM(MAP_ROUTE10), HEAL_LOCATION_ROUTE10_HNS},
+    [MAPSEC_ROUTE_4] = {MAP_GROUP(MAP_ROUTE4), MAP_NUM(MAP_ROUTE4), HEAL_LOCATION_ROUTE4_HNS},
     [MAPSEC_MELEMELE_ISLAND] = {MAP_GROUP(MAP_MELEMELE_ISLE_HNS), MAP_NUM(MAP_MELEMELE_ISLE_HNS), HEAL_LOCATION_MELEMELE_ISLE_HNS},
 
 #endif
@@ -1896,6 +1898,12 @@ static u8 GetMapsecType(mapsec_u16_t mapSecId)
         return FlagGet(FLAG_VISITED_BLACKTHORN_CITY) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
     case MAPSEC_MT_SILVER:
         return FlagGet(FLAG_VISITED_MT_SILVER) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    case MAPSEC_ROUTE_26:
+        return FlagGet(FLAG_VISITED_RECEPTION_GATE) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    case MAPSEC_ROUTE_10:
+        return FlagGet(FLAG_VISITED_ROUTE10) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
+    case MAPSEC_ROUTE_4:
+        return FlagGet(FLAG_VISITED_ROUTE4) ? MAPSECTYPE_CITY_CANFLY : MAPSECTYPE_CITY_CANTFLY;
 #endif
 #if !IS_HNS
     case MAPSEC_ONE_ISLAND:
@@ -2768,6 +2776,7 @@ static const struct FlyLocation sFlyLocations[] =
     { .regionMapType = REGION_MAP_JOHTO, .mapsec = MAPSEC_BLACKTHORN_CITY, .flag = FLAG_VISITED_BLACKTHORN_CITY },
     { .regionMapType = REGION_MAP_JOHTO, .mapsec = MAPSEC_INDIGO_PLATEAU, .flag = FLAG_VISITED_INDIGO_PLATEAU },
     { .regionMapType = REGION_MAP_JOHTO, .mapsec = MAPSEC_MT_SILVER, .flag = FLAG_VISITED_MT_SILVER },
+    { .regionMapType = REGION_MAP_JOHTO, .mapsec = MAPSEC_ROUTE_26, .flag = FLAG_VISITED_RECEPTION_GATE },
     // Combined JK map fly destinations (Johto)
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_NEW_BARK_TOWN, .flag = FLAG_VISITED_NEWBARK_TOWN },
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_CHERRYGROVE_CITY, .flag = FLAG_VISITED_CHERRYGROVE_CITY },
@@ -2783,6 +2792,7 @@ static const struct FlyLocation sFlyLocations[] =
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_BLACKTHORN_CITY, .flag = FLAG_VISITED_BLACKTHORN_CITY },
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_INDIGO_PLATEAU, .flag = FLAG_VISITED_INDIGO_PLATEAU },
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_MT_SILVER, .flag = FLAG_VISITED_MT_SILVER },
+    { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_ROUTE_26, .flag = FLAG_VISITED_RECEPTION_GATE },
     // Combined JK map fly destinations (Kanto)
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_PALLET_TOWN, .flag = FLAG_VISITED_PALLET_TOWN },
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_VIRIDIAN_CITY, .flag = FLAG_VISITED_VIRIDIAN_CITY },
@@ -2794,6 +2804,8 @@ static const struct FlyLocation sFlyLocations[] =
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_SAFFRON_CITY, .flag = FLAG_VISITED_SAFFRON_CITY },
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_FUCHSIA_CITY, .flag = FLAG_VISITED_FUCHSIA_CITY },
     { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_CINNABAR_ISLAND, .flag = FLAG_VISITED_CINNABAR_ISLAND },
+    { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_ROUTE_4, .flag = FLAG_VISITED_ROUTE4 },
+    { .regionMapType = REGION_MAP_JK, .mapsec = MAPSEC_ROUTE_10, .flag = FLAG_VISITED_ROUTE10 },
 #endif
 };
 
@@ -2801,6 +2813,37 @@ static const struct FlyLocation sFlyLocations[] =
 // Sprite data for SpriteCB_FlyDestIcon
 #define sIconMapSec   data[0]
 #define sFlickerTimer data[1]
+
+// In the HnS build, fly destinations that aren't cities (towns, routes, and
+// standalone landmarks) get a blue dot instead of the usual red one.
+static bool32 UseBlueFlyDestIcon(u32 mapSecId)
+{
+#if IS_HNS
+    switch (mapSecId)
+    {
+    // Johto
+    case MAPSEC_NEW_BARK_TOWN:
+    case MAPSEC_AZALEA_TOWN:
+    case MAPSEC_MAHOGANY_TOWN:
+    case MAPSEC_SAFARI_ZONE_GATE:
+    case MAPSEC_LAKE_OF_RAGE:
+    case MAPSEC_MT_SILVER:
+    case MAPSEC_ROUTE_26:
+    // Kanto
+    case MAPSEC_PALLET_TOWN:
+    case MAPSEC_LAVENDER_TOWN:
+    case MAPSEC_CINNABAR_ISLAND:
+    case MAPSEC_ROUTE_4:
+    case MAPSEC_ROUTE_10:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+#else
+    (void)mapSecId;
+    return FALSE;
+#endif
+}
 
 static void CreateFlyDestIcons(void)
 {
@@ -2829,7 +2872,8 @@ static void CreateFlyDestIcons(void)
         else
             shape = SPRITE_SHAPE(8x8);
 
-        spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 10);
+        spriteId = CreateSprite(UseBlueFlyDestIcon(sFlyLocations[i].mapsec) ? &sFlyDestIconBlueSpriteTemplate
+                                                                           : &sFlyDestIconSpriteTemplate, x, y, 10);
         if (spriteId != MAX_SPRITES)
         {
             gSprites[spriteId].oam.shape = shape;

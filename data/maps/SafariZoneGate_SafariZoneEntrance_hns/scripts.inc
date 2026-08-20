@@ -34,7 +34,8 @@ SafariZoneGate_SafariZoneEntrance_MeetBaoba::
 	lock
 	playse SE_PIN
 	applymovement LOCALID_SAFARIZONEGATE_BAOBA, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_SAFARIZONEGATE_BAOBA
 	applymovement LOCALID_SAFARIZONEGATE_BAOBA, SafariZoneGate_SafariZoneEntrance_Movement_WalkToPlayer
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp1
 	waitmovement LOCALID_SAFARIZONEGATE_BAOBA

@@ -1257,7 +1257,7 @@ static void Cmd_printselectionstringfromtable(void)
 {
     CMD_ARGS(const u16 *ptr);
 
-    assertf(gSelectionBattleScripts[gBattlerAttacker] != NULL, "wrong use of printselectionstringfromtable");
+    assertf(gSelectionBattleScripts[gBattlerAttacker] != NULL || gBattleTypeFlags & BATTLE_TYPE_PALACE, "wrong use of printselectionstringfromtable");
 
     if (gBattleControllerExecFlags == 0)
     {
@@ -2148,7 +2148,8 @@ static void Cmd_printselectionstring(void)
 {
     CMD_ARGS(u16 id);
 
-    assertf(gSelectionBattleScripts[gBattlerAttacker] != NULL, "wrong use of printselectionstring");
+    MgbaPrintf(MGBA_LOG_ERROR, "%d", cmd->id);
+    assertf(gSelectionBattleScripts[gBattlerAttacker] != NULL || gBattleTypeFlags & BATTLE_TYPE_PALACE, "wrong use of printselectionstring");
 
     BtlController_EmitPrintSelectionString(gBattlerAttacker, B_COMM_TO_CONTROLLER, cmd->id);
     MarkBattlerForControllerExec(gBattlerAttacker);
@@ -4991,7 +4992,7 @@ static void Cmd_end(void)
 {
     CMD_ARGS();
 
-    assertf(gSelectionBattleScripts[gBattlerAttacker] == NULL, "incorrect use of end in selection script, did you mean endselectionscript?");
+    assertf(gSelectionBattleScripts[gBattlerAttacker] == NULL || gBattleTypeFlags & BATTLE_TYPE_PALACE, "incorrect use of end in selection script, did you mean endselectionscript?");
     assertf(gBattleMainFunc != RunBattleScriptCommands, "incorrect use of end in battle script, did you mean end3?");
 
     if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
@@ -5004,7 +5005,7 @@ static void Cmd_end2(void)
 {
     CMD_ARGS();
 
-    assertf(gSelectionBattleScripts[gBattlerAttacker] == NULL, "incorrect use of end2 in selection script, did you mean endselectionscript?");
+    assertf(gSelectionBattleScripts[gBattlerAttacker] == NULL || gBattleTypeFlags & BATTLE_TYPE_PALACE, "incorrect use of end2 in selection script, did you mean endselectionscript?");
     assertf(gBattleMainFunc != RunBattleScriptCommands, "incorrect use of end2 in battle script, did you mean end3?");
 
     gCurrentActionFuncId = B_ACTION_TRY_FINISH;
@@ -5015,7 +5016,7 @@ static void Cmd_end3(void)
 {
     CMD_ARGS();
 
-    assertf(gSelectionBattleScripts[gBattlerAttacker] == NULL, "incorrect use of end3 in selection script, did you mean endselectionscript?");
+    assertf(gSelectionBattleScripts[gBattlerAttacker] == NULL || gBattleTypeFlags & BATTLE_TYPE_PALACE, "incorrect use of end3 in selection script, did you mean endselectionscript?");
 
     BattleScriptPop();
     if (gBattleResources->battleCallbackStack->size != 0)
@@ -5065,7 +5066,7 @@ static void Cmd_endselectionscript(void)
 {
     CMD_ARGS();
 
-    assertf(gSelectionBattleScripts[gBattlerAttacker] != NULL, "wrong use of endselectionscript");
+    assertf(gSelectionBattleScripts[gBattlerAttacker] != NULL || gBattleTypeFlags & BATTLE_TYPE_PALACE, "wrong use of endselectionscript");
     gBattleStruct->battlerState[gBattlerAttacker].selectionScriptFinished = TRUE;
 }
 
@@ -8806,10 +8807,10 @@ static void Cmd_trysetencore(void)
         }
     }
 
-    if ((IsMoveEncoreBanned(gLastMoves[gBattlerTarget]))
-     || i == MAX_MON_MOVES
-     || gLastMoves[gBattlerTarget] == MOVE_NONE
+    if (gLastMoves[gBattlerTarget] == MOVE_NONE
      || gLastMoves[gBattlerTarget] == MOVE_UNAVAILABLE
+     || IsMoveEncoreBanned(gLastMoves[gBattlerTarget])
+     || i == MAX_MON_MOVES
      || gBattleMons[gBattlerTarget].pp[i] == 0
      || gBattleMons[gBattlerTarget].volatiles.encoredMove != MOVE_NONE
      || GetMoveEffect(gChosenMoveByBattler[gBattlerTarget]) == EFFECT_SHELL_TRAP)
@@ -10840,6 +10841,12 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         ball->multiplier = 410;
         ball->divider = 4096;
         break;
+    case BALL_GS:
+        if (battleMon->species == SPECIES_CELEBI)
+            ball->guaranteedCapture = TRUE;
+        else
+            ball->multiplier = 2550;
+        break;
     }
 
 }
@@ -10879,17 +10886,20 @@ static u32 ComputeCaptureOdds(u32 wildMonBattler, u32 playerBattler)
     odds = odds * catchRate / (battleMon->maxHP * 3);
     odds = odds * ball.multiplier / ball.divider;
 
+    // sBadgeLevel only covers 8 badges, so the count driving the malus is clamped to it.
     u8 badgeCount = 0;
     for (u32 i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
     {
         if (FlagGet(i))
             badgeCount++;
     }
-    if (GetConfig(B_MISSING_BADGE_CATCH_MALUS) == GEN_8 && badgeCount < NUM_BADGES && gBattleMons[playerBattler].level < battleMon->level)
+    if (badgeCount > NUM_BADGES_CAPPED)
+        badgeCount = NUM_BADGES_CAPPED;
+    if (GetConfig(B_MISSING_BADGE_CATCH_MALUS) == GEN_8 && badgeCount < NUM_BADGES_CAPPED && gBattleMons[playerBattler].level < battleMon->level)
         odds = odds * 410 / 4096;
-    if (GetConfig(B_MISSING_BADGE_CATCH_MALUS) == GEN_9 && badgeCount < NUM_BADGES)
+    if (GetConfig(B_MISSING_BADGE_CATCH_MALUS) == GEN_9 && badgeCount < NUM_BADGES_CAPPED)
     {
-        for (u32 i = badgeCount; i < NUM_BADGES && battleMon->level > sBadgeLevel[i]; i++)
+        for (u32 i = badgeCount; i < ARRAY_COUNT(sBadgeLevel) && battleMon->level > sBadgeLevel[i]; i++)
             odds = odds * 4 / 5;
     }
 
@@ -11063,7 +11073,7 @@ static void Cmd_givecaughtmon(void)
     switch (state)
     {
     case GIVECAUGHTMON_CHECK_PARTY_SIZE:
-        if (CalculatePlayerPartyCount() == GetMaxPartySize() && B_CATCH_SWAP_INTO_PARTY >= GEN_7)
+        if (CalculatePlayerPartyCount() == GetMaxPartySize() && B_CATCH_SWAP_INTO_PARTY >= GEN_7 && !IsPartyLimitChallengeActive()) // tx_randomizer_and_challenges: no swapping into a limited party
         {
             PrepareStringBattle(STRINGID_SENDCAUGHTMONPARTYORBOX, gBattlerAttacker);
             gBattleCommunication[MSG_DISPLAY] = 1;
@@ -11142,6 +11152,7 @@ static void Cmd_givecaughtmon(void)
                     GetMonNickname(&gPlayerParty[gSelectedMonPartyId], gStringVar2);
                     StringCopy(gStringVar1, GetBoxNamePtr(GetPCBoxToSendMon()));
                     ZeroMonData(&gPlayerParty[gSelectedMonPartyId]);
+                    gLeveledUpInBattle &= ~(1u << gSelectedMonPartyId);
                     gBattleStruct->itemLost[B_SIDE_PLAYER][gSelectedMonPartyId].originalItem = ITEM_NONE;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWAPPED_INTO_PARTY;
                     gSelectedMonPartyId = PARTY_SIZE;
@@ -11195,7 +11206,7 @@ static void Cmd_givecaughtmon(void)
         }
 
         // Copy changedSpecies to allow caught mon to revert to its original species.
-        if (emptySlot != PARTY_SIZE)
+        if (emptySlot != GetMaxPartySize()) // tx_randomizer_and_challenges: party limit, not PARTY_SIZE
             gBattleStruct->partyState[B_SIDE_PLAYER][emptySlot].changedSpecies = GetBattlerPartyState(GetCatchingBattler())->changedSpecies;
 
         gBattleResults.caughtMonSpecies = GetMonData(caughtMon, MON_DATA_SPECIES);

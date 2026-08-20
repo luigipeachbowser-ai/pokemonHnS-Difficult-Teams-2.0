@@ -4,10 +4,11 @@ OlivineCity_PortInside_hns_MapScripts::
 
 OlivineCity_PortInside_EventScript_Oak::
 	lock
-	playbgm MUS_HG_OAK, TRUE
+	playbgm MUS_HG_OAK, FALSE
 	playse SE_PIN
 	applymovement2 LOCALID_OLIVINEPORT_OAK, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_OLIVINEPORT_OAK
 	turnobject LOCALID_OLIVINEPORT_OAK, DIR_NORTH
 	msgbox OlivineCity_PortInside_Text_Nationaldex1, MSGBOX_DEFAULT
 	closemessage
@@ -24,7 +25,8 @@ OlivineCity_PortInside_EventScript_Oak::
 	closemessage
 	playse SE_PIN
 	applymovement2 LOCALID_OLIVINEPORT_OAK, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_OLIVINEPORT_OAK
 	msgbox OlivineCity_PortInside_Text_Nationaldex4, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, OlivineCity_PortInside_Movement_PlayerMoveOver

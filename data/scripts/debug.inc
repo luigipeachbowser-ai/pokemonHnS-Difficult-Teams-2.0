@@ -203,17 +203,28 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	setvar VAR_SINJOH_STORYLINE, 10
+	clearflag FLAG_DEFEATED_OLIVINE_CITY_GYM
+	clearflag FLAG_DEFEATED_CIANWOOD_GYM
+	clearflag FLAG_DEFEATED_MAHOGANY_TOWN_GYM
+	clearflag FLAG_VISITED_VERMILION_CITY
+	setflag FLAG_HIDE_DOJO_CHUCK
+	setvar VAR_MAHOGANY_TOWN_STATE, 15
+	setvar VAR_NUM_BADGES, 6
 	release
 	end
 
+Debug_Text_1:
+	.string "{STR_VAR_1}$"
+
+
 Debug_EventScript_Script_2::
-	givemon SPECIES_REGICE, 100
-	givemon SPECIES_REGIROCK, 100
-	givemon SPECIES_REGISTEEL, 100
-	givemon SPECIES_REGIDRAGO, 100
-	givemon SPECIES_REGIELEKI, 100
-	setvar VAR_REGIS_SCANNED, 0
+	clearflag FLAG_DEFEATED_OLIVINE_CITY_GYM
+	clearflag FLAG_DEFEATED_CIANWOOD_GYM
+	clearflag FLAG_DEFEATED_MAHOGANY_TOWN_GYM
+	clearflag FLAG_VISITED_VERMILION_CITY
+	setflag FLAG_HIDE_DOJO_CHUCK
+	setvar VAR_MAHOGANY_TOWN_STATE, 15
+	setvar VAR_NUM_BADGES, 4
 	release
 	end
 

@@ -15,6 +15,7 @@ PokemonLeague_HallOfFame_EventScript_Cutscene::
 	waitmovement LOCALID_HALLOFFAME_LANCE
 	msgbox PokemonLeague_HallOfFame_LanceText, MSGBOX_DEFAULT
 	closemessage
+	special GivePartyMonChampionRibbon
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 20
@@ -37,6 +38,7 @@ PokemonLeague_HallOfFame_EventScript_CutsceneKantoChamp::
 	waitmovement LOCALID_HALLOFFAME_LANCE
 	msgbox PokemonLeague_HallOfFame_Rematch_LanceText, MSGBOX_DEFAULT
 	closemessage
+	special GivePartyMonChampionRibbon
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 20
@@ -53,6 +55,9 @@ PokemonLeague_HallOfFame_EventScript_CutsceneKantoChamp::
 	end
 
 PokemonLeague_HallOfFame_EventScript_SetFirstGameClearFlags::
+	setflag FLAG_HIDE_AZALEA_TOWN_SLOWPOKE
+	setflag FLAG_HIDE_SLOWPOKE_WELL_TAILLESS_SLOWPOKES
+	clearflag FLAG_HIDE_AZALEA_TOWN_TAILED_SLOWPOKES
 	clearflag FLAG_HIDE_LEAGUE_BLACKBELT
 	setflag FLAG_IS_CHAMPION
 	setflag FLAG_HIDE_BATTLEFRONTIER_ENGINEER
@@ -62,6 +67,10 @@ PokemonLeague_HallOfFame_EventScript_SetFirstGameClearFlags::
 	return
 
 PokemonLeague_HallOfFame_EventScript_SetGameClearFlags::
+	setflag FLAG_HIDE_CERULEANCAVE_GUARD
+	setflag FLAG_HIDE_AZALEA_TOWN_SLOWPOKE
+	setflag FLAG_HIDE_SLOWPOKE_WELL_TAILLESS_SLOWPOKES
+	clearflag FLAG_HIDE_AZALEA_TOWN_TAILED_SLOWPOKES
 	clearflag FLAG_HIDE_LATIOS
 	clearflag FLAG_HIDE_LATIAS
 	clearflag FLAG_HIDE_RAYQUAZA

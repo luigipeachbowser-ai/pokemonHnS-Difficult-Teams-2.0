@@ -18,7 +18,8 @@ CeruleanCity_Gym_EventScript_RocketGrunt::
 	closemessage
 	playse SE_PIN
 	applymovement LOCALID_CERULEAN_GYM_ROCKET, Common_Movement_ExclamationMark
-	delay 60
+	delay 55
+	waitmovement LOCALID_CERULEAN_GYM_ROCKET
 	applymovement LOCALID_CERULEAN_GYM_ROCKET, CeruleanCity_Gym_Movement_GruntWalkBack
 	waitmovement 0
 	msgbox CeruleanGym_Text_GruntBigMistake, MSGBOX_DEFAULT
@@ -192,8 +193,9 @@ CeruleanCity_Gym_EventScript_Misty::
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 10
 	call Common_EventScript_SetGymTrainers_hns
-	msgbox CeruleanGym_Text_MistyTm, MSGBOX_DEFAULT
+	msgbox CeruleanGym_Text_Misty_GiveTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM_WATER_PULSE
+	msgbox CeruleanGym_Text_Misty_ExplainTM, MSGBOX_DEFAULT
 	clearflag FLAG_HIDE_CAPE_MISTY
 	call_if_eq VAR_SUICUNE_ENCOUNTERS, 5, CeruleanCity_Gym_SetSuicuneScene
 	closemessage
@@ -318,5 +320,10 @@ CeruleanGym_Text_GuideWin:
 	.string "As always, that was one heck of a\n"
 	.string "great battle!$"
 
-CeruleanGym_Text_MistyTm:
+CeruleanGym_Text_Misty_GiveTM:
 	.string "Here, take this too.$"
+
+CeruleanGym_Text_Misty_ExplainTM:
+	.string "It's the WATER PULSE TM.\p"
+	.string "It never misses and sometimes\n"
+	.string "causes confusion as well!$"

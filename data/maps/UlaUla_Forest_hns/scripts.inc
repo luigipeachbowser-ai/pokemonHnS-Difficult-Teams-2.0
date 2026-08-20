@@ -221,7 +221,7 @@ Alola_Ulaula_Totem_sign_12:
 	end
 
 Alola_Ulaula_Totem_sign_15:
-	warp MAP_AKALA_ISLE_HNS, 9, 10
+	warp MAP_AKALA_ISLE_HNS, 9, 11
 	waitstate
 	end
 
@@ -280,14 +280,14 @@ Alola_Ulaula_TotemBattle_Text_0:
 	.string "Graah!$"
 
 Alola_Ulaula_TotemBattle_Text_1:
-	.string "Totem Tangrowth was defeated!\n"
+	.string "Totem TANGROWTH was defeated!\n"
 	.string "It scampered off somewhere…$"
 
 Alola_Ulaula_TotemBattle_Text_2:
 	.string "Graah!$"
 
 Alola_Ulaula_TotemBattle_Text_3:
-	.string "Totem Primeape was defeated!\n"
+	.string "Totem PRIMEAPE was defeated!\n"
 	.string "It scampered off somewhere…$"
 
 Alola_Ulaula_Totem_sign_Text_0:
@@ -297,19 +297,19 @@ Alola_Ulaula_Totem_sign_Text_0:
 	.string "Isle?$"
 
 Alola_Ulaula_Totem_sign_Text_1:
-	.string "Melemele Isle$"
+	.string "MELEMELE ISLE$"
 
 Alola_Ulaula_Totem_sign_Text_2:
-	.string "Akala Isle$"
+	.string "AKALA ISLE$"
 
 Alola_Ulaula_Totem_sign_Text_3:
-	.string "Ula'ula Isle$"
+	.string "ULA'ULA ISLE$"
 
 Alola_Ulaula_Totem_sign_Text_4:
-	.string "Poni Isle$"
+	.string "PONI ISLE$"
 
 Alola_Ulaula_Totem_sign_Text_5:
-	.string "Cancel$"
+	.string "CANCEL$"
 
 Alola_Ulaula_Totem_sign_Text_6:
 	.string "A strange totem stands here,\n"

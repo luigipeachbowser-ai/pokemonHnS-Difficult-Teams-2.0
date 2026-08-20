@@ -57,6 +57,14 @@ Route13_EventScript_RegisterAlex::
 Route13_EventScript_RematchAlex::
 	trainerbattle_rematch TRAINER_ALEX_HNS, Route13_Text_AlexRematchIntro, Route13_Text_AlexRematchDefeat
 	msgbox Route13_Text_AlexPostRematch, MSGBOX_AUTOCLOSE
+	goto_if_defeated TRAINER_ALEX_2_HNS, Route13_EventScript_RematchAlexTryGiveItem
+	end
+
+Route13_EventScript_RematchAlexTryGiveItem::
+	checkitem ITEM_RED_SHARD
+	goto_if_eq VAR_RESULT, TRUE, Common_EventScript_NoOp
+	giveitem ITEM_RED_SHARD
+	closemessage
 	end
 
 Route13_EventScript_Joshua::
@@ -92,6 +100,14 @@ Route13_EventScript_RegisterKenny::
 Route13_EventScript_RematchKenny::
 	trainerbattle_rematch TRAINER_KENNY_HNS, Route13_Text_KennyRematchIntro, Route13_Text_KennyRematchDefeat
 	msgbox Route13_Text_KennyPostRematch, MSGBOX_AUTOCLOSE
+	goto_if_defeated TRAINER_KENNY_2_HNS, Route13_EventScript_RematchKennyTryGiveItem
+	end
+
+Route13_EventScript_RematchKennyTryGiveItem::
+	checkitem ITEM_TM_STONE_EDGE
+	goto_if_eq VAR_RESULT, TRUE, Common_EventScript_NoOp
+	giveitem ITEM_TM_STONE_EDGE
+	closemessage
 	end
 
 Route13_EventScript_TrainerTips::
@@ -315,6 +331,10 @@ Route13_TravelToAlola_10:
 	msgbox Route13_TravelToAlola_Text_1, MSGBOX_AUTOCLOSE
 	goto_if_eq VAR_FACING, DIR_SOUTH, Route13_TravelToAlola_17
 Route13_TravelToAlola_16:
+	addobject LOCALID_ROUTE13_BOAT
+	clearflag FLAG_HIDE_ROUTE13_BOAT
+	applymovement LOCALID_ROUTE13_BOAT, Route13_Movement_BoatArrive
+	waitmovement 0
 	applymovement Route13_Alola_Captain, Route13_TravelToAlola_Movement_1
 	applymovement LOCALID_PLAYER, Route13_TravelToAlola_Movement_1
 	waitmovement 0
@@ -405,12 +425,12 @@ Route13_Movement_BoatArrive:
 Route13_GetOffBoat_Text_0:
 	.string "Welcome back to mainland Kanto!\p"
 	.string "Come back if you'd like to take a trip\n"
-	.string "to the Alola Isles!$"
+	.string "to the ALOLA ISLES!$"
 
 Route13_TravelToAlola_Text_0:
 	.string "Ahoy there!\p"
 	.string "That's one strange souvenir.\n"
-	.string "You must be from the Isles!$"
+	.string "You must be from the ISLES!$"
 Route13_TravelToAlola_Text_0_5:
 	.string "Would you like to take the next ship?\n"
 	.string "It departs shortly!$"
@@ -423,13 +443,13 @@ Route13_TravelToAlola_Text_2:
 	.string "Come back when you'd like to set sail.$"
 
 Route13_TravelToAlola_Text_3:
-	.string "Ah, its you again!\n"
-	.string "Do you want to go to the Alola Isles?$"
+	.string "Ah, it's you again!\n"
+	.string "Do you want to go to the ALOLA ISLES?$"
 
 Route13_TravelToAlola_Text_4:
 	.string "Ahoy!\n"
 	.string "This port is for residents only.\p"
-	.string "All of the residents of these Isles\n"
+	.string "All of the residents of these ISLES\n"
 	.string "carry some… {PAUSE 30}strange souvenirs.\p"
 	.string "It makes them so easy to identify,\n"
 	.string "I don't even need to check tickets!$"

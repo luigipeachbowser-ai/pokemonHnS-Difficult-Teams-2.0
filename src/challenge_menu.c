@@ -392,7 +392,7 @@ static const u8 *const sDesc_InfiniteTMs[] = {
 };
 static const u8 *const sDesc_Mints[] = {
     COMPOUND_STRING("Mints are not available ingame until\nfinishing the game."),
-    COMPOUND_STRING("Mints can be bought at PRETTY PETAL\nFLOWER SHOP after the 4th medal."),
+    COMPOUND_STRING("Mints can be bought at the\nFLOWER SHOP after the 3rd badge."),
 };
 static const u8 *const sDesc_SurvivePoison[] = {
     COMPOUND_STRING("Your {PKMN} will faint if they are\nPOISONED."),
@@ -2313,6 +2313,11 @@ bool32 HMsOverwriteOptionActive(void)
 u8 GetMaxPartySize(void)
 {
     return (PARTY_SIZE - gSaveBlock3Ptr->challengeSettings.tx_Challenges_PartyLimit);
+}
+
+bool8 IsPartyLimitChallengeActive(void)
+{
+    return (gSaveBlock3Ptr->challengeSettings.tx_Challenges_PartyLimit != 0);
 }
 
 u32 GetBaseStatEqualizerValue(void)

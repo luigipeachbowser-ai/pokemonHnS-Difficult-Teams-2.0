@@ -35,7 +35,7 @@ GoldenrodDeptStore2_EventScript_Sign::
 	end
 
 GoldenrodDeptStore_Text_2FYoungster:
-    .string "POKéGEAR can store up to 25 phone\n"
+    .string "POKéGEAR can store up to 100 phone\n"
     .string "numbers.\p"
     .string "It's hard to decide which numbers\n"
     .string "to keep.$"
@@ -65,6 +65,9 @@ GoldenrodDeptStore2_Pokemart:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
 	.2byte ITEM_POTION
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_HYPER_POTION

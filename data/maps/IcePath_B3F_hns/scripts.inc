@@ -11,7 +11,7 @@ IcePath_B3F_Trigger_Swinub_Jump::
 	goto_if_set FLAG_DAY_POKEMON, IcePath_B3F_Trigger_Night
 	playse SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-	delay 60
+	waitmovement OBJ_EVENT_ID_PLAYER
 	waitse
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	playmoncry SPECIES_SWINUB, CRY_MODE_NORMAL
@@ -86,7 +86,7 @@ IcePath_B3F_EventScript_Delibird::
 	removeitem VAR_ITEM_ID, 1
 	goto_if_ne VAR_ITEM_ID, ITEM_ASPEAR_BERRY, IcePath_B3F_EventScript_DelibirdDislikedBerry
 	msgbox IcePath_B3F_Text_DelibirdAteBerry, MSGBOX_DEFAULT
-	giveitem ITEM_TM_BLIZZARD
+	giveitem ITEM_TM_AVALANCHE
 	setflag FLAG_ITEM_ICEPATH4_TM_AVALANCHE
 IcePath_B3F_EventScript_DelibirdBlowPlayer::
 	closemessage

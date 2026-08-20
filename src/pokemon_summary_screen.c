@@ -782,6 +782,8 @@ static const u8 sText_Relearn_TM[] = _("{START_BUTTON} RELEARN TM");
 static const u8 sText_Relearn_Tutor[] = _("{START_BUTTON} RELEARN TUTOR");
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
+static const u8 sMemoHiddenNatureTextColor[] = _(" ({COLOR BLUE}{SHADOW DARK_GRAY}");
+static const u8 sText_EndParentheses[] = _("{COLOR WHITE}{SHADOW DARK_GRAY})");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
 static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
 static const u8 sStatsLeftIVEVColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
@@ -3788,6 +3790,13 @@ static void BufferMonTrainerMemo(void)
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, sMemoMiscTextColor);
     BufferNatureString();
 
+    if (sum->mintNature != sum->nature)
+    {
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, sMemoHiddenNatureTextColor);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(6, gNaturesInfo[sum->mintNature].name);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(7, sText_EndParentheses);
+    }
+
     if (InBattleFactory() == TRUE || InSlateportBattleTent() == TRUE || IsInGamePartnerMon() == TRUE)
     {
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, gText_XNature);
@@ -3840,6 +3849,8 @@ static void BufferNatureString(void)
     struct PokemonSummaryScreenData *sumStruct = sMonSummaryScreen;
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(2, gNaturesInfo[sumStruct->summary.nature].name);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
+    DynamicPlaceholderTextUtil_SetPlaceholderPtr(6, gText_EmptyString5);
+    DynamicPlaceholderTextUtil_SetPlaceholderPtr(7, gText_EmptyString5);
 }
 
 static void GetMetLevelString(u8 *output)
@@ -3953,7 +3964,11 @@ static void PrintEggMemo(void)
         else if (DidMonComeFromGBAGames() == FALSE || DoesMonOTMatchOwner() == FALSE)
             text = gText_PeculiarEggTrade;
         else if (sum->metLocation == METLOC_SPECIAL_EGG)
+        #if IS_HNS
+            text = gText_OddEggFromDaycare;
+        #else
             text = (DidMonComeFromRSE() == TRUE) ? gText_EggFromHotSprings : gText_EggFromTraveler;
+        #endif
         else
             text = gText_OddEggFoundByCouple;
     }
@@ -4196,7 +4211,7 @@ static void PrintExpPointsNextLevel(void)
     x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 42) + 2;
     PrintTextOnWindow(windowId, gStringVar1, x, 1, 0, 0);
 
-    if (sum->level < MAX_LEVEL)
+    if (sum->level < MAX_LEVEL && FlagGet(FLAG_LIMIT_TO_50) == FALSE)
         expToNextLevel = gExperienceTables[gSpeciesInfo[sum->species].growthRate][sum->level + 1] - sum->exp;
     else
         expToNextLevel = 0;

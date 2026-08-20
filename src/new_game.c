@@ -105,7 +105,7 @@ static void InitPlayerTrainerId(void)
 // L=A isnt set here for some reason.
 static void SetDefaultOptions(void)
 {
-    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
+    gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_MONO;
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
@@ -133,6 +133,8 @@ void SetDefaultChallengeSettings(void)
     gSaveblock3.challengeSettings.lrToRun = 0;
     gSaveblock3.challengeSettings.ballPrompt = 0;
     gSaveblock3.challengeSettings.newBackgrounds = 1;
+    gSaveblock3.challengeSettings.newBattleUI = 0;
+    gSaveblock3.challengeSettings.musicOnOff = 0;
     gSaveblock3.challengeSettings.runType = 0;
 
     // Challenge menu — "RECOMMENDED" defaults
@@ -297,6 +299,8 @@ void NewGameInitData(void)
     // Sync engine flags from restored challenge settings
     if (!gSaveBlock3Ptr->challengeSettings.tx_Mode_Mints)
         FlagSet(FLAG_MINTS_DISABLED);
+    if (gSaveBlock3Ptr->challengeSettings.evenFasterJoy == 0)
+        FlagSet(FLAG_EVEN_FASTER_JOY);
 
 #if IS_HNS
     StringCopy(gSaveBlock2Ptr->rivalName, gText_ExpandedPlaceholder_Silver);

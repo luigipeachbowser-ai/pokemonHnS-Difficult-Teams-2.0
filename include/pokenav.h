@@ -134,6 +134,7 @@ enum
     POKENAV_RIBBONS_RETURN_TO_MON_LIST,         // Exited the summary screen back to the ribbon list
 #if IS_HNS
     POKENAV_RADIO,
+    POKENAV_MAIN_MENU_CURSOR_ON_RADIO,
 #endif
 };
 
@@ -145,6 +146,8 @@ enum
 #if IS_HNS
     POKENAV_MENU_TYPE_UNLOCK_MC_RADIO,
     POKENAV_MENU_TYPE_UNLOCK_MC_RIBBONS_RADIO,
+    POKENAV_MENU_TYPE_DEFAULT_NO_COND,
+    POKENAV_MENU_TYPE_UNLOCK_MC_NO_COND,
 #endif
     POKENAV_MENU_TYPE_CONDITION,
     POKENAV_MENU_TYPE_CONDITION_SEARCH,
@@ -429,6 +432,9 @@ void ShutdownPokenav(void);
 bool32 PokenavCallback_Init_MainMenuCursorOnMap(void);
 bool32 PokenavCallback_Init_MainMenuCursorOnMatchCall(void);
 bool32 PokenavCallback_Init_MainMenuCursorOnRibbons(void);
+#if IS_HNS
+bool32 PokenavCallback_Init_MainMenuCursorOnRadio(void);
+#endif
 bool32 PokenavCallback_Init_ConditionMenu(void);
 bool32 PokenavCallback_Init_ConditionSearchMenu(void);
 u32 GetMenuHandlerCallback(void);

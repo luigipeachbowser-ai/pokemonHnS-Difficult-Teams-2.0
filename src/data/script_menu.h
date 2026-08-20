@@ -265,20 +265,41 @@ static const struct MenuAction MultichoiceList_GameCornerDolls[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_GameCornerDolls2[] =
+{
+    {COMPOUND_STRING("REGIROCK DOLL{CLEAR_TO 0x58}9,000 C.")},
+    {COMPOUND_STRING("REGICE DOLL{CLEAR_TO 0x58}9,000 C.")},
+    {COMPOUND_STRING("REGISTEEL DOLL{CLEAR_TO 0x58}9,000 C.")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_PrizeMons[] = 
+{
+    {COMPOUND_STRING("ABRA{CLEAR_TO 0x61}120 C.")},
+    {COMPOUND_STRING("CLEFAIRY{CLEAR_TO 0x61}500 C.")},
+    {COMPOUND_STRING("MUNCHLAX{CLEAR_TO 0x58}2,800 C.")},
+    {COMPOUND_STRING("DRATINI{CLEAR_TO 0x58}5,500 C.")},
+    {COMPOUND_STRING("PORYGON{CLEAR_TO 0x58}6,500 C.")},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_GameCornerTMs[] =
 {
-    {COMPOUND_STRING("TM32{CLEAR_TO 0x48}1,500 COINS")},
-    {COMPOUND_STRING("TM29{CLEAR_TO 0x48}3,500 COINS")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 0x48}4,000 COINS")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 0x48}4,000 COINS")},
-    {COMPOUND_STRING("TM13{CLEAR_TO 0x48}4,000 COINS")},
+    {COMPOUND_STRING("DOUBLE TEAM{CLEAR_TO 0x58}1,500 C.")},
+    {COMPOUND_STRING("PSYCHIC{CLEAR_TO 0x58}3,500 C.")},
+    {COMPOUND_STRING("ICE BEAM{CLEAR_TO 0x58}4,000 C.")},
+    {COMPOUND_STRING("THUNDERBOLT{CLEAR_TO 0x58}4,000 C.")},
+    {COMPOUND_STRING("FLAMETHROWER{CLEAR_TO 0x58}4,000 C.")},
     {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 {
-    {COMPOUND_STRING("  50 COINS    ¥1,000")},
-    {COMPOUND_STRING("500 COINS  ¥10,000")},
+    {COMPOUND_STRING("50 COINS{CLEAR_TO 0x48}¥500")},
+    {COMPOUND_STRING("500 COINS{CLEAR_TO 0x48}¥5,000")},
+    {COMPOUND_STRING("1,000 COINS{CLEAR_TO 0x48}¥10,000")},
+    {COMPOUND_STRING("2,500 COINS{CLEAR_TO 0x48}¥25,000")},
+    {COMPOUND_STRING("5,000 COINS{CLEAR_TO 0x48}¥50,000")},
     {gText_Exit},
 };
 
@@ -605,6 +626,16 @@ static const struct MenuAction MultichoiceList_Fossil[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_FossilHns[] =
+{
+    {COMPOUND_STRING("CLAW FOSSIL")},
+    {COMPOUND_STRING("ROOT FOSSIL")},
+    {COMPOUND_STRING("HELIX FOSSIL")},
+    {COMPOUND_STRING("DOME FOSSIL")},
+    {COMPOUND_STRING("OLD AMBER")},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_YesNo[] =
 {
     {gText_Yes},
@@ -880,11 +911,11 @@ static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
     { COMPOUND_STRING("SCYTHER{CLEAR_TO 0x4B}{FONT_SMALL} 5,500 COINS") },
     { COMPOUND_STRING("PORYGON{CLEAR_TO 0x4B}{FONT_SMALL} 9,999 COINS") },
 #else
-    { COMPOUND_STRING("ABRA{CLEAR_TO 0x55}{FONT_SMALL} 120 COINS") },
-    { COMPOUND_STRING("CLEFAIRY{CLEAR_TO 0x55}{FONT_SMALL} 750 COINS") },
-    { COMPOUND_STRING("PINSIR{CLEAR_TO 0x4B}{FONT_SMALL} 2,500 COINS") },
-    { COMPOUND_STRING("DRATINI{CLEAR_TO 0x4B}{FONT_SMALL} 4,600 COINS") },
-    { COMPOUND_STRING("PORYGON{CLEAR_TO 0x4B}{FONT_SMALL} 6,500 COINS") },
+    { COMPOUND_STRING("ABRA{CLEAR_TO 0x55}{FONT_SMALL} 120") },
+    { COMPOUND_STRING("CLEFAIRY{CLEAR_TO 0x55}{FONT_SMALL} 750") },
+    { COMPOUND_STRING("PINSIR{CLEAR_TO 0x4B}{FONT_SMALL} 2,500") },
+    { COMPOUND_STRING("DRATINI{CLEAR_TO 0x4B}{FONT_SMALL} 4,600") },
+    { COMPOUND_STRING("PORYGON{CLEAR_TO 0x4B}{FONT_SMALL} 6,500") },
 #endif
     { sText_NoThanks }
 };
@@ -1131,15 +1162,6 @@ static const struct MenuAction MultichoiceList_VermilionHarbor[] =
     {gText_Exit},
 };
 
-static const struct MenuAction MultichoiceList_PrizeMons[] = 
-{
-    {gText_Abra},
-    {gText_Clefairy},
-    {gText_Munchlax},
-    {gText_Dratini},
-    {gText_Porygon},
-    {gText_Exit},
-};
 static const struct MenuAction MultichoiceList_7Floors[] = 
 {
     {gText_Floor6},
@@ -1419,7 +1441,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_MOM_MENU]                   = MULTICHOICE(MultichoiceList_MomMenu),
     [MULTI_LINK_SERVICES_HNS]          = MULTICHOICE(MultichoiceList_LinkServicesHns),
     [MULTI_BATTLE_MODE_HNS]            = MULTICHOICE(MultichoiceList_BattleModeHns),
-
+    [MULTI_FOSSIL_HNS]                = MULTICHOICE(MultichoiceList_FossilHns),
+    [MULTI_GAME_CORNER_DOLLS2]         = MULTICHOICE(MultichoiceList_GameCornerDolls2),
 };
 
 const u8 *const gStdStrings[] =

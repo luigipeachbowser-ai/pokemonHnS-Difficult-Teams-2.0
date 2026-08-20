@@ -65,7 +65,7 @@ static void HealPlayerBoxes(void)
 {
     int boxId, boxPosition;
     struct BoxPokemon *boxMon;
-    bool8 nuzlocke = IsNuzlockeActive() || gSaveBlock3Ptr->challengeSettings.tx_Nuzlocke_EasyMode;
+    bool8 nuzlocke = IsNuzlockeActive() || IsNuzlockeEasyActive();
 
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
     {
@@ -549,6 +549,8 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, e
         if (ivs[i] <= MAX_PER_STAT_IVS && gSaveBlock3Ptr->challengeSettings.tx_Challenges_MaxPartyIVs == 0)
             SetMonData(&mon, MON_DATA_HP_IV + i, &ivs[i]);
     }
+    if (gSaveBlock3Ptr->challengeSettings.tx_Challenges_MaxPartyIVs != 0)
+        SetBoxMonIVs(&mon.box, USE_RANDOM_IVS);
     CalculateMonStats(&mon);
 
     // moves

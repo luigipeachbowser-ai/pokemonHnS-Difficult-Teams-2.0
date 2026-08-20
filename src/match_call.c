@@ -1133,6 +1133,8 @@ static const struct MatchCallText *const sMatchCallGeneralTopics[] =
 extern const u8 gBirchDexRatingText_AreYouCurious[];
 extern const u8 gElmDexRatingText_AreYouCurious[];
 extern const u8 gElmDexRatingText_AreYouCuriousNational[];
+extern const u8 gElmDexRatingText_GoFindMrPokemon[];
+extern const u8 gElmDexRatingText_Robbery[];
 extern const u8 gBirchDexRatingText_SoYouveSeenAndCaught[];
 extern const u8 gBirchDexRatingText_OnANationwideBasis[];
 
@@ -1187,12 +1189,36 @@ bool32 HnsUpdateRouteStepCounter(void)
             if (!HasTrainerBeenFought(gRematchTable[i].trainerIds[0]))
                 continue;
 
-            candidates[numCandidates++] = gRematchTable[i].trainerIds[0];
+            candidates[numCandidates++] = i;
         }
 
         if (numCandidates > 0)
         {
-            sMatchCallState.trainerId = candidates[Random() % numCandidates];
+            u32 chosen = candidates[Random() % numCandidates];
+            u16 trainerId = gRematchTable[chosen].trainerIds[0];
+            u32 j;
+
+            for (j = 0; j < ARRAY_COUNT(sHnsMatchCallTrainers); j++)
+            {
+                if (sHnsMatchCallTrainers[j].trainerId == trainerId)
+                {
+                    if (sHnsMatchCallTrainers[j].itemFlag != 0 && (Random() % 5) == 0)
+                    {
+                        u8 itemIdx = Random() % sHnsMatchCallTrainers[j].numGiftItems;
+                        VarSet(sHnsMatchCallTrainers[j].itemVar, sHnsMatchCallTrainers[j].giftItems[itemIdx]);
+                        FlagSet(sHnsMatchCallTrainers[j].itemFlag);
+                    }
+                    else
+                    {
+                        UpdateRematchIfDefeated(chosen);
+                    }
+                    break;
+                }
+            }
+            if (j == ARRAY_COUNT(sHnsMatchCallTrainers))
+                UpdateRematchIfDefeated(chosen);
+
+            sMatchCallState.trainerId = trainerId;
             sMatchCallState.triggeredFromScript = FALSE;
             StartMatchCall();
             return TRUE;
@@ -1242,6 +1268,19 @@ static bool32 CheckMatchCallChance(void)
     else
         return FALSE;
 }
+
+#if IS_HNS
+// Calls are held off entirely while inside, rather than being rolled and
+// discarded, so stepping back outside doesn't cost the player a full timer.
+static bool32 HnsMapAllowsMatchCall(void)
+{
+    // Outdoors, plus caves as in HGSS. Several HnS interiors are tagged
+    // MAP_TYPE_NONE rather than MAP_TYPE_INDOOR, so allow by whitelist
+    // instead of denying by type.
+    return Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType)
+        || gMapHeader.mapType == MAP_TYPE_UNDERGROUND;
+}
+#endif
 
 static bool32 MapAllowsMatchCall(void)
 {
@@ -1350,6 +1389,7 @@ bool32 TryStartMatchCall(void)
 #if IS_HNS
     if (FlagGet(FLAG_HAS_MATCH_CALL)
         && HasEnoughBadgesForRematch()
+        && HnsMapAllowsMatchCall()
         && UpdateMatchCallStepCounter()
         && UpdateMatchCallMinutesCounter()
         && CheckMatchCallChance()
@@ -1763,32 +1803,14 @@ bool32 SelectMatchCallMessage(int trainerId, u8 *str)
     {
         if (sHnsMatchCallTrainers[i].trainerId == trainerId)
         {
-            bool32 canGiveItem = sHnsMatchCallTrainers[i].itemFlag != 0;
-            bool32 canRematch = rematchIdx >= 0
-                             && HasTrainerBeenFought(gRematchTable[rematchIdx].trainerIds[0]);
-            u8 roll;
-
-            if (canGiveItem && canRematch)
-                roll = Random() % 3;
-            else if (canGiveItem)
-                roll = (Random() & 1) ? 1 : 0;
-            else if (canRematch)
-                roll = (Random() & 1) ? 2 : 0;
-            else
-                roll = 0;
-
-            if (roll == 1)
-            {
-                u8 itemIdx = Random() % sHnsMatchCallTrainers[i].numGiftItems;
-                VarSet(sHnsMatchCallTrainers[i].itemVar, sHnsMatchCallTrainers[i].giftItems[itemIdx]);
-                FlagSet(sHnsMatchCallTrainers[i].itemFlag);
-                text = sHnsMatchCallTrainers[i].foundItemText;
-            }
-            else if (roll == 2)
+            if (rematchIdx >= 0 && gSaveBlock1Ptr->trainerRematches[rematchIdx] != 0)
             {
                 text = sHnsMatchCallTrainers[i].battleRequestText;
                 newRematchRequest = TRUE;
-                UpdateRematchIfDefeated(rematchIdx);
+            }
+            else if (sHnsMatchCallTrainers[i].itemFlag != 0 && FlagGet(sHnsMatchCallTrainers[i].itemFlag))
+            {
+                text = sHnsMatchCallTrainers[i].foundItemText;
             }
             else
             {
@@ -2155,7 +2177,7 @@ static int GetNumOwnedBadges(void)
 {
     u32 i;
 
-    for (i = 0; i < NUM_BADGES; i++)
+    for (i = 0; i < ARRAY_COUNT(gBadgeFlags); i++)
     {
         if (!FlagGet(gBadgeFlags[i]))
             break;
@@ -2280,6 +2302,19 @@ void BufferPokedexRatingForMatchCall(u8 *destStr)
 {
     int numSeen, numCaught;
     u8 *str, *str2;
+
+#if IS_HNS
+    if (VarGet(VAR_NEWBARKTOWN_LABSTATE) == 3)
+    {
+        StringCopy(destStr, gElmDexRatingText_GoFindMrPokemon);
+        return;
+    }
+    if (VarGet(VAR_NEWBARKTOWN_LABSTATE) == 4)
+    {
+        StringCopy(destStr, gElmDexRatingText_Robbery);
+        return;
+    }
+#endif
 
     u8 *buffer = Alloc(sizeof(gStringVar4));
     if (!buffer)

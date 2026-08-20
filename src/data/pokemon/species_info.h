@@ -149,6 +149,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
         .eggMoveLearnset = sNoneEggMoveLearnset,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 
     #include "species_info/gen_1_families.h"
@@ -164,6 +165,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_EGG] =
     {
         .frontPic = gMonFrontPic_Egg,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontPicSize = MON_COORDS_SIZE(24, 24),
         .frontPicYOffset = 20,
         .backPic = gMonFrontPic_Egg,

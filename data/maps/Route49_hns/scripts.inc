@@ -148,7 +148,8 @@ Route49_EventScript_ActivateOverqwil::
 	waitfieldeffect FLDEFF_SPARKLE
     playse SE_PIN
     applymovement2 LOCALID_PLAYER, Common_Movement_ExclamationMark
-    delay 60
+    delay 55
+    waitmovement LOCALID_PLAYER
     msgbox SinjohRuins_Lab_Text_PlayFlute, MSGBOX_YESNO
 	closemessage
     goto_if_eq VAR_RESULT, FALSE, SinjohRuins_Lab_EventScript_NoOp
@@ -253,7 +254,6 @@ Route49_Movement_PlayerWyrdeerLeft:
 	walk_up
 	walk_right
 	walk_up
-	walk_up
 	step_end
 
 Route49_EventScript_ActivateWyrdeerLeft::
@@ -265,7 +265,8 @@ Route49_EventScript_ActivateWyrdeerLeft::
 	waitfieldeffect FLDEFF_SPARKLE
     playse SE_PIN
     applymovement2 LOCALID_PLAYER, Common_Movement_ExclamationMark
-    delay 60
+    delay 55
+    waitmovement LOCALID_PLAYER
     msgbox SinjohRuins_Lab_Text_PlayFlute, MSGBOX_YESNO
 	closemessage
     goto_if_eq VAR_RESULT, FALSE, SinjohRuins_Lab_EventScript_NoOp
@@ -284,7 +285,7 @@ Route49_EventScript_ActivateWyrdeerLeft::
     waitmoncry
     waitmovement 0
     applymovement2 LOCALID_ROUTE49_NOBLE_WYRDEER, Route49_Movement_WyrdeerEntrance2
-    delay 10
+    delay 90
     playse SE_LEDGE
     delay 20
 	waitmovement LOCALID_ROUTE49_NOBLE_WYRDEER
@@ -306,7 +307,8 @@ Route49_EventScript_ActivateWyrdeerRight::
 	waitfieldeffect FLDEFF_SPARKLE
     playse SE_PIN
     applymovement2 LOCALID_PLAYER, Common_Movement_ExclamationMark
-    delay 60
+    delay 55
+    waitmovement LOCALID_PLAYER
     msgbox SinjohRuins_Lab_Text_PlayFlute, MSGBOX_YESNO
 	closemessage
     goto_if_eq VAR_RESULT, FALSE, SinjohRuins_Lab_EventScript_NoOp
@@ -398,4 +400,8 @@ Route49_EventScript_WyrdeerRan::
 	clearflag FLAG_SMART_WILD_AI
 	clearflag FLAG_NO_SHINY
 	release
+	end
+
+Route49_EventScript_Item_TMRockClimb::
+	finditem ITEM_TM_ROCK_CLIMB
 	end

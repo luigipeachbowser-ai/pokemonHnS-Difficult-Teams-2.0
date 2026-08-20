@@ -1220,6 +1220,13 @@ Common_EventScript_ShowBagIsFull::
 	release
 	end
 
+Common_EventScript_NoOp::
+	end
+
+Common_EventScript_ReleaseNoOp::
+	release
+	end
+
 Common_EventScript_BagIsFull::
 	msgbox gText_TooBadBagIsFull, MSGBOX_DEFAULT
 	return
@@ -2371,7 +2378,6 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/PoniIsle_hns/scripts.inc"
 	.include "data/maps/MelemeleIsle_hns/scripts.inc"
 	.include "data/maps/AlolaWater_hns/scripts.inc"
-	.include "data/maps/Alola_hns/scripts.inc"
 	.include "data/maps/AkalaIsle_hns/scripts.inc"
 	.include "data/maps/UlaulaIsle_hns/scripts.inc"
 	.include "data/maps/Melemele_PlayerHouse_hns/scripts.inc"

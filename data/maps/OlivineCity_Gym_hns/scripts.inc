@@ -21,7 +21,7 @@ OlivineCity_Gym_TriggerRow1::
 	setvar VAR_TEMP_0, LOCALID_OLIVINE_CITY_GYM_NPC1
 	playse SE_PIN
 	applymovement VAR_TEMP_0, Common_Movement_ExclamationMark
-	delay 60
+	waitmovement VAR_TEMP_0
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 	call_if_eq VAR_TEMP_1, 6, OlivineCity_Gym_EventScript_MoveLeft4
 	call_if_eq VAR_TEMP_1, 7, OlivineCity_Gym_EventScript_MoveLeft3
@@ -104,7 +104,7 @@ OlivineCity_Gym_TriggerRow2::
 	setvar VAR_TEMP_0, LOCALID_OLIVINE_CITY_GYM_NPC2
 	playse SE_PIN
 	applymovement VAR_TEMP_0, Common_Movement_ExclamationMark
-	delay 60
+	waitmovement VAR_TEMP_0
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 	call_if_eq VAR_TEMP_1, 6, OlivineCity_Gym_EventScript_MoveRight0
 	call_if_eq VAR_TEMP_1, 7, OlivineCity_Gym_EventScript_MoveRight1
@@ -240,6 +240,8 @@ OlivineCity_Gym_EventScript_JasmineVictory::
 	giveitem ITEM_TM_IRON_TAIL
 	msgbox OlivineCity_Gym_Text_JasmineIronTailSpeech, MSGBOX_DEFAULT
 	setvar VAR_OLIVINE_CITY_STATE, 8
+	setrespawn HEAL_LOCATION_OLIVINE_CITY_HNS
+    call_if_eq VAR_NUM_BADGES, 7, MahoganyTown_Gym_EventScript_SetupElmRocketCall
 	closemessage
 	release
 	end

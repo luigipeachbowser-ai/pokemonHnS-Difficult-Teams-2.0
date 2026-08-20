@@ -363,7 +363,7 @@
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_TM_CALM_MIND (HNS_ITEM_BALL_START + 132)
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_ULTRA_BALL  (HNS_ITEM_BALL_START + 133)
 #define FLAG_ITEM_GOLDENROD_UNDERGROUND_ULTRA_BALL2 (HNS_ITEM_BALL_START + 134)
-#define FLAG_ITEM_VICTORYROAD1_FULL_HEAL            (HNS_ITEM_BALL_START + 135)
+#define FLAG_ITEM_VICTORYROAD1_TM_EARTHQUAKE            (HNS_ITEM_BALL_START + 135)
 #define FLAG_ITEM_VICTORYROAD1_MAX_REVIVE           (HNS_ITEM_BALL_START + 136)
 #define FLAG_ITEM_VICTORYROAD1_POTION               (HNS_ITEM_BALL_START + 137)
 #define FLAG_ITEM_VICTORYROAD2_FULL_RESTORE         (HNS_ITEM_BALL_START + 138)
@@ -674,7 +674,7 @@
 #define FLAG_MINTS_ENABLED                          0x263
 #define FLAG_NO_SHINY                               0x264
 
-#define HNS_FEATURE_COUNT                           9
+#define HNS_FEATURE_COUNT                           10
 
 // Misc
 #define HNS_MISC_START                              0x265
@@ -846,7 +846,7 @@
 #define FLAG_FUCHSIA_SAFARI_NPC_TRADE_COMPLETED      0x300
 #define FLAG_PEWTER_GYM_NPC_TRADE_COMPLETED          0x301
 #define FLAG_OLIVINE_GYM_NPC_TRADE_COMPLETED         0x302
-#define FLAG_UNUSED_35                              0x303
+#define FLAG_ENABLE_CONDITION                       0x303
 #define FLAG_UNUSED_36                              0x304
 #define FLAG_UNUSED_37                              0x305
 #define FLAG_UNUSED_38                              0x306
@@ -855,8 +855,20 @@
 
 #define HNS_CONTENT_FLAGS_END                       0x308
 
-// Extended content flags (0x36A – 0x431)
-// 200 slots for new content; 0x432–0x4FF reserved for future trainer registered expansion
+// Extended content flags (0x36A – 0x495)
+// 300 slots for new content; 0x496–0x4FF reserved for future expansion.
+//
+// WARNING: this block butts directly against the trainer registered (match call)
+// flags below it, with NO gap. Those start at 0x310 and use one flag per rematch
+// table entry, so with REMATCH_TABLE_ENTRIES == 90 they currently end at 0x369 --
+// exactly one below HNS_EXTENDED_CONTENT_START. Adding a 91st rematch trainer makes
+// its FLAG_REGISTERED_* alias FLAG_DECORATION_1, and nothing catches it: the writer
+// (pokenav_match_call_data.c RegisterTrainerInMatchCall) indexes the table directly,
+// while decorations are touched via FLAG_DECORATION_1 + gSpecialVar_0x8004 in
+// secret_base.c. Note MAX_REMATCH_ENTRIES is 100, so the saveblock reserves 10 more
+// entries than there is flag room for -- the reservation is NOT the safe limit here.
+// If the rematch table needs to grow, move this whole block up into the free
+// 0x496-0x4FF window first (or wherever there is room), do not extend downward.
 #define HNS_EXTENDED_CONTENT_START                  0x36A
 #define FLAG_DECORATION_1                           (HNS_EXTENDED_CONTENT_START + 0)
 #define FLAG_DECORATION_2                           (HNS_EXTENDED_CONTENT_START + 1)
@@ -941,11 +953,11 @@
 #define FLAG_HIDE_SINJOHRUINS_REGIELEKI                     (HNS_EXTENDED_CONTENT_START + 69)
 #define FLAG_HIDE_SINJOHRUINS_REGIDRAGO                     (HNS_EXTENDED_CONTENT_START + 70)
 #define FLAG_HIDE_SINJOHRUINS_REGIGIGAS                     (HNS_EXTENDED_CONTENT_START + 71)
-#define FLAG_UNUSED_EXTENDED_72                     (HNS_EXTENDED_CONTENT_START + 72)
-#define FLAG_UNUSED_EXTENDED_73                     (HNS_EXTENDED_CONTENT_START + 73)
-#define FLAG_UNUSED_EXTENDED_74                     (HNS_EXTENDED_CONTENT_START + 74)
-#define FLAG_UNUSED_EXTENDED_75                     (HNS_EXTENDED_CONTENT_START + 75)
-#define FLAG_UNUSED_EXTENDED_76                    (HNS_EXTENDED_CONTENT_START + 76)
+#define FLAG_VISITED_ROUTE10                     (HNS_EXTENDED_CONTENT_START + 72)
+#define FLAG_VISITED_ROUTE4                     (HNS_EXTENDED_CONTENT_START + 73)
+#define FLAG_HIDE_ROUTE49_TM_ROCK_CLIMB                     (HNS_EXTENDED_CONTENT_START + 74)
+#define FLAG_COMPLETED_TAUROS_TRADE                     (HNS_EXTENDED_CONTENT_START + 75)
+#define FLAG_HIDE_SLOWPOKE_WELL_TAILLESS_SLOWPOKES                    (HNS_EXTENDED_CONTENT_START + 76)
 #define FLAG_UNUSED_EXTENDED_77                    (HNS_EXTENDED_CONTENT_START + 77)
 #define FLAG_UNUSED_EXTENDED_78                    (HNS_EXTENDED_CONTENT_START + 78)
 #define FLAG_UNUSED_EXTENDED_79                   (HNS_EXTENDED_CONTENT_START + 79)
@@ -968,9 +980,9 @@
 #define FLAG_UNUSED_EXTENDED_96                     (HNS_EXTENDED_CONTENT_START + 96)
 #define FLAG_UNUSED_EXTENDED_97                     (HNS_EXTENDED_CONTENT_START + 97)
 #define FLAG_UNUSED_EXTENDED_98                     (HNS_EXTENDED_CONTENT_START + 98)
-#define FLAG_EXTENDED_CONTENT_99                    (HNS_EXTENDED_CONTENT_START + 99)
+#define FLAG_UNUSED_EXTENDED_99                    (HNS_EXTENDED_CONTENT_START + 99)
 
-#define FLAG_EXTENDED_CONTENT_SET_100                   (HNS_EXTENDED_CONTENT_START + 100)
+#define FLAG_HIDE_AZALEA_TOWN_TAILED_SLOWPOKES                   (HNS_EXTENDED_CONTENT_START + 100)
 #define FLAG_EXTENDED_CONTENT_SET_101                   (HNS_EXTENDED_CONTENT_START + 101)
 #define FLAG_EXTENDED_CONTENT_SET_102                   (HNS_EXTENDED_CONTENT_START + 102)
 #define FLAG_EXTENDED_CONTENT_SET_103                   (HNS_EXTENDED_CONTENT_START + 103)
@@ -1070,7 +1082,7 @@
 #define FLAG_EXTENDED_CONTENT_197                  (HNS_EXTENDED_CONTENT_START + 197)
 #define FLAG_EXTENDED_CONTENT_198                  (HNS_EXTENDED_CONTENT_START + 198)
 #define FLAG_EXTENDED_CONTENT_199                  (HNS_EXTENDED_CONTENT_START + 199)
-#define FLAG_EXTENDED_CONTENT_200                   (HNS_EXTENDED_CONTENT_START + 200)
+#define FLAG_ULAULA_FOREST_HIDDEN_ITEM_1           (HNS_EXTENDED_CONTENT_START + 200) // hidden item flag for ulaula forest hidden item
 #define FLAG_HIDDEN_ITEM_ROUTE21_STARDUST_3         (HNS_EXTENDED_CONTENT_START + 201)
 #define FLAG_HIDDEN_ITEM_MT_SILVER_OUTSIDE_REAPER_CLOTH (HNS_EXTENDED_CONTENT_START + 202)
 #define FLAG_HIDDEN_ITEM_MT_SILVER_OUTSIDE_FULL_RESTORE (HNS_EXTENDED_CONTENT_START + 203)
@@ -1326,7 +1338,8 @@
 #define FLAG_DAILY_BUENAS_PASSWORD                  (DAILY_FLAGS_START + 7)
 #define FLAG_DAILY_LUCKY_NUMBER_SET                 (DAILY_FLAGS_START + 8)
 #define FLAG_DAILY_BUENAS_PASSWORD_GUESSED          (DAILY_FLAGS_START + 9)
-#define DAILY_FLAGS_END                             (DAILY_FLAGS_START + 9)
+#define FLAG_DAILY_FLOWER_SHOP_RECEIVED_BERRY_HNS   (DAILY_FLAGS_START +10)
+#define DAILY_FLAGS_END                             (DAILY_FLAGS_START +10)
 #define NUM_DAILY_FLAGS                             (DAILY_FLAGS_END - DAILY_FLAGS_START + 1)
 #define BUILD_FLAGS_END                             DAILY_FLAGS_END
 

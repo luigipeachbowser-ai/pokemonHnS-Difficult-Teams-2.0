@@ -78,7 +78,11 @@ void SetupNativeScript(struct ScriptContext *ctx, bool8 (*ptr)(void))
 
 void StopScript(struct ScriptContext *ctx)
 {
-    assertf(!FuncIsActiveTask(Task_WarpAndLoadMap), "Leaving script while a warp is in progress: try adding a waitstate");
+    // if Task_WarpAndLoadMap is active, and our script context isn't "waiting", then we may be leaving the script that triggered the warp too early
+    // if Task_WarpAndLoadMap is active, but our script context *is* "waiting", we're leaving the current map's OnFrame which ignores waiting state
+    bool8 shouldAssert = FuncIsActiveTask(Task_WarpAndLoadMap);
+    if (shouldAssert) shouldAssert = sGlobalScriptContextStatus != CONTEXT_WAITING;
+    assertf(!shouldAssert, "Leaving script while a warp is in progress: try adding a waitstate");
     ctx->mode = SCRIPT_MODE_STOPPED;
     ctx->scriptPtr = NULL;
 }
@@ -366,11 +370,7 @@ const u8 *MapHeaderCheckScriptTable(u8 tag)
 
         // Run map script if vars are equal
         if (VarGet(varIndex1) == VarGet(varIndex2))
-        {
-            const u8 *mapScript = T2_READ_PTR(ptr);
-            if (!Script_HasNoEffect(mapScript))
-                return mapScript;
-        }
+            return T2_READ_PTR(ptr);
 
         ptr += 4;
     }

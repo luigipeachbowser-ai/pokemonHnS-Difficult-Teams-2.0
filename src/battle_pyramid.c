@@ -1141,9 +1141,12 @@ static void UpdatePyramidLightRadius(void)
 {
     s32 j;
 
-    FlagSet(FLAG_LIMIT_TO_50);
-    for (j = 0; j < PARTY_SIZE; j++)
-        CalculateMonStats(&gPlayerParty[j]);
+    if (gSaveBlock2Ptr->frontier.lvlMode == FRONTIER_LVL_50)
+    {
+        FlagSet(FLAG_LIMIT_TO_50);
+        for (j = 0; j < PARTY_SIZE; j++)
+            CalculateMonStats(&gPlayerParty[j]);
+    }
 
     switch (gSpecialVar_0x8006)
     {
@@ -1438,6 +1441,9 @@ void GenerateBattlePyramidWildMon(void)
     while (1)
     {
         species = Random() % NUM_SPECIES;
+
+        if (!IsSpeciesEnabled(species))
+            continue;
 
         // check if base species
         if (GET_BASE_SPECIES_ID(species) != species)

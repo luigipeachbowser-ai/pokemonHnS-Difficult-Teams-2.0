@@ -125,7 +125,7 @@ MilkMan_Battle_text:
 	.string "Special delivery today!$"
 
 NewSinjoh_MilkMan_text_Lose:
-	.string "This world is perfect.\p"
+	.string "This world is perfect.\n"
 	.string "isn't it?$"
 
 NewSinjoh_Script_TravelMart::
@@ -308,7 +308,7 @@ NewSinjoh_EventScript_Welcome_Sign::
 	end
 
 NewSinjoh_Text_Welcome_Sign:
-	.string "New Sinjoh$"
+	.string "NEW SINJOH$"
 
 NewSinjoh_EventScript_Resturant_Sign::
 	msgbox NewSinjoh_Text_Resturant_Sign, MSGBOX_SIGN

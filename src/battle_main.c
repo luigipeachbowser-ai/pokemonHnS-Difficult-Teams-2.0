@@ -478,8 +478,9 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_TWINS_HNS] =            { _("TWINS"), 3 },
     [TRAINER_CLASS_YOUNG_COUPLE_HNS] =     { _("YOUNG COUPLE"), 8 },
     [TRAINER_CLASS_YOUNGSTER_HNS] =        { _("YOUNGSTER"), 4 },
-    [TRAINER_CLASS_PROFESSOR_HNS] =         { _("{PKMN} PROF."), 25, BALL_FRIEND},
-    [TRAINER_CLASS_DEVELOPER_HNS] =           { _("DEVELOPER"), 50, BALL_MASTER},
+    [TRAINER_CLASS_PROFESSOR_HNS] =        { _("{PKMN} PROF."), 25, BALL_FRIEND},
+    [TRAINER_CLASS_DEVELOPER_HNS] =        { _("DEVELOPER"), 50, BALL_MASTER},
+    [TRAINER_CLASS_PYRAMID_KING_HNS] =     { _("PYRAMID KING") },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
@@ -3161,6 +3162,18 @@ static void ClearSetBScriptingStruct(void)
     gBattleScripting.specialTrainerBattleType = specialBattleType;
 }
 
+static bool32 DoesPartyHoldDoublePrizeItem(void)
+{
+    u32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetItemHoldEffect(GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM)) == HOLD_EFFECT_DOUBLE_PRIZE)
+            return TRUE;
+    }
+    return FALSE;
+}
+
 static void BattleStartClearSetData(void)
 {
     s32 i;
@@ -3240,7 +3253,16 @@ static void BattleStartClearSetData(void)
     gBattleStruct->safariCatchFactor = gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)].catchRate * 100 / 1275;
     gBattleStruct->safariEscapeFactor = 3;
     gBattleStruct->wildVictorySong = 0;
-    gBattleStruct->moneyMultiplier = 1;
+    // Amulet Coin applies as long as any party mon holds it, even if that mon never enters the battle.
+    if (DoesPartyHoldDoublePrizeItem())
+    {
+        gBattleStruct->moneyMultiplier = 2;
+        gBattleStruct->moneyMultiplierItem = TRUE;
+    }
+    else
+    {
+        gBattleStruct->moneyMultiplier = 1;
+    }
 
     gBattleStruct->givenExpMons = 0;
     gBattleStruct->palaceFlags = 0;
@@ -3927,7 +3949,7 @@ static void DoBattleIntro(void)
             struct StartingStatuses statusesOpponentB = {0};
 
             // Try to set a status to start the battle with
-            if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+            if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && !IsSpecialTrainer(TRAINER_BATTLE_PARAM.opponentA))
             {
                 statusesOpponentA = GetTrainerStartingStatusFromId(TRAINER_BATTLE_PARAM.opponentA);
                 if (TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
@@ -5713,6 +5735,24 @@ static void HandleEndTurn_FinishBattle(void)
 {
     if (gCurrentActionFuncId == B_ACTION_TRY_FINISH || gCurrentActionFuncId == B_ACTION_FINISHED)
     {
+        // Both of these loops are keyed by the party index each mon had at the START of the
+        // battle (gBattleStruct->itemLost and gBattleStruct->partyState). They must run before
+        // anything that reorders gPlayerParty, or they apply to the wrong mons. The Mirror
+        // party restore and the Nuzlocke fainted-mon deletion below both reorder it.
+        // Held items must be restored before the form revert, since item-based form changes
+        // (plates, drives, Rusted Sword, Griseous Orb) read the mon's held item.
+        if (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE || B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9)
+            TryRestoreHeldItems();
+
+        for (u32 i = 0; i < PARTY_SIZE; i++)
+        {
+            bool32 changedForm = TryRevertPartyMonFormChange(i);
+
+            // Recalculate the stats of every party member before the end
+            if (!changedForm && B_RECALCULATE_STATS >= GEN_5)
+                CalculateMonStats(&gPlayerParty[i]);
+        }
+
         if (gSaveBlock3Ptr->challengeSettings.tx_Challenges_Mirror
          && !gSaveBlock3Ptr->challengeSettings.tx_Challenges_Mirror_Thief
          && (gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE)))
@@ -5786,7 +5826,7 @@ static void HandleEndTurn_FinishBattle(void)
             TryPutBreakingNewsOnAir();
         }
 
-        if (gSaveBlock3Ptr->challengeSettings.tx_Nuzlocke_EasyMode && !IsNuzlockeActive())
+        if (IsNuzlockeEasyActive())
         {
             if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
                                         | BATTLE_TYPE_LINK_IN_BATTLE
@@ -5835,17 +5875,6 @@ static void HandleEndTurn_FinishBattle(void)
 
         BeginFastPaletteFade(3);
         FadeOutMapMusic(5);
-        if (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE || B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9)
-            TryRestoreHeldItems();
-
-        for (u32 i = 0; i < PARTY_SIZE; i++)
-        {
-            bool32 changedForm = TryRevertPartyMonFormChange(i);
-
-            // Recalculate the stats of every party member before the end
-            if (!changedForm && B_RECALCULATE_STATS >= GEN_5)
-                CalculateMonStats(&gPlayerParty[i]);
-        }
         RecordedBattle_SetPlaybackFinished();
         if (gTestRunnerEnabled)
             TestRunner_Battle_AfterLastTurn();

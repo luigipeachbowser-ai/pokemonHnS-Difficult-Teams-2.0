@@ -68,7 +68,7 @@ Route50_Text_WesselDefeat:
 	.string "My hypothesis was wrong...$"
 
 Route50_Text_WesselAfter:
-	.string "Take it the PLATE. I don't want to\n"
+	.string "Take the PLATE. I don't want to\n"
 	.string "talk about it.$"
 
 Route50_EventScript_Finley::
@@ -143,7 +143,8 @@ Route50_EventScript_ActivateKleavor::
 	waitfieldeffect FLDEFF_SPARKLE
     playse SE_PIN
     applymovement2 LOCALID_PLAYER, Common_Movement_ExclamationMark
-    delay 60
+    delay 55
+    waitmovement LOCALID_PLAYER
     msgbox SinjohRuins_Lab_Text_PlayFlute, MSGBOX_YESNO
 	closemessage
     goto_if_eq VAR_RESULT, FALSE, SinjohRuins_Lab_EventScript_NoOp
@@ -240,7 +241,8 @@ Route50_EventScript_ActivateElectrode::
 	waitfieldeffect FLDEFF_SPARKLE
     playse SE_PIN
     applymovement2 LOCALID_PLAYER, Common_Movement_ExclamationMark
-    delay 60
+    delay 55
+    waitmovement LOCALID_PLAYER
     msgbox SinjohRuins_Lab_Text_PlayFlute, MSGBOX_YESNO
 	closemessage
     goto_if_eq VAR_RESULT, FALSE, SinjohRuins_Lab_EventScript_NoOp
@@ -304,8 +306,8 @@ Route50_EventScript_Electrode::
 	faceplayer
 	playmoncry SPECIES_ELECTRODE_HISUI, CRY_MODE_ENCOUNTER
 	waitmoncry
-	setwildbossbattle species=SPECIES_ELECTRODE_HISUI, level=80, item=ITEM_SCOPE_LENS, move1_1=MOVE_STONE_AXE, move1_2=MOVE_CROSS_POISON, move1_3=MOVE_LUNGE move1_4=MOVE_FOCUS_ENERGY
-	settotemboost B_POSITION_OPPONENT_LEFT, 1, 2, 0, 0, 2, 0
+	setwildbossbattle species=SPECIES_ELECTRODE_HISUI, level=80, item=ITEM_BRIGHT_POWDER, move1_1=MOVE_FOUL_PLAY, move1_2=MOVE_ELECTRO_BALL, move1_3=MOVE_ENERGY_BALL move1_4=MOVE_CHLOROBLAST
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 3, 1, 0, 3, 0
 	setflag FLAG_NO_WILD_CATCHING
 	setflag FLAG_NO_WILD_RUNNING
 	setflag FLAG_SMART_WILD_AI
