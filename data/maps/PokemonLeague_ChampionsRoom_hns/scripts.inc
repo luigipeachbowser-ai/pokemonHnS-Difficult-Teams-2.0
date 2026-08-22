@@ -6,6 +6,14 @@ PokemonLeague_ChampionsRoom_hns_MapScripts::
 PokemonLeague_ChampionsRoom_OnResume::
 	setvar VAR_0x8004, 4
 	special DoPokemonLeagueLightingEffect
+	goto_if_set FLAG_IS_CHAMPION, PokemonLeague_ChampionsRoom_ShowBlue
+	clearflag FLAG_HIDE_CHAMPIONS_ROOM_LANCE_HNS
+	setflag FLAG_HIDE_CHAMPIONS_ROOM_BLUE_HNS
+	end
+
+PokemonLeague_ChampionsRoom_ShowBlue::
+	setflag FLAG_HIDE_CHAMPIONS_ROOM_LANCE_HNS
+	clearflag FLAG_HIDE_CHAMPIONS_ROOM_BLUE_HNS
 	end
 
 ChampionRoom_OnFrame::
@@ -55,7 +63,7 @@ PokemonLeague_WillsRoom_EventScript_LanceRematch::
 	msgbox PokemonLeague_ChampionsRoom_Text_RematchBattleIntro, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
-	trainerbattle_no_intro TRAINER_LANCE_2_HNS, PokemonLeague_ChampionsRoom_Text_BattleWin
+	trainerbattle_no_intro TRAINER_CHAMPIONBLUE_2_HNS, PokemonLeague_ChampionsRoom_Text_BattleWin
 	goto PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto
 
 PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto::
@@ -130,7 +138,7 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatJohto::
 
 PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	clearflag FLAG_TEMP_5
-	msgbox PokemonLeague_ChampionsRoom_Text_BattleAfter, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_BlueBattleAfter, MSGBOX_DEFAULT
 	closemessage
 	setmetatile 6, 1, 0x3F2, FALSE
 	setmetatile 6, 2, 0x296, FALSE	
@@ -143,14 +151,14 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	waitstate
 	special DrawWholeMapView
 	playse SE_PIN
-	applymovement LOCALID_LEAGUE_LANCE, Common_Movement_ExclamationMark
+	applymovement LOCALID_LEAGUE_BLUE, Common_Movement_ExclamationMark
 	delay 55
-	waitmovement LOCALID_LEAGUE_LANCE
+	waitmovement LOCALID_LEAGUE_BLUE
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
 	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerMoveToCenter
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceMoveOver
+	applymovement LOCALID_LEAGUE_BLUE, PokemonLeague_ChampionsRoom_Movement_LanceMoveOver
 	waitmovement OBJ_EVENT_ID_PLAYER
-	waitmovement LOCALID_LEAGUE_LANCE
+	waitmovement LOCALID_LEAGUE_BLUE
 	addobject LOCALID_LEAGUE_MARY
 	addobject LOCALID_LEAGUE_OAK
 	applymovement LOCALID_LEAGUE_MARY, PokemonLeague_ChampionsRoom_Movement_MaryEnter
@@ -167,16 +175,16 @@ PokemonLeague_WillsRoom_EventScript_LanceOnDefeatKanto::
 	waitmovement 0
 	msgbox PokemonLeague_ChampionsRoom_Text_RematchMaryInterview, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceAnxious
+	applymovement LOCALID_LEAGUE_BLUE, PokemonLeague_ChampionsRoom_Movement_LanceAnxious
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_Noisy, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_Noisy_Blue, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_LEAGUE_LANCE, PokemonLeague_ChampionsRoom_Movement_LanceLeave
+	applymovement LOCALID_LEAGUE_BLUE, PokemonLeague_ChampionsRoom_Movement_LanceLeave
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerLeave
-	waitmovement LOCALID_LEAGUE_LANCE
-	@setobjectxyperm LOCALID_LEAGUE_LANCE, 6, 14
-	removeobject LOCALID_LEAGUE_LANCE
+	waitmovement LOCALID_LEAGUE_BLUE
+	@setobjectxyperm LOCALID_LEAGUE_BLUE, 6, 14
+	removeobject LOCALID_LEAGUE_BLUE
 	playse SE_EXIT
 	waitmovement OBJ_EVENT_ID_PLAYER
 	special SpawnCameraObject
@@ -310,26 +318,30 @@ PokemonLeague_ChampionsRoom_Movement_MaryLeft:
 	step_end
 
 PokemonLeague_ChampionsRoom_Text_RematchBattleIntro:
-    .string "LANCE: Welcome back!\p"
-    .string "You've proven yourself in JOHTO,\p"
-    .string "acquiring all 8 badges and even\n"
-    .string "besting me once.\p"
-    .string "But now, you're in the big\n"
-    .string "leagues.\p"
-    .string "The KANTO LEAGUE!\p"
-    .string "A region with its own trials and\n"
-    .string "champions.\p"
-    .string "Here, I am the final challenge,\n"
-    .string "with a team stronger than ever\l"
-    .string "before.\p"
-    .string "This is the true test,\p"
-    .string "a battle to determine the\n"
-    .string "CHAMPION of KANTO.\p"
-    .string "Are you ready to rise to this new\n"
-    .string "challenge?\p"
-    .string "To prove yourself once more?\p"
-    .string "Show me the strength that\n"
-    .string "conquered JOHTO, CHAMPION.$"
+	.string "BLUE: {PLAYER}...\p"
+	.string "You know, when you defeated me\n"
+	.string "at the VIRIDIAN GYM, something inside\l"
+	.string "me changed.\p"
+	.string "That loss... it lit a fire in me\n"
+	.string "that I thought had died out\l"
+	.string "long ago.\p"
+	.string "It made me remember what it felt\n"
+	.string "like to strive for greatness again.\p"
+	.string "So I gave up my GYM, took on the\n"
+	.string "LEAGUE challenge once more,\n"
+	.string "and reclaimed my rightful place here.\p"
+	.string "Looking into your golden eyes now...\p"
+	.string "You remind me of someone...\p"
+	.string "A rival from long ago who once\n"
+	.string "stood where you stand now.\p"
+	.string "He defeated me too, back when\n"
+	.string "I thought I was invincible.\p"
+	.string "But I'm not the same trainer I was then.\n"
+	.string "I am stronger, smarter, better.\p"
+	.string "Thanks to you, I've found my\n"
+	.string "passion again!\p"
+	.string "Now, show me your strength!\p"
+	.string "The strength that reignited my dreams!$"
 
 PokemonLeague_ChampionsRoom_Text_BattleIntro:
     .string "LANCE: I've been waiting for you.\p"
@@ -360,6 +372,17 @@ PokemonLeague_ChampionsRoom_Text_BattleAfter:
     .string "strong and upstanding nature.\p"
     .string "As a trainer, you will continue to\n"
     .string "grow strong with your POKéMON.$"
+
+PokemonLeague_ChampionsRoom_Text_BlueBattleAfter:
+    .string "Hah... Not bad, {PLAYER}.\n"
+    .string "Not bad at all.\p"
+    .string "I have to admit, you've got\n"
+    .string "some serious skill.\p"
+    .string "You remind me why I love battling\n"
+    .string "in the first place.\p"
+    .string "Keep pushing forward, champ.\p"
+    .string "The world's got a lot more challenges\n"
+    .string "waiting for someone like you.$"
 
 PokemonLeague_ChampionsRoom_Text_MaryOhNoOak:
     .string "MARY: Oh, no! It's all over!\p"
@@ -409,6 +432,12 @@ PokemonLeague_ChampionsRoom_Text_Noisy:
     .string "LANCE: This is getting to be a bit\n"
     .string "too noisy…\p"
     .string "{PLAYER}, could you come with me?$"
+
+PokemonLeague_ChampionsRoom_Text_Noisy_Blue:
+    .string "BLUE: Ugh, what a racket...\p"
+    .string "Hey {PLAYER}, let's get out\n"
+    .string "of here before my ears start\l"
+    .string "bleeding.$"
 
 PokemonLeague_ChampionsRoom_Text_MaryNoInterview:
     .string "MARY: Oh, wait! We haven't done\n"

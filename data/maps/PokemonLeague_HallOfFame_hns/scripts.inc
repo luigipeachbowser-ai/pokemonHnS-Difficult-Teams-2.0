@@ -32,11 +32,12 @@ PokemonLeague_HallOfFame_EventScript_Cutscene::
 	end
 
 PokemonLeague_HallOfFame_EventScript_CutsceneKantoChamp::
-	applymovement LOCALID_HALLOFFAME_LANCE, PokemonLeague_HallOfFame_Movement_LanceEnter
+	showobjectat LOCALID_HALLOFFAME_BLUE, MAP_POKEMON_LEAGUE_HALL_OF_FAME_HNS
+	applymovement LOCALID_HALLOFFAME_BLUE, PokemonLeague_HallOfFame_Movement_BlueEnter
 	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_HallOfFame_Movement_PlayerEnter
 	waitmovement OBJ_EVENT_ID_PLAYER
-	waitmovement LOCALID_HALLOFFAME_LANCE
-	msgbox PokemonLeague_HallOfFame_Rematch_LanceText, MSGBOX_DEFAULT
+	waitmovement LOCALID_HALLOFFAME_BLUE
+	msgbox PokemonLeague_HallOfFame_Rematch_BlueText, MSGBOX_DEFAULT
 	closemessage
 	special GivePartyMonChampionRibbon
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
@@ -166,6 +167,18 @@ PokemonLeague_HallOfFame_Movement_LanceEnter:
 	face_left
 	step_end
 
+PokemonLeague_HallOfFame_Movement_BlueEnter:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	face_left
+	step_end
+
 PokemonLeague_HallOfFame_Movement_PlayerEnter:
 	walk_up
 	walk_up
@@ -220,4 +233,26 @@ PokemonLeague_HallOfFame_Rematch_LanceText:
     .string "{PLAYER}, it is my honor to register\n"
     .string "you, and your trusted partners,\l"
     .string "as champions once again.$"
+
+PokemonLeague_HallOfFame_Rematch_BlueText:
+    .string "BLUE: Well, well... Here we are\n"
+    .string "again in the HALL OF FAME.\p"
+    .string "I have to admit, {PLAYER}, you've\n"
+    .string "really proven yourself.\p"
+    .string "First you beat the JOHTO LEAGUE,\n"
+    .string "then you took down all of KANTO's\l"
+    .string "GYM LEADERS...me included\p"
+    .string "And now you've beaten me at my\n"
+    .string "absolute strongest.\p"
+    .string "I've been training non-stop since\n"
+    .string "I became CHAMPION, but you still\l"
+    .string "found a way to win.\p"
+    .string "That's what makes a true CHAMPION--\n"
+    .string "never giving up, always pushing\l"
+    .string "forward no matter the odds.\p"
+    .string "You've earned your place here\n"
+    .string "among the greatest trainers.\p"
+    .string "{PLAYER}, let me register you and\n"
+    .string "your POKéMON in the HALL OF FAME\l"
+    .string "once more!$"
 

@@ -11923,8 +11923,8 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 
 Chikorita
-Level: 7
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Level: 6
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_RIVAL_CHIKORITA_2_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12275,8 +12275,8 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 
 Cyndaquil
-Level: 7
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Level: 6
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_RIVAL_CYNDAQUIL_2_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12627,8 +12627,8 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 
 Totodile
-Level: 7
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Level: 6
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_RIVAL_TOTODILE_2_HNS ===
 Name: {B_RIVAL_NAME}

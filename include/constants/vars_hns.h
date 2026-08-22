@@ -107,7 +107,7 @@
 #define VAR_RADIO_BUENAS_PASSWORD                        0x40AB
 #define VAR_CONTEST_PRIZE_PICKUP_HNS                            0x40AC
 #define VAR_TRIGGER_ELM_ROCKET_CALL                            0x40B3
-#define VAR_UNUSED_HNS_0x40B4                            0x40B4
+#define VAR_ROUTE39_STATE_HNS                            0x40B4
 #define VAR_UNUSED_HNS_0x40C2                            0x40C2
 #define VAR_UNUSED_HNS_0x40C6                            0x40C6
 #define VAR_UNUSED_HNS_0x40C9                            0x40C9
