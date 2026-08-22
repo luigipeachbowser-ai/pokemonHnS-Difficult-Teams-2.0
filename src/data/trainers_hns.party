@@ -9567,6 +9567,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 
 Ledian
+Ability: Huge Power
 Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Silver Wind
@@ -16548,7 +16549,7 @@ Pic: Steven
 Music: Hg Champion
 Gender: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Assumptions
 Items: Full Restore / Full Restore
 Mugshot: Orange
 

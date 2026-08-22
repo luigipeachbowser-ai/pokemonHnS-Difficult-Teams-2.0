@@ -3961,7 +3961,86 @@ static void DoBattleIntro(void)
         break;
     }
 }
+struct TrainerWeatherOverride
+{
+    u16 trainerId;
+    u32 weather;
+    bool32 tailwind;
+};
 
+static const struct TrainerWeatherOverride sTrainerWeatherOverrides[] =
+{
+    { TRAINER_JASMINE_1_HNS,        B_WEATHER_RAIN,      FALSE },
+    { TRAINER_JASMINE_1_2_HNS,      B_WEATHER_RAIN,      FALSE },
+    { TRAINER_JASMINE_2_HNS,        B_WEATHER_RAIN,      FALSE },
+    { TRAINER_JASMINE_1_3_HNS,      B_WEATHER_RAIN,      FALSE },
+    { TRAINER_BROCK_HNS,            B_WEATHER_SANDSTORM, FALSE },
+    { TRAINER_GIOVANNI_HNS,         B_WEATHER_SANDSTORM, FALSE },
+    { TRAINER_PRYCE_1_HNS,          B_WEATHER_HAIL,      FALSE },
+    { TRAINER_PRYCE_1_2_HNS,        B_WEATHER_HAIL,      FALSE },
+    { TRAINER_PRYCE_2_HNS,          B_WEATHER_HAIL,      FALSE },
+    { TRAINER_PRYCE_1_3_HNS,        B_WEATHER_HAIL,      FALSE },
+    { TRAINER_BLAINE_HNS,           B_WEATHER_SUN,       FALSE },
+    { TRAINER_FALKNER_2_HNS,        B_WEATHER_NONE,      TRUE  },
+    { TRAINER_LANCE_1_HNS,          B_WEATHER_NONE,      TRUE  },
+    { TRAINER_FALKNER_1_HNS,        B_WEATHER_NONE,      TRUE  },
+    { 0xFFFF,                      B_WEATHER_NONE,      FALSE },
+};
+
+static bool32 TryApplyTrainerSpecificStartingWeather(void)
+{
+    if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+        return FALSE;
+
+    for (const struct TrainerWeatherOverride *entry = sTrainerWeatherOverrides; entry->trainerId != 0xFFFF; ++entry)
+    {
+        if (entry->trainerId == TRAINER_BATTLE_PARAM.opponentA)
+        {
+            if (entry->tailwind)
+            {
+                gBattlerAttacker = gBattlerTarget = (enum BattlerId)B_SIDE_OPPONENT;
+                gSideStatuses[B_SIDE_OPPONENT] |= SIDE_STATUS_TAILWIND;
+                gSideTimers[B_SIDE_OPPONENT].tailwindTimer = (B_TAILWIND_TURNS >= GEN_5 ? 4 : 3);
+                gBattleScripting.animArg1 = B_ANIM_TAILWIND;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_TAILWIND;
+                BattleScriptPushCursorAndCallback(BattleScript_OverworldStatusStarts);
+                return TRUE;
+            }
+
+            switch (entry->weather)
+            {
+                case B_WEATHER_RAIN:
+                    gBattleWeather = B_WEATHER_RAIN;
+                    gBattleScripting.animArg1 = B_ANIM_RAIN_CONTINUES;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_RAIN;
+                    BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);
+                    return TRUE;
+                case B_WEATHER_SUN:
+                    gBattleWeather = B_WEATHER_SUN;
+                    gBattleScripting.animArg1 = B_ANIM_SUN_CONTINUES;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SUNLIGHT;
+                    BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);
+                    return TRUE;
+                case B_WEATHER_SANDSTORM:
+                    gBattleWeather = B_WEATHER_SANDSTORM;
+                    gBattleScripting.animArg1 = B_ANIM_SANDSTORM_CONTINUES;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SANDSTORM;
+                    BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);
+                    return TRUE;
+                case B_WEATHER_HAIL:
+                    gBattleWeather = B_WEATHER_HAIL;
+                    gBattleScripting.animArg1 = B_ANIM_HAIL_CONTINUES;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_HAIL;
+                    BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);
+                    return TRUE;
+                default:
+                    return FALSE;
+            }
+        }
+    }
+
+    return FALSE;
+}
 static void TryDoEventsBeforeFirstTurn(void)
 {
     s32 i;
@@ -4005,6 +4084,8 @@ static void TryDoEventsBeforeFirstTurn(void)
         break;
     case FIRST_TURN_EVENTS_OVERWORLD_WEATHER:
         gBattleStruct->eventState.beforeFirstTurn++;
+        if (TryApplyTrainerSpecificStartingWeather())
+            return;
         if (TryFieldEffects(FIELD_EFFECT_OVERWORLD_WEATHER))
             return;
         break;
