@@ -629,9 +629,12 @@
 #define TRAINER_MUALANI_HNS                           614
 #define TRAINER_WESSEL_HNS                            615
 #define TRAINER_SKYLAR_HNS                            616
+#define TRAINER_WILL_ROUTE39_STRONG_HNS               621
+#define TRAINER_WILL_ROUTE39_HNS                      619
+#define TRAINER_CHAMPIONBLUE_2_HNS                    620
 
 // 618 is TRAINER_TANYA_HNS, relocated out of the TRAINER_FRONTIER_BRAIN slot (330).
-#define TRAINERS_COUNT_HNS                       619
+#define TRAINERS_COUNT_HNS                       622
 #define MAX_TRAINERS_COUNT_HNS                   864
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_HNS_H
