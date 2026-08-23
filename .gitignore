@@ -65,8 +65,9 @@ tools/aif2pcm/aif2pcm
 *.smolTM
 __pycache__
 .map_version
-src/data/trainers_hns.h
+/pokehns-*.png
 src/data/trainers_hns.h
 tools/poryscript
 porymap.user.json
 /migration_scripts/1.9/old-events
+tools/mid2gbs/.venv

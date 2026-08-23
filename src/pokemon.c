@@ -5542,7 +5542,11 @@ enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum)
 {
     int i;
 
+#if RANDOMIZER_AVAILABLE == TRUE
+    if (abilityNum == 0 && gSaveBlock3Ptr->challengeSettings.tx_Mode_Legendary_Abilities == 1 && !RandomizerFeatureEnabled(RANDOMIZE_ABILITIES))
+#else
     if (abilityNum == 0 && gSaveBlock3Ptr->challengeSettings.tx_Mode_Legendary_Abilities == 1)
+#endif
     {
         for (i = 0; i < (int)ARRAY_COUNT(sLegendaryCustomAbilities); i++)
         {
@@ -8104,6 +8108,8 @@ u16 GetBattleBGM(void)
                 return MUS_HG_VS_TRAINER_KANTO;
             else if (GetCurrentRegion() == REGION_ALOLA)
                 return MUS_HG_VS_TRAINER_KANTO;  // Alola trainer battles
+            else if (GetCurrentRegion() == REGION_HISUI)
+                return MUS_HG_VS_TRAINER;        // Sinjoh keeps the Johto theme
             else
                 return MUS_VS_TRAINER;
         #else
@@ -8123,6 +8129,8 @@ u16 GetBattleBGM(void)
             return MUS_HG_VS_WILD_KANTO;
         else if (GetCurrentRegion() == REGION_ALOLA)
             return MUS_HG_VS_WILD_KANTO;  // Alola wild battles
+        else if (GetCurrentRegion() == REGION_HISUI)
+            return MUS_HG_VS_WILD;        // Sinjoh keeps the Johto theme
         else
             return MUS_VS_WILD;
     #else
