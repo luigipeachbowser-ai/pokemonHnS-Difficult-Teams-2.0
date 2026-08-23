@@ -12277,7 +12277,9 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 
 Cyndaquil
+Ability: Flash Fire
 Level: 6
+Modest Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
 === TRAINER_RIVAL_CYNDAQUIL_2_HNS ===
@@ -12292,36 +12294,44 @@ Mugshot: Dark Red
 Items: Potion
 
 Remoraid
+Ability: Sniper
 Level: 16
+Modest Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Water Gun
-- Bubble Beam
+- Mud Shot
 - Aurora Beam
 - Psybeam
 
 Zubat
-Level: 16
+Ability: Infiltrator
+Level: 17
+Adamant Nature
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Absorb
-- Supersonic
+- Bite
+- Confuse Ray
 - Poison Sting
-- Astonish
+- Wing Attack
 
 Larvitar
+Ability: Guts
 Level: 17
+Adamant Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Bite
 - Rock Throw
 - Screech
-- Sandstorm
+- Chip Away
 
 Quilava
+Ability: Flash Fire
 Level: 18
+Modest Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
-- Leer
+- Quick Attack
 - Smokescreen
 - Ember
-- Tackle
+- Dig
 
 === TRAINER_RIVAL_CYNDAQUIL_3_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12335,52 +12345,64 @@ Mugshot: Dark Red
 Items: Super Potion
 
 Teddiursa
+Ability: Quick Feet
 Level: 25
+Adamant Nature
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Slash
-- Fury Swipes
+- Feint Attack
 - Lick
 - Rock Smash
 
 Larvitar
+Ability: Guts
 Level: 24
+Adamant Nature
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Bite
-- Rock Throw
-- Screech
+- Rock Slide
+- Chip Away
 - Magnitude
 
 Remoraid
+Ability: Sniper
 Level: 26
+Modest Nature
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Bubble Beam
+- Water Pulse
 - Aurora Beam
 - Psybeam
-- Lock On
+- Mud Shot
 
 Golbat
-Level: 26
+Ability: Infiltrator
+Level: 27
+Adamant Nature
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Bite
 - Confuse Ray
-- Poison Sting
+- Poison Fang
 - Wing Attack
 
-Victreebel
+Victreebel @Sitrus Berry
+Ability: Gluttony
 Level: 26
+Jolly Nature
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Razor Leaf
-- Growth
 - Sleep Powder
-- Stun Spore
+- Razor Leaf
+- Toxic
+- Venoshock
 
 Quilava
+Ability: Flash Fire
 Level: 28
+Adamant Nature
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Flame Wheel
 - Dig
 - Quick Attack
-- Smokescreen
+- Double Kick 
 
 === TRAINER_RIVAL_CYNDAQUIL_4_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12393,53 +12415,65 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Super Potion
 
-Ursaring @ Chesto Berry
+Ursaring @ Flame Orb
+Ability: Guts
 Level: 42
+Adamant Nature
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Slash
-- Faint Attack
-- Rock Smash
-- Rest
+- Earthquake
+- Swords Dance
+- Stone Edge
 
 Pupitar
+Ability: Shed Skin
 Level: 42
+Adamant Nature
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Thrash
+- Earthquake
 - Rock Slide
-- Dark Pulse
-- Bite
+- Payback
+- Superpower
 
-Victreebel
+Victreebel @ Sitrus Berry
+Ability: Gluttony
 Level: 41
+Jolly Nature
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Sludge Bomb
-- Razor Leaf
+- Leaf Blade
 - Sleep Powder
-- Growth
+- Knock Off
 
 Octillery
+Ability: Sniper
 Level: 40
+Modest Nature
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Octazooka
 - Psybeam
-- Aurora Beam
+- Flamethrower
 - Ice Beam
 
-Crobat
+Crobat @ Flying Gem
+Ability: Infiltrator
 Level: 42
+Adamant Nature
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Toxic
-- Air Cutter
+- Acrobatics
+- X Scissor
 - Confuse Ray
-- Poison Fang
+- Cross Poison
 
-Typhlosion
+Typhlosion @ Charcoal
+Ability: Flash Fire
 Level: 45
+Adamant Nature
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Thunder Punch
-- Flamethrower
-- Quick Attack
-- Iron Tail
+- Flame Charge
+- Body Slam
+- Low Kick
 
 === TRAINER_RIVAL_CYNDAQUIL_5_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12452,53 +12486,65 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Hyper Potion
 
-Ursaring @ Chesto Berry
+Ursaring @ Flame Orb
+Ability: Guts
 Level: 52
+Adamant Nature
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Slash
-- Faint Attack
-- Rock Smash
-- Rest
+- Earthquake
+- Swords Dance
+- Stone Edge
 
-Golbat @ Poison Barb
+Crobat @ Flying Gem
+Ability: Infiltrator
 Level: 52
+Adamant Nature
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-- Toxic
-- Double Team
-- Poison Fang
-- Air Cutter
+- Acrobatics
+- X Scissor
+- Confuse Ray
+- Cross Poison
 
 Octillery @ Quick Claw
+Ability: Sniper
 Level: 52
+Modest Nature
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-- Surf
+- Octazooka
 - Ice Beam
 - Psybeam
-- Hyper Beam
+- Flamethrower
 
 Victreebel @ Scope Lens
+Ability: Chlorophyll
 Level: 52
+Jolly Nature
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Sludge Bomb
 - Leaf Blade
 - Sleep Powder
 - Leech Seed
 
-Typhlosion @ Charcoal
+Typhlosion @ Choice Band
+Ability: Flash Fire
 Level: 53
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Eruption
-- Earth Power
-- Iron Tail
-- Thunderbolt
+- Earthquake
+- Iron Head
+- Thunder Punch
 
 Tyranitar @ Hard Stone
+Ability: Sand Stream
 Level: 53
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 - Earthquake
 - Rock Slide
-- Fire Punch
+- Thunder Fang
 
 === TRAINER_RIVAL_CYNDAQUIL_6_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12512,52 +12558,64 @@ Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
 Ursaluna Bloodmoon @ Chesto Berry
+Ability: Minds Eye
 Level: 70
+Modest Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fake Tears
+- Earth Power
 - Moonblast
-- Ancient Power
-- Rest
+- Calm Mind
+- Baby Doll Eyes
 
-Crobat @ Leftovers
+Crobat @ Flying Gem
+Ability: Infiltrator
 Level: 70
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Double Team
+- Acrobatics
+- X Scissor
 - Confuse Ray
-- Wing Attack
+- Cross Poison
 
-Octillery @ Never Melt Ice
+Octillery @ Quick Claw
+Ability: Sniper
 Level: 70
+Modest Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
+- Octazooka
 - Ice Beam
 - Psybeam
-- Hyper Beam
+- Flamethrower
 
 Victreebel @ Scope Lens
+Ability: Chlorophyll
 Level: 70
+Jolly Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sludge Bomb
-- Razor Leaf
+- Leaf Blade
 - Sleep Powder
-- Growth
+- Swords Dance
 
-Typhlosion @ Charcoal
+Typhlosion @ Choice Band
+Ability: Flash Fire
 Level: 70
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
+- Eruption
 - Earthquake
-- Iron Tail
+- Iron Head
 - Thunder Punch
 
 Tyranitar @ Quick Claw
+Ability: Sand Stream
 Level: 70
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 - Earthquake
-- Rock Slide
-- Fire Blast
+- Stone Edge
+- Dragon Dance
 
 === TRAINER_RIVAL_CYNDAQUIL_7_HNS ===
 Name: {B_RIVAL_NAME}
@@ -12571,52 +12629,64 @@ Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
 Ursaluna Bloodmoon @ Chesto Berry
+Ability: Minds Eye
 Level: 76
+Modest Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fake Tears
+- Earth Power
 - Moonblast
-- Ancient Power
-- Rest
+- Calm Mind
+- Baby Doll Eyes
 
-Crobat @ Leftovers
+Crobat @ Flying Gem
+Ability: Infiltrator
 Level: 76
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Double Team
+- Acrobatics
+- X Scissor
 - Confuse Ray
-- Fly
+- Cross Poison
 
 Octillery @ Never Melt Ice
+Ability: Sniper
 Level: 76
+Modest Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
+- Octazooka
 - Ice Beam
 - Psybeam
-- Hyper Beam
+- Flamethrower
 
 Victreebel @ Scope Lens
+Ability: Chlorophyll
 Level: 76
+Jolly Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sludge Bomb
-- Razor Leaf
+- Leaf Blade
 - Sleep Powder
-- Growth
+- Swords Dance
 
-Typhlosion @ Charcoal
+Typhlosion @ Choice Band
+Ability: Flash Fire
 Level: 76
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
+- Eruption
 - Earthquake
-- Iron Tail
+- Iron Head
 - Thunder Punch
 
 Tyranitar @ Quick Claw
+Ability: Sand Stream
 Level: 76
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 - Earthquake
-- Rock Slide
-- Fire Blast
+- Stone Edge
+- Dragon Dance
 
 === TRAINER_RIVAL_TOTODILE_1_HNS ===
 Name: ???
