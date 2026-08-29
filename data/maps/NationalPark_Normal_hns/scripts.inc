@@ -129,6 +129,13 @@ NationalPark_Normal_EventScript_RematchJack::
 NationalPark_Normal_EventScript_Beverly::
 	trainerbattle_single TRAINER_BEVERLY_HNS, NationalPark_Normal_Text_PokefanFBeverly1_Seen, NationalPark_Normal_Text_PokefanFBeverly1_Beaten, NationalPark_Normal_EventScript_RegisterBeverly
 	goto_if_set FLAG_BEVERLY_HAS_ITEM_HNS, NationalPark_Normal_EventScript_BeverlyGiveItem
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, NationalPark_Normal_EventScript_RematchBeverly
+	msgbox NationalPark_Normal_Text_PokefanFBeverly_After, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_Normal_EventScript_RematchBeverly::
+	trainerbattle_rematch TRAINER_BEVERLY_HNS, NationalPark_Normal_Text_PokefanFBeverly1_Seen, NationalPark_Normal_Text_PokefanFBeverly1_Beaten
 	msgbox NationalPark_Normal_Text_PokefanFBeverly_After, MSGBOX_AUTOCLOSE
 	end
 
@@ -182,13 +189,13 @@ NationalPark_Normal_Text_SchoolboyJack1_Beaten:
 NationalPark_Normal_Text_SchoolboyJack_After:
 	.string "There is a lot to learn.\p"
 	.string "For example…\p"
-	.string "There are 90 kinds of TMs.\p"
+	.string "There are 92 kinds of TMs.\p"
 	.string "Traded POKéMON level up faster.$"
 
 NationalPark_Normal_Text_JackRegister:
 	.string "There is a lot to learn.\p"
 	.string "For example…\p"
-	.string "There are 50 kinds of TMs.\p"
+	.string "There are 92 kinds of TMs.\p"
 	.string "Traded POKéMON level up faster.$"
 
 NationalPark_Normal_Text_JackRematchIntro:
@@ -201,7 +208,7 @@ NationalPark_Normal_Text_JackRematchDefeat:
 NationalPark_Normal_Text_JackPostRematch:
 	.string "There is a lot to learn.\p"
 	.string "For example…\p"
-	.string "There are 50 kinds of TMs.\p"
+	.string "There are 92 kinds of TMs.\p"
 	.string "Traded POKéMON level up faster.$"
 
 NationalPark_Normal_Text_PokefanFBeverly1_Seen:

@@ -167,12 +167,12 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     [REMATCH_RICKY]        = REMATCH(TRAINER_ANTHONY_HNS,  TRAINER_ANTHONY_2_HNS, TRAINER_ANTHONY_3_HNS, TRAINER_ANTHONY_4_HNS, TRAINER_ANTHONY_5_HNS, MAP_ROUTE33_HNS),
     [REMATCH_LILA_AND_ROY] = REMATCH(TRAINER_TODD_HNS,     TRAINER_TODD_2_HNS,    TRAINER_TODD_3_HNS,    TRAINER_TODD_4_HNS,    TRAINER_TODD_5_HNS,    MAP_ROUTE34_HNS),
     [REMATCH_CRISTIN]      = REMATCH(TRAINER_GINA_HNS,     TRAINER_GINA_2_HNS,    TRAINER_GINA_3_HNS,    TRAINER_GINA_4_HNS,    TRAINER_GINA_5_HNS,    MAP_ROUTE34_HNS),
-    [REMATCH_BROOKE]       = REMATCH(TRAINER_IRWIN_HNS,    TRAINER_IRWIN_HNS,     TRAINER_IRWIN_HNS,     TRAINER_IRWIN_HNS,     TRAINER_IRWIN_HNS,     MAP_ROUTE35_HNS),
+    [REMATCH_BROOKE]       = REMATCH(TRAINER_IRWIN_HNS,    TRAINER_IRWIN_2_HNS,   TRAINER_IRWIN_3_HNS,   TRAINER_IRWIN_4_HNS,   TRAINER_IRWIN_5_HNS,   MAP_ROUTE35_HNS),
     [REMATCH_WILTON]       = REMATCH(TRAINER_ARNIE_HNS,    TRAINER_ARNIE_2_HNS,   TRAINER_ARNIE_3_HNS,   TRAINER_ARNIE_4_HNS,   TRAINER_ARNIE_5_HNS,   MAP_ROUTE35_HNS),
     [REMATCH_VALERIE]      = REMATCH(TRAINER_ALAN_HNS,     TRAINER_ALAN_2_HNS,    TRAINER_ALAN_3_HNS,    TRAINER_ALAN_4_HNS,    TRAINER_ALAN_5_HNS,    MAP_ROUTE36_HNS),
     [REMATCH_CINDY]        = REMATCH(TRAINER_DANA_HNS,     TRAINER_DANA_2_HNS,    TRAINER_DANA_3_HNS,    TRAINER_DANA_4_HNS,    TRAINER_DANA_5_HNS,    MAP_ROUTE38_HNS),
     [REMATCH_THALIA]       = REMATCH(TRAINER_CHAD_HNS,     TRAINER_CHAD_2_HNS,    TRAINER_CHAD_3_HNS,    TRAINER_CHAD_4_HNS,    TRAINER_CHAD_5_HNS,    MAP_ROUTE38_HNS),
-    [REMATCH_JESSICA]      = REMATCH(TRAINER_DEREK_HNS,    TRAINER_DEREK_HNS,     TRAINER_DEREK_HNS,     TRAINER_DEREK_HNS,     TRAINER_DEREK_HNS,     MAP_ROUTE39_HNS),
+    [REMATCH_JESSICA]      = REMATCH(TRAINER_DEREK_HNS,    TRAINER_DEREK_2_HNS,   TRAINER_DEREK_3_HNS,   TRAINER_DEREK_4_HNS,   TRAINER_DEREK_5_HNS,   MAP_ROUTE39_HNS),
     [REMATCH_WINSTON]      = REMATCH(TRAINER_TULLY_HNS,    TRAINER_TULLY_2_HNS,   TRAINER_TULLY_3_HNS,   TRAINER_TULLY_4_HNS,   TRAINER_TULLY_4_HNS,   MAP_ROUTE42_HNS),
     [REMATCH_STEVE]        = REMATCH(TRAINER_BRENT_HNS,    TRAINER_BRENT_2_HNS,   TRAINER_BRENT_3_HNS,   TRAINER_BRENT_4_HNS,   TRAINER_BRENT_4_HNS,   MAP_ROUTE43_HNS),
     [REMATCH_TONY]         = REMATCH(TRAINER_TIFFANY_HNS,  TRAINER_TIFFANY_2_HNS, TRAINER_TIFFANY_3_HNS, TRAINER_TIFFANY_4_HNS, TRAINER_TIFFANY_4_HNS, MAP_ROUTE43_HNS),
@@ -182,7 +182,7 @@ const struct RematchTrainer gRematchTable[REMATCH_TABLE_ENTRIES] =
     [REMATCH_DALTON]       = REMATCH(TRAINER_PARRY_HNS,    TRAINER_PARRY_2_HNS,   TRAINER_PARRY_3_HNS,   TRAINER_PARRY_3_HNS,   TRAINER_PARRY_3_HNS,   MAP_ROUTE45_HNS),
     [REMATCH_BERNIE]       = REMATCH(TRAINER_ERIN_HNS,     TRAINER_ERIN_2_HNS,    TRAINER_ERIN_3_HNS,    TRAINER_ERIN_3_HNS,    TRAINER_ERIN_3_HNS,    MAP_ROUTE46_HNS),
     [REMATCH_ETHAN]        = REMATCH(TRAINER_JACK_HNS,     TRAINER_JACK_2_HNS,    TRAINER_JACK_3_HNS,    TRAINER_JACK_4_HNS,    TRAINER_JACK_5_HNS,    MAP_NATIONAL_PARK_NORMAL_HNS),
-    [REMATCH_JOHN_AND_JAY] = REMATCH(TRAINER_BEVERLY_HNS,  TRAINER_BEVERLY_HNS,   TRAINER_BEVERLY_HNS,   TRAINER_BEVERLY_HNS,   TRAINER_BEVERLY_HNS,   MAP_NATIONAL_PARK_NORMAL_HNS),
+    [REMATCH_JOHN_AND_JAY] = REMATCH(TRAINER_BEVERLY_HNS,  TRAINER_BEVERLY_2_HNS, TRAINER_BEVERLY_3_HNS, TRAINER_BEVERLY_4_HNS, TRAINER_BEVERLY_5_HNS, MAP_NATIONAL_PARK_NORMAL_HNS),
     [REMATCH_JEFFREY]      = REMATCH(TRAINER_HUEY_HNS,     TRAINER_HUEY_2_HNS,    TRAINER_HUEY_3_HNS,    TRAINER_HUEY_4_HNS,    TRAINER_HUEY_4_HNS,    MAP_OLIVINE_CITY_LIGHTHOUSE_HNS),
     [REMATCH_CAMERON]      = REMATCH(TRAINER_GAVEN_HNS,    TRAINER_GAVEN_2_HNS,   TRAINER_GAVEN_3_HNS,   TRAINER_GAVEN_3_HNS,   TRAINER_GAVEN_3_HNS,   MAP_ROUTE26_HNS),
     [REMATCH_JACKI]        = REMATCH(TRAINER_BETH_HNS,     TRAINER_BETH_2_HNS,    TRAINER_BETH_3_HNS,    TRAINER_BETH_3_HNS,    TRAINER_BETH_3_HNS,    MAP_ROUTE26_HNS),
@@ -447,6 +447,12 @@ void DoStandardWildBattle_Debug(void)
 
 void BattleSetup_StartRoamerBattle(void)
 {
+    SetNuzlockeChecks();
+    // A roamer is a one-off encounter that happens to be standing on a route the
+    // player has usually already spent, so it never obeys the Nuzlocke zone flag.
+    // Only the One Type Challenge still applies.
+    NuzlockeIsCaptureBlocked = FALSE;
+    NuzlockeIsSpeciesClauseActive = FALSE;
     LockPlayerFieldControls();
     FreezeObjectEvents();
     StopPlayerAvatar();
@@ -2169,17 +2175,105 @@ static bool8 IsTrainerReadyForRematch_(const struct RematchTrainer *table, u16 t
     return TRUE;
 }
 
+#if IS_HNS
+// HnS rematch teams climb steeply between stages (Joey's Rattata runs 27 -> 30 -> 40 -> 65),
+// so an ungated rematch can be dozens of levels above the player's party the moment the
+// previous stage is beaten. Gate the stage the player is offered on badge count: a stage is
+// only offered once its team fits under the level ceiling for the badges earned so far, so
+// rematches stay farmable at a sane level all game. Stage 1 (the first rematch) is always
+// allowed, since that is what the trainer originally offered.
+static const u8 sRematchLevelCeilingByBadges[NUM_BADGES + 1] =
+{
+    [0]  = 12, // no badges
+    [1]  = 16,
+    [2]  = 20,
+    [3]  = 25, // OW_REMATCH_BADGE_COUNT - rematches unlock here
+    [4]  = 30,
+    [5]  = 32,
+    [6]  = 34,
+    [7]  = 43,
+    [8]  = 47, // Johto complete
+    [9]  = 52, // Kanto badges
+    [10] = 55,
+    [11] = 57,
+    [12] = 59,
+    [13] = 61,
+    [14] = 64,
+    [15] = 67,
+    [16] = MAX_LEVEL,
+};
+
+static u32 GetRematchBadgeCount(void)
+{
+    u32 i, count = 0;
+
+    for (i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
+    {
+        if (FlagGet(i))
+            count++;
+    }
+
+    return count;
+}
+
+static u32 GetTrainerPartyMaxLevel(u16 trainerId)
+{
+    const struct TrainerMon *party = GetTrainerPartyFromId(trainerId);
+    u32 i, partySize = GetTrainerPartySizeFromId(trainerId);
+    u32 maxLevel = 0;
+
+    if (party == NULL)
+        return 0;
+
+    for (i = 0; i < partySize; i++)
+    {
+        if (party[i].lvl > maxLevel)
+            maxLevel = party[i].lvl;
+    }
+
+    return maxLevel;
+}
+
+// Returns the highest rematch stage (index into trainerIds) the player's badge count allows.
+static s32 GetMaxRematchStageForBadges(const struct RematchTrainer *trainerEntry)
+{
+    u32 i, levelCeiling;
+    s32 maxStage = 1;
+
+    // Once the Kanto league is cleared there is nothing left to scale against.
+    if (FlagGet(FLAG_IS_KANTO_CHAMPION))
+        return REMATCHES_COUNT - 1;
+
+    levelCeiling = sRematchLevelCeilingByBadges[GetRematchBadgeCount()];
+
+    for (i = 2; i < REMATCHES_COUNT; i++)
+    {
+        if (trainerEntry->trainerIds[i] == 0)
+            break;
+        if (GetTrainerPartyMaxLevel(trainerEntry->trainerIds[i]) > levelCeiling)
+            break;
+        maxStage = i;
+    }
+
+    return maxStage;
+}
+#endif // IS_HNS
+
 u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBattleTrainerId)
 {
     const struct RematchTrainer *trainerEntry;
     s32 i;
+    s32 maxStage = REMATCHES_COUNT - 1;
     s32 tableId = FirstBattleTrainerIdToRematchTableId(table, firstBattleTrainerId);
 
     if (tableId == -1)
         return FALSE;
 
     trainerEntry = &table[tableId];
-    for (i = 1; i < REMATCHES_COUNT; i++)
+#if IS_HNS
+    maxStage = GetMaxRematchStageForBadges(trainerEntry);
+#endif
+    for (i = 1; i <= maxStage; i++)
     {
         if (trainerEntry->trainerIds[i] == 0) // previous entry was this trainer's last one
             return trainerEntry->trainerIds[i - 1];
@@ -2187,7 +2281,8 @@ u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBa
             return trainerEntry->trainerIds[i];
     }
 
-    return trainerEntry->trainerIds[REMATCHES_COUNT - 1]; // already beaten at max stage
+    // Already beaten every stage the player's badges unlock - keep replaying the highest one.
+    return trainerEntry->trainerIds[maxStage];
 }
 
 static u16 GetLastBeatenRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBattleTrainerId)
