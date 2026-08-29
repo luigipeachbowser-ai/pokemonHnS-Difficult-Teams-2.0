@@ -9441,48 +9441,60 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Light Blue
 
 Pidgey
+Ability: Keen Eye
 Level: 8
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Jolly Nature
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Aerial Ace
 - Sand Attack
 - Gust
 - Quick Attack
 
 Yanma
+Ability: Compound Eyes
 Level: 8
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Timid Nature
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Sonic Boom
 - Quick Attack
 - Supersonic
 - Foresight
 
 Wingull
+Ability: Keen Eye
 Level: 9
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Modest Nature
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Water Gun
 - Supersonic
 - Wing Attack
 - Quick Attack
 
 Zubat
+Ability: Inner Focus
 Level: 9
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Jolly Nature
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Leech Life
 - Astonish
 - Hypnosis
 - Bite
 
 Gligar
+Ability: Hyper Cutter
 Level: 10
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Impish Nature
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Quick Attack
 - Sand Attack
 - Wing Attack
 - Mud Slap
 
 Noctowl @ Sitrus Berry
+Ability: Tinted Lens
 Level: 11
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Calm Nature
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Aerial Ace
 - Faint Attack
 - Hypnosis
@@ -9500,52 +9512,64 @@ Mugshot: Light Blue
 Items: Full Restore / Full Restore
 
 Noctowl @ Sitrus Berry
+Ability: Tinted Lens
 Level: 65
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Wing Attack
 - Hypnosis
 - Dream Eater
+- Psychic
+- Air Slash
 
 Skarmory @ Leftovers
+Ability: Sturdy
 Level: 65
+Nature: Impish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Spikes
+- Roost
 - Drill Peck
 - Toxic
-- Protect
 
-Swellow @ Focus Band
+Swellow @ Flame Orb
+Ability: Guts
 Level: 65
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Endure
-- Flail
-- Drill Peck
-- Steel Wing
+- Facade
+- Brave Bird
+- Quick Attack
+- U-turn
 
-Honchkrow @ Silph Scope
+Honchkrow @ Life Orb
+Ability: Moxie
 Level: 66
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Drill Peck
-- Faint Attack
+- Brave Bird
+- Night Slash
+- Sucker Punch
 - Haze
-- Icy Wind
 
 Pidgeot @ Sitrus Berry
+Ability: Keen Eye
 Level: 65
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
+- Hurricane
+- U-turn
+- Roost
 - Extreme Speed
-- Double Team
-- Steel Wing
 
 Pelipper @ Mystic Water
+Ability: Drizzle
 Level: 68
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
 - Hydro Pump
+- Hurricane
 - Ice Beam
-- Steel Wing
+- Roost
 
 === TRAINER_BUGSY_1_HNS ===
 Name: BUGSY
@@ -9559,51 +9583,68 @@ Mugshot: Green
 Items: Potion / Potion
 
 Pineco
+Ability: Sturdy
 Level: 15
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Impish
+EVs: 20 HP / 20 Def
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Spikes
 - Pin Missile
-- Headbutt
-- Self Destruct
 - Protect
+- Self-Destruct
 
 Ledian
 Ability: Huge Power
 Level: 15
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+EVs: 20 Atk / 20 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Silver Wind
-- Comet Punch
-- Supersonic
+- Drain Punch
+- Mach Punch
 - Reflect
 
-Heracross
+Heracross @ Black Belt
+Ability: Guts
 Level: 15
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+EVs: 20 HP / 20 Atk
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bulk Up
 - Brick Break
-- Horn Attack
 - Fury Cutter
+- Rock Tomb
 
-Butterfree
+Butterfree @ Silver Powder
+Ability: Compound Eyes
 Level: 15
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+EVs: 20 SpA / 20 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Struggle Bug
 - Confusion
-- Sleep Powder
-- Poison Powder
 - Gust
+- Sleep Powder
 
-Beedrill
+Beedrill @ Poison Barb
+Ability: Adaptability
 Level: 15
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Poison Sting
-- Fury Attack
+Nature: Jolly
+EVs: 20 Atk / 20 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Twineedle
+- Fury Attack
 - Pursuit
+- Focus Energy
 
 Scyther @ Berry Juice
+Ability: Technician
 Level: 16
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Nature: Jolly
+EVs: 20 Atk / 20 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Wing Attack
-- Fury Cutter
+- Bug Bite
 - Quick Attack
 - Swords Dance
 
@@ -9618,32 +9659,44 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Green
 Items: Full Restore / Full Restore
 
-Kleavor @ Focus Band
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Swords Dance
-- Rock Slide
-- Aerial Ace
-- Twineedle
-
 Forretress @ Leftovers
+Ability: Sturdy
 Level: 65
+Nature: Impish
+EVs: 252 HP / 252 Def / 4 Atk
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Curse
+- Spikes
+- Toxic Spikes
+- Volt Switch
 - Explosion
-- Pin Missile
-- Spike Cannon
 
-Yanmega @ Berry Juice
+Kleavor @ Focus Band
+Ability: Sharpness
 Level: 65
+Nature: Jolly
+EVs: 252 Atk / 252 Spe / 4 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Air Slash
-- Hypnosis
-- Ancient Power
+- Stone Axe
+- X-Scissor
+- Swords Dance
+- Close Combat
+
+Yanmega @ Life Orb
+Ability: Tinted Lens
+Level: 65
+Nature: Modest
+EVs: 252 SpA / 252 Spe / 4 HP
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bug Buzz
+- Air Slash
+- Giga Drain
+- Hypnosis
 
 Butterfree @ Leftovers
+Ability: Compound Eyes
 Level: 67
+Nature: Timid
+EVs: 252 SpA / 252 Spe / 4 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sleep Powder
 - Bug Buzz
@@ -9651,20 +9704,26 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Substitute
 
 Shedinja @ Focus Band
+Ability: Wonder Guard
 Level: 67
+Nature: Jolly
+EVs: 252 Atk / 252 Spe / 4 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Bug Buzz
-- Giga Drain
-- Air Slash
+- Shadow Sneak
+- X-Scissor
+- Will-O-Wisp
+- Protect
 
 Scizor @ Scope Lens
+Ability: Technician
 Level: 68
+Nature: Adamant
+EVs: 252 HP / 252 Atk / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slash
-- Superpower
-- Wing Attack
 - Swords Dance
+- Bullet Punch
+- Bug Bite
+- Dual Wingbeat
 
 === TRAINER_WHITNEY_1_HNS ===
 Name: WHITNEY
@@ -9675,54 +9734,72 @@ Music: Hg Boy 1
 Double Battle: No
 AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Pink
-Items: Super Potion / Potion
+Items: Super Potion / Super Potion
 
 Clefairy @ Leftovers
+Ability: Magic Guard
 Level: 20
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Nature: Modest
+EVs: 20 HP / 40 SpA
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Calm Mind
+- Draining Kiss
 - Water Pulse
-- Sweet Kiss
-- Secret Power
+- Encore
 
 Porygon2 @ Silk Scarf
+Ability: Trace
 Level: 20
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Shock Wave
-- Psybeam
-- Thunder Wave
+Nature: Modest
+EVs: 40 HP / 20 SpA
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 - Swift
+- Psybeam
+- Shock Wave
+- Thunder Wave
 
 Girafarig @ Twisted Spoon
+Ability: Early Bird
 Level: 20
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Confusion
-- Swift
+Nature: Modest
+EVs: 20 HP / 40 SpA
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+- Psybeam
+- Thunderbolt
 - Calm Mind
 - Reflect
 
 Tauros @ Silk Scarf
+Ability: Intimidate
 Level: 20
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Nature: Jolly
+EVs: 20 HP / 40 Atk
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 - Body Slam
+- Bulldoze
 - Substitute
-- Rock Tomb
-- Iron Tail
+- Zen Headbutt
 
-Farfetchd @ Bright Powder
+Farfetch'd @ Bright Powder
+Ability: Super Luck
 Level: 21
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Nature: Jolly
+EVs: 20 Atk / 40 Spe
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 - Knock Off
 - Aerial Ace
-- Body Slam
 - Swords Dance
+- Quick Attack
 
 Miltank @ Sitrus Berry
+Ability: Scrappy
 Level: 21
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Nature: Jolly
+EVs: 20 HP / 40 Atk
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+- Body Slam
 - Rollout
 - Attract
-- Stomp
 - Milk Drink
 
 === TRAINER_WHITNEY_2_HNS ===
@@ -9737,52 +9814,70 @@ Mugshot: Pink
 Items: Full Restore / Full Restore
 
 Clefable @ Leftovers
+Ability: Magic Guard
 Level: 65
+Nature: Bold
+EVs: 252 HP / 252 Def / 4 SpA
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Calm Mind
 - Moonblast
-- Ice Beam
-- Encore
+- Flamethrower
+- Moonlight
 
 Porygon-Z @ Chesto Berry
+Ability: Adaptability
 Level: 65
+Nature: Timid
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
 - Tri Attack
 - Thunderbolt
 - Shadow Ball
+- Nasty Plot
 
 Blissey @ Leftovers
+Ability: Natural Cure
 Level: 65
+Nature: Bold
+EVs: 252 HP / 252 Def / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Egg Bomb
-- Attract
-- Soft Boiled
-- Light Screen
+- Seismic Toss
+- Thunder Wave
+- Soft-Boiled
+- Stealth Rock
 
-Tauros @ Silk Scarf
+Tauros @ Life Orb
+Ability: Sheer Force
 Level: 66
+Nature: Jolly
+EVs: 4 HP / 252 Atk / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Double Edge
+- Body Slam
+- Close Combat
 - Earthquake
-- Blaze Kick
-- Pursuit
+- Rock Slide
 
 Miltank @ Silk Scarf
+Ability: Sap Sipper
 Level: 67
+Nature: Jolly
+EVs: 4 HP / 252 Atk / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Tail
-- Attract
 - Body Slam
+- Earthquake
 - Milk Drink
+- Heal Bell
 
 Wyrdeer @ Silk Scarf
+Ability: Intimidate
 Level: 68
+Nature: Modest
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psycho Cut
-- Jump Kick
-- Blaze Kick
-- Double Edge
+- Psychic
+- Hyper Voice
+- Calm Mind
+- Thunderbolt
 
 === TRAINER_MORTY_1_HNS ===
 Name: MORTY
@@ -9796,53 +9891,70 @@ Mugshot: Purple
 Items: Super Potion / Super Potion
 
 Banette @ Leftovers
+Ability: Insomnia
 Level: 24
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Shadow Ball
-- Will O Wisp
+Nature: Adamant
+EVs: 45 HP / 45 Atk
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Shadow Sneak
+- Knock Off
+- Will-O-Wisp
 - Curse
-- Thunderbolt
 
-Froslass @ Quick Claw
+Froslass @ Focus Sash
+Ability: Cursed Body
 Level: 23
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+Nature: Timid
+EVs: 45 SpA / 45 Spe
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Shadow Ball
-- Confuse Ray
 - Icy Wind
-- Toxic
+- Taunt
+- Destiny Bond
 
-Mismagius @ Quick Claw
+Mismagius @ Spell Tag
+Ability: Levitate
 Level: 24
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
+Nature: Timid
+EVs: 45 SpA / 45 Spe
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Shadow Ball
-- Thunderbolt
-- Perish Song
+- Mystical Fire
 - Psychic
+- Nasty Plot
 
 Shedinja @ Focus Band
+Ability: Wonder Guard
 Level: 23
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Air Slash
-- Bug Buzz
-- Shadow Ball
-- Toxic
+Nature: Jolly
+EVs: 45 Atk / 45 Spe
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Shadow Sneak
+- X-Scissor
+- Will-O-Wisp
+- Protect
 
-Dusknoir @ Chesto Berry
+Dusknoir @ Sitrus Berry
+Ability: Pressure
 Level: 24
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Shadow Ball
-- Brick Break
-- Toxic
-- Rest
+Nature: Impish
+EVs: 45 HP / 45 Def
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Shadow Punch
+- Will-O-Wisp
+- Pain Split
+- Protect
 
-Gengar @ Bright Powder
+Gengar @ Spell Tag
 Ability: Levitate
 Level: 25
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Psychic
+Nature: Timid
+EVs: 45 SpA / 45 Spe
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Shadow Ball
 - Sludge Bomb
-- Focus Blast
+- Thunderbolt
+- Destiny Bond
 
 === TRAINER_MORTY_2_HNS ===
 Name: MORTY
@@ -9856,52 +9968,70 @@ Mugshot: Purple
 Items: Full Restore / Full Restore
 
 Sableye @ Leftovers
+Ability: Prankster
 Level: 65
+Nature: Careful
+EVs: 252 HP / 4 Def / 252 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Claw
-- Toxic
+- Knock Off
+- Will-O-Wisp
 - Taunt
-- Detect
+- Recover
 
-Froslass @ Never Melt Ice
+Froslass @ Focus Sash
+Ability: Cursed Body
 Level: 65
+Nature: Timid
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blizzard
-- Shadow Ball
-- Confuse Ray
-- Toxic
+- Spikes
+- Taunt
+- Icy Wind
+- Destiny Bond
 
 Wyrdeer @ Spell Tag
+Ability: Intimidate
 Level: 65
+Nature: Modest
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psycho Cut
-- Double Edge
-- Blaze Kick
-- Megahorn
+- Psychic
+- Hyper Voice
+- Shadow Ball
+- Calm Mind
 
 Mismagius @ Twisted Spoon
+Ability: Levitate
 Level: 66
+Nature: Timid
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
 - Shadow Ball
-- Psychic
-- Pain Split
-- Perish Song
+- Power Gem
+- Taunt
 
-Gengar @ Sitrus Berry
+Gengar @ Life Orb
+Ability: Cursed Body
 Level: 67
+Nature: Timid
+EVs: 4 Def / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
+- Sludge Wave
 - Focus Blast
 - Thunderbolt
-- Hypnosis
 
 Dusknoir @ Sitrus Berry
+Ability: Frisk
 Level: 69
+Nature: Relaxed
+EVs: 252 HP / 112 Atk / 144 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Punch
-- Fire Punch
-- Will O Wisp
-- Dark Pulse
+- Trick Room
+- Will-O-Wisp
+- Brick Break
+- Memento
 
 === TRAINER_PRYCE_1_HNS ===
 Name: PRYCE
@@ -9915,51 +10045,69 @@ Mugshot: Light Blue
 Items: Super Potion / Super Potion
 
 Dewgong @ Leftovers
+Ability: Thick Fat
 Level: 31
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Calm
+EVs: 60 HP / 40 SpD
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Surf
 - Blizzard
-- Sleep Talk
 - Rest
+- Sleep Talk
 
 Weavile @ Focus Band
+Ability: Pressure
 Level: 32
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Jolly
+EVs: 40 Atk / 60 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Ice Punch
+- Knock Off
 - Iron Tail
 - Swords Dance
-- Ice Punch
-- Pursuit
 
 Jynx @ Twisted Spoon
+Ability: Dry Skin
 Level: 31
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Timid
+EVs: 40 SpA / 60 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Blizzard
 - Psychic
 - Lovely Kiss
 - Calm Mind
 
-Glalie @ Never Melt Ice
+Glalie @ Never-Melt Ice
+Ability: Inner Focus
 Level: 31
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Timid
+EVs: 40 SpA / 60 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Blizzard
 - Spikes
 - Taunt
 - Explosion
 
 Cloyster @ Leftovers
+Ability: Skill Link
 Level: 32
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-- Surf
+Nature: Adamant
+EVs: 60 Atk / 40 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Icicle Spear
+- Rock Blast
+- Razor Shell
 - Spikes
-- Explosion
-- Hidden Power
 
 Mamoswine @ Sitrus Berry
+Ability: Thick Fat
 Level: 33
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-- Body Slam
+Nature: Adamant
+EVs: 60 Atk / 40 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Earthquake
-- Ice Ball
+- Icicle Crash
+- Ice Shard
 - Rock Slide
 
 === TRAINER_PRYCE_2_HNS ===
@@ -9973,53 +10121,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Light Blue
 Items: Full Restore / Full Restore
 
-Weavile @ Never Melt Ice
+Weavile @ Choice Band
+Ability: Pressure
 Level: 65
+Nature: Jolly
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Faint Attack
-- Metal Claw
-- Beat Up
-- Ice Punch
+- Icicle Crash
+- Knock Off
+- Ice Shard
+- Low Kick
 
-Dewgong @ Sitrus Berry
+Dewgong @ Leftovers
+Ability: Thick Fat
 Level: 65
+Nature: Calm
+EVs: 252 HP / 4 Def / 252 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Surf
 - Blizzard
 - Rest
-- Encore
+- Sleep Talk
 
-Jynx @ Never Melt Ice
+Jynx @ Never-Melt Ice
+Ability: Dry Skin
 Level: 65
+Nature: Timid
+EVs: 4 Def / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
+- Lovely Kiss
 - Blizzard
 - Psychic
-- Shadow Ball
-- Lovely Kiss
 
-Froslass @ Spell Tag
+Froslass @ Focus Sash
+Ability: Cursed Body
 Level: 66
+Nature: Timid
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
+- Spikes
+- Taunt
 - Blizzard
-- Will O Wisp
 - Destiny Bond
 
-Mamoswine @ Soft Sand
+Mamoswine @ Life Orb
+Ability: Thick Fat
 Level: 67
+Nature: Adamant
+EVs: 252 Atk / 4 Def / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Ball
 - Earthquake
+- Icicle Crash
+- Ice Shard
 - Rock Slide
-- Double Edge
 
 Glalie @ Bright Powder
+Ability: Moody
 Level: 69
+Nature: Timid
+EVs: 4 HP / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sheer Cold
-- Earthquake
-- Dark Pulse
+- Protect
+- Substitute
 - Blizzard
+- Taunt
 
 === TRAINER_PRYCE_1_2_HNS ===
 Name: PRYCE
@@ -10033,51 +10199,69 @@ Mugshot: Light Blue
 Items: Full Restore / Full Restore
 
 Dewgong @ Leftovers
+Ability: Thick Fat
 Level: 33
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Calm
+EVs: 84 HP / 4 Def / 76 SpD
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Surf
 - Blizzard
-- Sleep Talk
 - Rest
+- Sleep Talk
 
-Weavile @ Focus Band
+Weavile @ Never-Melt Ice
+Ability: Pressure
 Level: 34
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Jolly
+EVs: 4 HP / 76 Atk / 84 Spe
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Ice Punch
+- Knock Off
 - Iron Tail
 - Swords Dance
-- Ice Punch
-- Pursuit
 
 Jynx @ Twisted Spoon
+Ability: Dry Skin
 Level: 34
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Timid
+EVs: 4 HP / 76 SpA / 84 Spe
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Blizzard
 - Psychic
 - Lovely Kiss
 - Calm Mind
 
-Glalie @ Never Melt Ice
+Glalie @ Never-Melt Ice
+Ability: Inner Focus
 Level: 34
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Timid
+EVs: 4 HP / 76 SpA / 84 Spe
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Blizzard
 - Spikes
 - Taunt
 - Explosion
 
 Cloyster @ Leftovers
+Ability: Skill Link
 Level: 35
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-- Surf
+Nature: Adamant
+EVs: 84 Atk / 81 HP
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Icicle Spear
+- Rock Blast
+- Razor Shell
 - Spikes
-- Explosion
-- Hidden Power
 
 Mamoswine @ Sitrus Berry
+Ability: Thick Fat
 Level: 35
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-- Body Slam
+Nature: Adamant
+EVs: 84 Atk / 81 HP
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Earthquake
-- Ice Ball
+- Icicle Crash
+- Ice Shard
 - Rock Slide
 
 === TRAINER_PRYCE_1_3_HNS ===
@@ -10091,52 +10275,70 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Light Blue
 Items: Full Restore / Full Restore
 
-Glalie @ Never Melt Ice
+Glalie @ Never-Melt Ice
+Ability: Inner Focus
 Level: 38
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Timid
+EVs: 4 HP / 92 SpA / 104 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Blizzard
 - Spikes
 - Taunt
 - Explosion
 
 Dewgong @ Leftovers
+Ability: Thick Fat
 Level: 38
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Calm
+EVs: 100 HP / 100 SpD
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Surf
 - Blizzard
-- Sleep Talk
 - Rest
+- Sleep Talk
 
-Weavile @ Never Melt Ice
+Weavile @ Never-Melt Ice
+Ability: Pressure
 Level: 38
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-- Iron Tail
-- Swords Dance
+Nature: Jolly
+EVs: 4 HP / 92 Atk / 104 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Ice Punch
-- Pursuit
+- Knock Off
+- Ice Shard
+- Swords Dance
 
 Jynx @ Twisted Spoon
+Ability: Dry Skin
 Level: 38
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Nature: Timid
+EVs: 4 HP / 92 SpA / 104 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Blizzard
 - Psychic
 - Lovely Kiss
 - Calm Mind
 
 Cloyster @ Leftovers
+Ability: Skill Link
 Level: 38
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-- Surf
+Nature: Adamant
+EVs: 100 Atk / 100 HP
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Icicle Spear
+- Rock Blast
+- Razor Shell
 - Spikes
-- Explosion
-- Hidden Power
 
 Mamoswine @ Sitrus Berry
+Ability: Thick Fat
 Level: 38
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-- Body Slam
+Nature: Adamant
+EVs: 100 Atk / 100 HP
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Earthquake
-- Ice Ball
+- Icicle Crash
+- Ice Shard
 - Rock Slide
 
 === TRAINER_JASMINE_1_HNS ===
@@ -10151,52 +10353,71 @@ Mugshot: Yellow
 Items: Super Potion / Super Potion
 
 Skarmory @ Leftovers
+Ability: Sturdy
+Nature: Impish
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 HP / 65 Def
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Spikes
 - Drill Peck
-- Swagger
-- Steel Wing
+- Roost
+- Whirlwind
 
 Metang @ Focus Band
+Ability: Clear Body
+Nature: Adamant
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 HP / 65 Atk
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Meteor Mash
-- Protect
-- Toxic
+- Bullet Punch
+- Zen Headbutt
 - Earthquake
 
-Magnezone @ Focus Band
+Magnezone @ Sitrus Berry
+Ability: Sturdy
+Nature: Modest
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 SpA / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Thunder
-- Tri Attack
+- Flash Cannon
 - Thunder Wave
-- Toxic
+- Volt Switch
 
 Mawile @ Focus Band
+Ability: Intimidate
+Nature: Impish
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flash Cannon
-- Iron Defense
-- Baton Pass
+EVs: 100 HP / 65 Def
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Play Rough
+- Iron Defense
+- Sucker Punch
+- Baton Pass
 
 Lairon @ Hard Stone
+Ability: Sturdy
+Nature: Adamant
 Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Rock Slide
-- Iron Tail
-- Swords Dance
+- Iron Head
 - Earthquake
+- Stealth Rock
 
-Steelix @ Quick Claw
+Steelix @ Sitrus Berry
+Ability: Sturdy
+Nature: Adamant
 Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Crunch
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Heavy Slam
 - Earthquake
 - Rock Slide
-- Iron Tail
+- Crunch
+
 
 === TRAINER_JASMINE_2_HNS ===
 Name: JASMINE
@@ -10210,52 +10431,71 @@ Mugshot: Yellow
 Items: Full Restore / Full Restore
 
 Skarmory @ Leftovers
+Ability: Sturdy
+Nature: Impish
 Level: 65
+EVs: 252 HP / 232 Def / 24 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Spikes
-- Drill Peck
-- Swagger
-- Steel Wing
+- Roost
+- Whirlwind
+- Brave Bird
 
-Mawile @ Leftovers
+Magnezone @ Choice Specs
+Ability: Magnet Pull
+Nature: Modest
 Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+IVs: 30 HP / 31 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe
+- Thunder
 - Flash Cannon
-- Iron Defense
-- Baton Pass
-- Play Rough
+- Volt Switch
+- Hidden Power
 
-Metagross @ Focus Band
+Metagross @ Assault Vest
+Ability: Clear Body
+Nature: Jolly
 Level: 66
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Mash
-- Protect
+- Bullet Punch
 - Earthquake
 - Thunder Punch
 
-Magnezone @ Sitrus Berry
+Mawile @ Leftovers
+Ability: Intimidate
+Nature: Impish
 Level: 66
+EVs: 252 HP / 252 Def / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tri Attack
-- Substitute
-- Flash Cannon
-- Thunder
+- Play Rough
+- Iron Defense
+- Sucker Punch
+- Baton Pass
 
-Aggron @ Hard Stone
-Level: 66
+Aggron @ Choice Band
+Ability: Rock Head
+Nature: Adamant
+Level: 67
+EVs: 252 Atk / 4 Def / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rock Slide
-- Iron Tail
-- Swords Dance
+- Head Smash
+- Heavy Slam
 - Earthquake
+- Aqua Tail
 
-Steelix @ Quick Claw
-Level: 68
+Steelix @ Leftovers
+Ability: Sturdy
+Nature: Impish
+Level: 69
+EVs: 252 HP / 252 Def / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
+- Stealth Rock
+- Heavy Slam
 - Earthquake
-- Rock Slide
-- Iron Tail
+- Roar
+
 
 === TRAINER_JASMINE_1_2_HNS ===
 Name: JASMINE
@@ -10269,52 +10509,71 @@ Mugshot: Yellow
 Items: Full Restore / Full Restore
 
 Mawile @ Focus Band
+Ability: Intimidate
+Nature: Impish
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flash Cannon
-- Iron Defense
-- Baton Pass
+EVs: 100 HP / 65 Def
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Play Rough
+- Iron Defense
+- Sucker Punch
+- Baton Pass
 
 Skarmory @ Leftovers
+Ability: Sturdy
+Nature: Impish
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 HP / 65 Def
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Spikes
 - Drill Peck
-- Swagger
-- Steel Wing
+- Roost
+- Whirlwind
 
 Metang @ Focus Band
+Ability: Clear Body
+Nature: Adamant
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 HP / 65 Atk
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Meteor Mash
-- Protect
-- Toxic
+- Bullet Punch
+- Zen Headbutt
 - Earthquake
 
-Magnezone @ Focus Band
+Magnezone @ Sitrus Berry
+Ability: Magnet Pull
+Nature: Modest
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 SpA / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Thunder
-- Tri Attack
+- Flash Cannon
 - Thunder Wave
-- Toxic
+- Volt Switch
 
 Aggron @ Hard Stone
+Ability: Rock Head
+Nature: Adamant
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Rock Slide
-- Iron Tail
-- Swords Dance
+- Iron Head
 - Earthquake
+- Swords Dance
 
 Steelix @ Quick Claw
+Ability: Sturdy
+Nature: Adamant
 Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Crunch
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Heavy Slam
 - Earthquake
 - Rock Slide
-- Iron Tail
+- Curse
+
 
 === TRAINER_JASMINE_1_3_HNS ===
 Name: JASMINE
@@ -10328,52 +10587,71 @@ Mugshot: Yellow
 Items: Full Restore / Full Restore
 
 Mawile @ Focus Band
+Ability: Intimidate
+Nature: Impish
 Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flash Cannon
-- Iron Defense
-- Baton Pass
+EVs: 100 HP / 60 Def / 60 SpD
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Play Rough
+- Iron Defense
+- Sucker Punch
+- Baton Pass
 
 Skarmory @ Leftovers
+Ability: Sturdy
+Nature: Impish
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 100 Def / 20 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Spikes
-- Drill Peck
-- Swagger
-- Steel Wing
+- Brave Bird
+- Roost
+- Whirlwind
 
-Metagross @ Focus Band
+Metagross @ Assault Vest
+Ability: Clear Body
+Nature: Adamant
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 100 Atk / 20 SpD
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Meteor Mash
-- Protect
-- Toxic
+- Bullet Punch
+- Earthquake
 - Thunder Punch
 
-Magnezone @ Focus Band
+Magnezone @ Sitrus Berry
+Ability: Magnet Pull
+Nature: Modest
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 100 SpA / 20 SpD
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Thunder
-- Tri Attack
-- Light Screen
 - Flash Cannon
+- Light Screen
+- Volt Switch
 
 Aggron @ Hard Stone
+Ability: Rock Head
+Nature: Adamant
 Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rock Slide
-- Iron Tail
-- Swords Dance
+EVs: 100 HP / 100 Atk / 20 Def
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Iron Head
+- Head Smash
 - Earthquake
+- Swords Dance
 
 Steelix @ Quick Claw
+Ability: Sturdy
+Nature: Adamant
 Level: 38
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Crunch
+EVs: 100 HP / 100 Atk / 20 Def
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Heavy Slam
 - Earthquake
 - Rock Slide
-- Iron Tail
+- Curse
+
 
 === TRAINER_CHUCK_1_HNS ===
 Name: CHUCK
@@ -10387,52 +10665,71 @@ Mugshot: Orange
 Items: Super Potion / Super Potion
 
 Ursaring @ Lum Berry
+Ability: Guts
+Nature: Adamant
 Level: 32
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Earthquake
+EVs: 100 HP / 65 Atk
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Slash
 - Brick Break
-- Body Slam
+- Earthquake
 - Swords Dance
 
 Primeape @ Bright Powder
+Ability: Vital Spirit
+Nature: Jolly
 Level: 32
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+EVs: 4 HP / 100 Atk / 61 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Low Kick
-- Earthquake
+- Rock Tomb
 - Ice Punch
-- Aerial Ace
+- U-turn
 
 Gallade @ Black Belt
+Ability: Steadfast
+Nature: Adamant
 Level: 32
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Psycho Cut
-- Play Rough
-- Brick Break
+- Drain Punch
+- Knock Off
 - Swords Dance
 
-Machamp @ Choice Band
+Machamp @ Sitrus Berry
+Ability: No Guard
+Nature: Adamant
 Level: 32
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Dynamic Punch
 - Rock Slide
-- Ice Punch
-- Thunder Punch
-- Cross Chop
+- Knock Off
+- Bullet Punch
 
 Electabuzz @ Lum Berry
+Ability: Vital Spirit
+Nature: Timid
 Level: 32
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Thunder Punch
-- Brick Break
-- Substitute
-- Toxic
+EVs: 100 SpA / 65 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Thunderbolt
+- Psychic
+- Focus Blast
+- Volt Switch
 
 Poliwrath @ Sitrus Berry
+Ability: Water Absorb
+Nature: Adamant
 Level: 33
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+EVs: 100 HP / 65 Atk
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Waterfall
+- Brick Break
 - Hypnosis
 - Belly Drum
-- Waterfall
-- Body Slam
+
 
 === TRAINER_CHUCK_2_HNS ===
 Name: CHUCK
@@ -10445,53 +10742,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Orange
 Items: Full Restore / Full Restore
 
-Ursaluna @ Silph Scope
-Level: 66
+Ursaluna @ Flame Orb
+Ability: Guts
+Nature: Adamant
+Level: 65
+EVs: 252 Atk / 4 SpD / 252 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Facade
 - Earthquake
-- Play Rough
-- Slash
-- Swords Dance
-
-Blaziken @ Charcoal
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blaze Kick
-- Thunder Punch
-- Bulk Up
+- Crunch
 - Protect
 
+Blaziken @ Life Orb
+Ability: Speed Boost
+Nature: Adamant
+Level: 66
+EVs: 252 Atk / 4 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flare Blitz
+- High Jump Kick
+- Protect
+- Swords Dance
+
 Annihilape @ Choice Band
+Ability: Defiant
+Nature: Jolly
 Level: 66
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Punch
-- Brick Break
+- Close Combat
+- Rage Fist
+- U-turn
 - Ice Punch
-- Fire Punch
 
-Electivire @ Black Belt
+Electivire @ Expert Belt
+Ability: Motor Drive
+Nature: Jolly
 Level: 66
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Punch
-- Brick Break
+- Wild Charge
 - Earthquake
-- Iron Tail
+- Ice Punch
+- Cross Chop
 
-Medicham @ Bright Powder
+Medicham @ Choice Scarf
+Ability: Pure Power
+Nature: Jolly
 Level: 66
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hi Jump Kick
-- Thunder Punch
-- Psychic
-- Attract
+- High Jump Kick
+- Zen Headbutt
+- Ice Punch
+- Fake Out
 
 Poliwrath @ Sitrus Berry
+Ability: Water Absorb
+Nature: Adamant
 Level: 68
+EVs: 252 HP / 252 Atk / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Waterfall
-- Dynamic Punch
 - Belly Drum
-- Body Slam
+- Waterfall
+- Drain Punch
+- Ice Punch
 
 === TRAINER_CHUCK_1_2_HNS ===
 Name: CHUCK
@@ -10504,53 +10819,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Orange
 Items: Full Restore / Full Restore
 
-Ursaring @ Leftovers
+Ursaring @ Flame Orb
+Ability: Guts
+Nature: Adamant
 Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Earthquake
+EVs: 100 HP / 65 Atk
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Facade
 - Brick Break
-- Body Slam
-- Swords Dance
-
-Blaziken @ Charcoal
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Blaze Kick
-- Thunder Punch
-- Bulk Up
+- Earthquake
 - Protect
 
-Primeape
+Blaziken @ Charcoal
+Ability: Speed Boost
+Nature: Adamant
 Level: 36
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-- Low Kick
-- Earthquake
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Blaze Kick
+- Double Kick
+- Thunder Punch
+- Protect
+
+Primeape @ Bright Powder
+Ability: Vital Spirit
+Nature: Jolly
+Level: 36
+EVs: 4 HP / 100 Atk / 61 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Close Combat
+- Rock Tomb
 - Ice Punch
-- Aerial Ace
+- U-turn
 
 Electivire @ Black Belt
+Ability: Motor Drive
+Nature: Adamant
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 Atk / 65 Spe
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Thunder Punch
 - Brick Break
 - Earthquake
-- Iron Tail
+- Ice Punch
 
-Gallade @ Bright Powder
+Gallade @ Sitrus Berry
+Ability: Steadfast
+Nature: Adamant
 Level: 36
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 Atk / 65 HP
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Psycho Cut
-- Play Rough
-- Brick Break
+- Drain Punch
+- Knock Off
 - Swords Dance
 
 Poliwrath @ Sitrus Berry
+Ability: Water Absorb
+Nature: Adamant
 Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+EVs: 100 HP / 65 Atk
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Waterfall
+- Brick Break
 - Hypnosis
 - Belly Drum
-- Waterfall
-- Body Slam
+
 
 === TRAINER_CHUCK_1_3_HNS ===
 Name: CHUCK
@@ -10563,53 +10897,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Orange
 Items: Full Restore / Full Restore
 
-Ursaluna @ Silph Scope
+Ursaluna @ Flame Orb
+Ability: Guts
+Nature: Adamant
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 100 Atk / 20 SpD
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Facade
 - Earthquake
-- Brick Break
-- Slash
+- Crunch
 - Swords Dance
 
 Blaziken @ Charcoal
+Ability: Speed Boost
+Nature: Adamant
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 Atk / 100 Spe / 20 HP
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Blaze Kick
+- Sky Uppercut
 - Thunder Punch
-- Bulk Up
 - Protect
 
 Annihilape @ Choice Band
+Ability: Defiant
+Nature: Jolly
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Shadow Punch
-- Brick Break
+EVs: 100 Atk / 100 Spe / 20 HP
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Close Combat
+- Rage Fist
 - Ice Punch
-- Fire Punch
+- U-turn
 
-Electivire @ Black Belt
+Electivire @ Expert Belt
+Ability: Motor Drive
+Nature: Adamant
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Thunder Punch
+EVs: 100 Atk / 100 Spe / 20 HP
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Wild Charge
 - Brick Break
 - Earthquake
-- Iron Tail
+- Ice Punch
 
-Gallade @ Bright Powder
+Gallade @ Sitrus Berry
+Ability: Steadfast
+Nature: Jolly
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 Atk / 100 Spe / 20 HP
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Psycho Cut
-- Play Rough
-- Brick Break
+- Close Combat
+- Knock Off
 - Swords Dance
 
 Poliwrath @ Sitrus Berry
+Ability: Water Absorb
+Nature: Adamant
 Level: 38
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Ice Punch
-- Belly Drum
+EVs: 100 HP / 100 Atk / 20 SpD
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Waterfall
-- Body Slam
+- Drain Punch
+- Hypnosis
+- Belly Drum
+
 
 === TRAINER_CLAIR_1_HNS ===
 Name: CLAIR
@@ -10617,58 +10970,76 @@ Class: Leader Hns
 Pic: Leader Clair Hns
 Gender: Male
 Music: Hg Boy 1
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Blue
 Items: Full Restore / Full Restore
 
-Altaria @ Focus Band
+Altaria @ Leftovers
+Ability: Natural Cure
+Nature: Calm
 Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+EVs: 100 HP / 100 SpD / 85 Spe
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Dragon Pulse
 - Moonblast
-- Toxic
-- Perish Song
+- Roost
+- Helping Hand
 
 Gyarados @ Lum Berry
+Ability: Intimidate
+Nature: Jolly
 Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+EVs: 100 Atk / 100 Spe / 85 HP
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Dragon Dance
 - Waterfall
-- Crunch
-- Earthquake
+- Ice Fang
+- Protect
 
 Lapras @ Chesto Berry
+Ability: Water Absorb
+Nature: Modest
 Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+EVs: 100 HP / 100 SpA / 85 SpD
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Surf
 - Ice Beam
-- Body Slam
-- Rest
+- Thunderbolt
+- Protect
 
 Salamence @ Sitrus Berry
+Ability: Intimidate
+Nature: Jolly
 Level: 44
-IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+EVs: 100 Atk / 100 Spe / 85 HP
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Dragon Dance
-- Dragon Claw
-- Flamethrower
 - Earthquake
+- Dragon Claw
+- Protect
 
-Dragonite @ Leftovers
+Dragonite @ Weakness Policy
+Ability: Multiscale
+Nature: Adamant
 Level: 44
-IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
-- Dragon Pulse
-- Thunderbolt
-- Ice Beam
-- Fire Blast
+EVs: 100 Atk / 100 Spe / 85 HP
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Dragon Dance
+- Earthquake
+- Extreme Speed
+- Protect
 
-Kingdra @ Dragon Fang
+Kingdra @ Scope Lens
+Ability: Sniper
+Nature: Modest
 Level: 45
-IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
-- Substitute
-- Surf
-- Hydro Pump
+EVs: 100 SpA / 100 Spe / 85 HP
+IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
+- Focus Energy
+- Muddy Water
 - Dragon Pulse
+- Protect
 
 === TRAINER_CLAIR_2_HNS ===
 Name: CLAIR
@@ -10681,53 +11052,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Blue
 Items: Full Restore / Full Restore
 
-Dragonite @ Metal Coat
+Dragonite @ Lum Berry
+Ability: Multiscale
+Nature: Adamant
 Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Wave
-- Thunderbolt
-- Fire Blast
-- Iron Tail
-
-Gyarados @ Lum Berry
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
-- Waterfall
-- Earthquake
-- Dragon Dance
-
-Salamence @ Sitrus Berry
-Level: 68
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
 - Dragon Claw
-- Flamethrower
+- Extreme Speed
+- Roost
+
+Gyarados @ Flyinium Z
+Ability: Intimidate
+Nature: Jolly
+Level: 66
+EVs: 252 Atk / 4 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Dance
+- Waterfall
+- Bounce
 - Earthquake
 
-Latias @ Sitrus Berry
+Salamence @ Life Orb
+Ability: Intimidate
+Nature: Naive
 Level: 68
+EVs: 252 Atk / 4 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Dance
+- Dragon Claw
+- Earthquake
+- Fire Blast
+
+Latias @ Soul Dew
+Ability: Levitate
+Nature: Timid
+Level: 68
+EVs: 252 SpA / 4 SpD / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Calm Mind
 - Dragon Pulse
 - Psychic
-- Calm Mind
-- Ice Beam
+- Recover
 
-Flygon @ White Herb
+Flygon @ Choice Scarf
+Ability: Levitate
+Nature: Jolly
 Level: 70
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bug Buzz
-- Earth Power
-- Dragon Pulse
-- Hyper Beam
+- Earthquake
+- Dragon Claw
+- U-turn
+- Rock Slide
 
-Kingdra @ Leftovers
+Kingdra @ Choice Specs
+Ability: Sniper
+Nature: Modest
 Level: 70
+EVs: 252 SpA / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flash Cannon
 - Hydro Pump
+- Draco Meteor
 - Ice Beam
-- Dragon Pulse
+- Flash Cannon
 
 === TRAINER_BROCK_HNS ===
 Name: BROCK
@@ -10741,52 +11130,70 @@ Mugshot: Orange
 Items: Full Restore / Full Restore
 
 Sudowoodo @ Choice Band
+Ability: Rock Head
+Nature: Adamant
 Level: 66
+EVs: 252 Atk / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Brick Break
+- Wood Hammer
 - Rock Slide
+- Earthquake
 - Explosion
-- Earthquake
 
-Aerodactyl @ Hard Stone
+Sandslash @ Life Orb
+Ability: Sand Rush
+Nature: Jolly
 Level: 66
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rock Slide
-- Wing Attack
 - Earthquake
-- Fire Blast
-
-Kabutops @ Scope Lens
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Waterfall
 - Rock Slide
-- Giga Drain
+- Knock Off
 - Swords Dance
 
-Omastar @ Focus Band
+Aerodactyl @ Focus Sash
+Ability: Unnerve
+Nature: Jolly
 Level: 66
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ancient Power
-- Ice Beam
-- Surf
-- Toxic
-
-Regirock @ Hard Stone
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Explosion
-- Rock Slide
-- Thunder Wave
+- Stealth Rock
+- Taunt
+- Stone Edge
 - Earthquake
 
-Tyranitar @ Quick Claw
+Omastar @ White Herb
+Ability: Weak Armor
+Nature: Modest
 Level: 66
+EVs: 252 SpA / 252 Spe / 6 Def
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shell Smash
+- Hydro Pump
+- Ice Beam
+- Earth Power
+
+Rhyperior @ Leftovers
+Ability: Solid Rock
+Nature: Adamant
+Level: 67
+EVs: 252 HP / 252 Atk / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Earthquake
+- Rock Blast
+- Megahorn
+
+Tyranitar @ Lum Berry
+Ability: Sand Stream
+Nature: Jolly
+Level: 68
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
-- Rock Slide
+- Stone Edge
 - Crunch
-- Earthquake
+- Ice Punch
 
 === TRAINER_MISTY_HNS ===
 Name: MISTY
@@ -10799,53 +11206,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Light Blue
 Items: Full Restore / Full Restore
 
-Kyogre @ Leftovers
+Kyogre @ Choice Specs
+Ability: Drizzle
+Nature: Modest
 Level: 62
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Calm Mind
-- Surf
+- Water Spout
+- Origin Pulse
 - Ice Beam
-- Substitute
+- Thunder
 
-Ludicolo @ Quick Claw
+Ludicolo @ Life Orb
+Ability: Swift Swim
+Nature: Modest
 Level: 62
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Leech Seed
-- Toxic
-- Protect
-
-Kingdra @ Leftovers
-Level: 62
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hydro Pump
-- Dragon Pulse
-- Rain Dance
+- Giga Drain
 - Ice Beam
+- Rain Dance
+
+Kingdra @ Choice Specs
+Ability: Swift Swim
+Nature: Modest
+Level: 62
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Draco Meteor
+- Ice Beam
+- Flash Cannon
 
 Milotic @ Leftovers
+Ability: Competitive
+Nature: Bold
 Level: 62
+EVs: 252 HP / 252 Def / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
+- Scald
 - Ice Beam
-- Rest
-- Sleep Talk
+- Recover
+- Haze
 
 Swampert @ Leftovers
+Ability: Damp
+Nature: Adamant
 Level: 62
+EVs: 252 HP / 252 Atk / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Waterfall
+- Stealth Rock
 - Earthquake
+- Waterfall
 - Roar
-- Protect
 
-Starmie @ Mystic Water
+Starmie @ Life Orb
+Ability: Analytic
+Nature: Timid
 Level: 63
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Psychic
-- Recover
-- Thunderbolt
+- Hydro Pump
+- Thunder
+- Ice Beam
+- Rapid Spin
 
 === TRAINER_LTSURGE_HNS ===
 Name: LTSURGE
@@ -10858,53 +11283,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Items: Full Restore / Full Restore
 Mugshot: Yellow
 
-Electrode @ Focus Band
+Electrode @ Focus Sash
+Ability: Aftermath
+Nature: Timid
 Level: 57
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
-- Rain Dance
-- Thunder Wave
+- Volt Switch
+- Taunt
 - Explosion
 
-Magnezone @ Focus Band
+Magnezone @ Choice Specs
+Ability: Magnet Pull
+Nature: Modest
 Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunderbolt
-- Thunder Wave
-- Toxic
-- Protect
+EVs: 252 SpA / 252 HP / 6 SpD
+IVs: 31 HP / 0 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+- Thunder
+- Flash Cannon
+- Volt Switch
+- Hidden Power
 
-Regieleki @ Leftovers
+Regieleki @ Magnet
+Ability: Transistor
+Nature: Timid
 Level: 58
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Reflect
-- Light Screen
 - Thunderbolt
+- Volt Switch
+- Electro Ball
 - Rapid Spin
 
-Raichu @ Magnet
+Raichu @ Life Orb
+Ability: Lightning Rod
+Nature: Timid
 Level: 60
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Rain Dance
-- Body Slam
-- Surf
-
-Manectric @ Focus Band
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Overheat
-- Thunder
-- Thunder Wave
-- Crunch
-
-Electivire @ Scope Lens
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
 - Thunderbolt
-- Flamethrower
-- Cross Chop
+- Focus Blast
+- Grass Knot
+
+Manectric @ Choice Scarf
+Ability: Lightning Rod
+Nature: Timid
+Level: 58
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Thunderbolt
+- Volt Switch
+- Overheat
+- Hidden Power
+
+Electivire @ Expert Belt
+Ability: Motor Drive
+Nature: Jolly
+Level: 59
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wild Charge
 - Earthquake
+- Ice Punch
+- Cross Chop
 
 === TRAINER_ERIKA_HNS ===
 Name: ERIKA
@@ -10917,53 +11360,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Green
 Items: Full Restore / Full Restore
 
-Cradily @ Leftovers
+Victreebel @ Life Orb
+Ability: Chlorophyll
+Nature: Modest
 Level: 61
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Rock Slide
-- Curse
-- Earthquake
-
-Roserade @ Poison Barb
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Light Screen
-- Sludge Bomb
-- Toxic
-- Shadow Ball
-
-Breloom @ Black Belt
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spore
-- Focus Punch
-- Mach Punch
-- Sky Uppercut
-
-Venusaur @ Leftovers
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
+- Growth
 - Giga Drain
-- Leech Seed
-- Sleep Powder
+- Sludge Bomb
+- Weather Ball
 
-Celebi @ Twisted Spoon
-Level: 62
+Venusaur @ Life Orb
+Ability: Thick Fat
+Nature: Modest
+Level: 61
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 0 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+- Growth
+- Giga Drain
+- Sludge Bomb
+- Hidden Power
+
+Roserade @ Black Sludge
+Ability: Natural Cure
+Nature: Timid
+Level: 60
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Leech Seed
-- Recover
+- Sleep Powder
+- Giga Drain
+- Sludge Bomb
+- Toxic Spikes
+
+Celebi @ Life Orb
+Ability: Natural Cure
+Nature: Timid
+Level: 62
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
 - Psychic
 - Giga Drain
+- Recover
 
-Bellossom @ Miracle Seed
+Bellossom @ Heat Rock
+Ability: Chlorophyll
+Nature: Modest
 Level: 62
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sunny Day
-- Hidden Power
+- Quiver Dance
+- Giga Drain
+- Moonblast
 - Sleep Powder
-- Solar Beam
+
+Cradily @ Leftovers
+Ability: Storm Drain
+Nature: Careful
+Level: 61
+EVs: 252 HP / 252 SpD / 6 Def
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Giga Drain
+- Recover
+- Toxic
 
 === TRAINER_SABRINA_HNS ===
 Name: SABRINA
@@ -10971,58 +11432,76 @@ Class: Leader Hns
 Pic: Leader Sabrina Hns
 Gender: Male
 Music: Hg Boy 1
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Pink
 Items: Full Restore / Full Restore
 
-Mr Mime @ Quick Claw
+Mr. Mime @ Light Clay
+Ability: Filter
+Nature: Timid
 Level: 65
+EVs: 252 HP / 180 SpA / 78 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
-- Thunder Wave
-- Encore
-- Ice Punch
+- Reflect
+- Light Screen
+- Helping Hand
 
-Metagross @ Choice Band
-Level: 64
+Deoxys-Attack @ Life Orb
+Ability: Pressure
+Nature: Naive
+Level: 66
+EVs: 252 SpA / 252 Spe / 6 Atk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psycho Boost
+- Superpower
+- Ice Beam
+- Protect
+
+Jynx @ Focus Sash
+Ability: Dry Skin
+Nature: Timid
+Level: 65
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Lovely Kiss
+- Psychic
+- Ice Beam
+- Protect
+
+Metagross @ Assault Vest
+Ability: Clear Body
+Nature: Adamant
+Level: 66
+EVs: 252 HP / 252 Atk / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Mash
-- Explosion
+- Zen Headbutt
+- Bullet Punch
 - Earthquake
-- Rock Slide
 
-Deoxys Attack @ Spell Tag
-Level: 64
+Espeon @ Life Orb
+Ability: Magic Bounce
+Nature: Timid
+Level: 67
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
+- Psychic
+- Dazzling Gleam
 - Shadow Ball
-- Superpower
-- Psychic
+- Protect
 
-Wobbuffet @ Leftovers
-Level: 64
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Mirror Coat
-- Counter
-- Safeguard
-- Destiny Bond
-
-Espeon @ Leftovers
-Level: 65
+Alakazam @ Focus Sash
+Ability: Magic Guard
+Nature: Timid
+Level: 68
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
-- Calm Mind
-- Substitute
-- Baton Pass
-
-Alakazam @ Twisted Spoon
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Blast
 - Shadow Ball
-- Psychic
-- Calm Mind
-- Thunder Punch
+- Protect
 
 === TRAINER_JANINE_HNS ===
 Name: JANINE
@@ -11035,53 +11514,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Purple
 Items: Full Restore / Full Restore
 
-Weezing @ Leftovers
+Weezing @ Black Sludge
+Ability: Levitate
+Nature: Bold
 Level: 63
+EVs: 252 HP / 252 Def / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Will-O-Wisp
 - Sludge Bomb
-- Fire Blast
-- Destiny Bond
-- Amnesia
+- Pain Split
+- Toxic Spikes
 
-Tentacruel @ Leftovers
+Swalot @ Black Sludge
+Ability: Gluttony
+Nature: Careful
 Level: 62
+EVs: 252 HP / 252 SpD / 6 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
+- Stockpile
+- Toxic
 - Sludge Bomb
-- Substitute
-- Swords Dance
+- Protect
 
-Dustox @ Leftovers
+Dustox @ Black Sludge
+Ability: Compound Eyes
+Nature: Timid
 Level: 61
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Moonlight
-- Sludge Bomb
-- Toxic
-- Whirlwind
+- Quiver Dance
+- Sleep Powder
+- Bug Buzz
+- Roost
 
-Nidoking @ Bright Powder
+Muk @ Assault Vest
+Ability: Poison Touch
+Nature: Careful
 Level: 62
+EVs: 252 HP / 252 SpD / 6 Atk
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Megahorn
-- Shadow Ball
-- Ice Beam
+- Poison Jab
+- Knock Off
+- Drain Punch
+- Shadow Sneak
 
-Crobat @ Choice Band
+Beedrill @ Life Orb
+Ability: Adaptability
+Nature: Jolly
 Level: 63
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Aerial Ace
-- Shadow Ball
-- Confuse Ray
+- U-turn
+- Poison Jab
+- Drill Run
+- Knock Off
 
-Venomoth @ Bright Powder
+Venomoth @ Focus Sash
+Ability: Tinted Lens
+Nature: Timid
 Level: 64
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
+- Quiver Dance
+- Sleep Powder
+- Bug Buzz
 - Psychic
-- Toxic
-- Double Team
 
 === TRAINER_BLAINE_HNS ===
 Name: BLAINE
@@ -11094,53 +11591,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Arcanine @ Charcoal
+Ninetales @ Heat Rock
+Ability: Flash Fire
+Nature: Timid
 Level: 66
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
+- Nasty Plot
 - Fire Blast
-- Toxic
-- Sunny Day
-
-Magmortar @ Sitrus Berry
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunderbolt
-- Fire Blast
-- Psychic
-- Confuse Ray
-
-Houndoom @ Miracle Seed
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Sunny Day
 - Solar Beam
-- Crunch
-
-Moltres @ Leftovers
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Will O Wisp
-- Roar
-- Hidden Power
+- Will-O-Wisp
 
 Torkoal @ Leftovers
+Ability: Shell Armor
+Nature: Bold
 Level: 67
+EVs: 252 HP / 252 Def / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Lava Plume
+- Rapid Spin
+- Yawn
+
+Rapidash @ Life Orb
+Ability: Flame Body
+Nature: Jolly
+Level: 67
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flare Blitz
+- Megahorn
+- High Horsepower
+- Morning Sun
+
+Magmortar @ Choice Specs
+Ability: Vital Spirit
+Nature: Timid
+Level: 65
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Blast
-- Explosion
-- Yawn
-- Rock Slide
+- Thunderbolt
+- Solar Beam
+- Focus Blast
+
+Moltres @ Life Orb
+Ability: Flame Body
+Nature: Timid
+Level: 65
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
+- Fire Blast
+- Solar Beam
+- Roost
 
 Camerupt @ Charcoal
+Ability: Solid Rock
+Nature: Modest
 Level: 67
+EVs: 252 SpA / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Fire Blast
-- Rest
-- Sleep Talk
+- Eruption
+- Earth Power
+- Solar Beam
+- Stealth Rock
 
 === TRAINER_BLUE_HNS ===
 Name: BLUE
@@ -11153,53 +11668,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Blue
 Items: Full Restore / Full Restore
 
-Rhyperior @ Leftovers
+Rhyperior @ Choice Band
+Ability: Solid Rock
+Nature: Adamant
 Level: 69
+EVs: 252 Atk / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Rock Blast
 - Megahorn
-- Substitute
+- Ice Punch
 
-Pidgeot @ Sharp Beak
+Pidgeot @ Leftovers
+Ability: No Guard
+Nature: Timid
 Level: 68
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Return
-- Extreme Speed
-- Drill Peck
-- Feather Dance
+- Hurricane
+- Heat Wave
+- U-turn
+- Roost
 
-Machamp @ Scope Lens
+Machamp @ Flame Orb
+Ability: Guts
+Nature: Adamant
 Level: 67
+EVs: 252 Atk / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Cross Chop
-- Rock Slide
-- Earthquake
-- Body Slam
+- Close Combat
+- Facade
+- Knock Off
+- Bullet Punch
 
-Exeggutor @ Leftovers
+Exeggutor @ Sitrus Berry
+Ability: Harvest
+Nature: Modest
 Level: 68
+EVs: 252 SpA / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Leech Seed
 - Sleep Powder
 - Psychic
 - Giga Drain
+- Substitute
 
-Tyranitar @ White Herb
+Tyranitar @ Choice Scarf
+Ability: Sand Stream
+Nature: Jolly
 Level: 68
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Pulse
-- Dark Pulse
-- Focus Blast
-- Hyper Beam
-
-Arcanine @ Silk Scarf
-Level: 69
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Curse
+- Stone Edge
 - Crunch
+- Pursuit
+- Earthquake
+
+Arcanine @ Life Orb
+Ability: Intimidate
+Nature: Jolly
+Level: 69
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flare Blitz
 - Extreme Speed
+- Close Combat
+- Wild Charge
 
 === TRAINER_BLUE_2_HNS ===
 Name: BLUE
@@ -11212,53 +11745,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Blue
 Items: Full Restore / Full Restore
 
-Articuno @ Sitrus Berry
+Articuno @ Leftovers
+Ability: Pressure
+Nature: Timid
 Level: 69
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
 - Ice Beam
-- Air Slash
-- Rest
-- Toxic
+- Roost
+- Defog
 
-Alakazam @ Twisted Spoon
+Alakazam @ Life Orb
+Ability: Magic Guard
+Nature: Timid
 Level: 68
+EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunderbolt
-- Recover
 - Psychic
+- Thunder
+- Focus Blast
 - Shadow Ball
 
-Rhyperior @ Quick Claw
+Rhyperior @ Choice Band
+Ability: Solid Rock
+Nature: Adamant
 Level: 67
+EVs: 252 Atk / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Rock Blast
 - Megahorn
-- Substitute
+- Ice Punch
 
-Exeggutor @ Leftovers
+Exeggutor @ Sitrus Berry
+Ability: Harvest
+Nature: Modest
 Level: 68
+EVs: 252 SpA / 252 HP / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Leech Seed
 - Sleep Powder
 - Psychic
 - Giga Drain
+- Substitute
 
-Gyarados @ Focus Band
+Gyarados @ Lum Berry
+Ability: Moxie
+Nature: Jolly
 Level: 68
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Dance
 - Waterfall
 - Earthquake
-- Body Slam
-- Dragon Dance
+- Ice Fang
 
-Arcanine @ Silk Scarf
+Arcanine @ Life Orb
+Ability: Intimidate
+Nature: Jolly
 Level: 69
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Curse
-- Crunch
+- Flare Blitz
 - Extreme Speed
+- Close Combat
+- Wild Charge
 
 === TRAINER_WILL_1_HNS ===
 Name: WILL
@@ -11272,52 +11823,70 @@ Mugshot: Pink
 Items: Full Restore / Full Restore
 
 Gallade @ Scope Lens
+Ability: Sharpness
+Nature: Jolly
 Level: 54
-IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 252 Atk / 4 SpD / 104 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
 - Psycho Cut
-- Toxic
-- Brick Break
+- Night Slash
+- Sacred Sword
 
 Togekiss @ Leftovers
+Ability: Serene Grace
+Nature: Timid
 Level: 54
+EVs: 252 HP / 4 SpA / 104 Spe
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Nasty Plot
 - Air Slash
 - Thunder Wave
-- Moonblast
-- Psychic
+- Roost
 
-Claydol @ Leftovers
+Claydol @ Colbur Berry
+Ability: Levitate
+Nature: Bold
 Level: 54
+EVs: 252 HP / 100 Def / 8 Spe
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
-- Reflect
-- Ice Beam
-- Explosion
+- Stealth Rock
+- Rapid Spin
+- Psychic
 - Earth Power
 
 Porygon-Z @ Silk Scarf
+Ability: Adaptability
+Nature: Timid
 Level: 54
+EVs: 252 SpA / 4 SpD / 104 Spe
 IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
 - Tri Attack
-- Psychic
 - Thunderbolt
 - Ice Beam
+- Nasty Plot
 
-Xatu @ Twisted Spoon
+Xatu @ Leftovers
+Ability: Magic Bounce
+Nature: Timid
 Level: 54
+EVs: 252 HP / 4 SpA / 104 Spe
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-- Light Screen
-- Wish
-- Confuse Ray
 - Psychic
+- Roost
+- U-turn
+- Toxic
 
 Metagross @ Lum Berry
+Ability: Clear Body
+Nature: Adamant
 Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 104 Spe
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Meteor Mash
-- Explosion
+- Zen Headbutt
 - Earthquake
-- Thunder Punch
+- Bullet Punch
 
 === TRAINER_WILL_2_HNS ===
 Name: WILL
@@ -11330,53 +11899,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Pink
 Items: Full Restore / Full Restore
 
-Togekiss @ Twisted Spoon
+Togekiss @ Leftovers
+Ability: Serene Grace
+Nature: Timid
 Level: 72
+EVs: 252 SpA / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Thunder Wave
+- Nasty Plot
 - Air Slash
-- Moonblast
+- Aura Sphere
+- Roost
 
 Porygon-Z @ Silk Scarf
+Ability: Adaptability
+Nature: Timid
 Level: 70
+EVs: 4 Def / 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
+- Conversion
 - Thunderbolt
-- Tri Attack
-- Signal Beam
+- Ice Beam
+- Recover
 
-Claydol @ Leftovers
+Claydol @ Colbur Berry
+Ability: Levitate
+Nature: Bold
 Level: 70
+EVs: 252 HP / 120 Def / 136 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rapid Spin
+- Stealth Rock
 - Psychic
 - Earth Power
-- Explosion
 
-Exeggutor @ Sitrus Berry
-Level: 70
+Gallade @ Life Orb
+Ability: Sharpness
+Nature: Jolly
+Level: 72
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Sleep Powder
-- Psychic
-- Soft Boiled
+- Swords Dance
+- Psycho Cut
+- Sacred Sword
+- Knock Off
 
-Jirachi @ Leftovers
+Jirachi @ Choice Scarf
+Ability: Serene Grace
+Nature: Jolly
 Level: 71
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Meteor Mash
-- Play Rough
-- Body Slam
+- Iron Head
+- U-turn
+- Healing Wish
 - Fire Punch
 
-Metagross @ Quick Claw
+Metagross @ Assault Vest
+Ability: Clear Body
+Nature: Adamant
 Level: 72
+EVs: 252 Atk / 4 SpD / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Meteor Mash
-- Explosion
+- Zen Headbutt
+- Bullet Punch
 - Earthquake
-- Thunder Punch
 
 === TRAINER_BRUNO_1_HNS ===
 Name: BRUNO
@@ -11389,53 +11976,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Orange
 Items: Full Restore / Full Restore
 
-Breloom @ Focus Band
+Breloom @ Focus Sash
+Ability: Technician
+Nature: Jolly
 Level: 54
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Spore
 - Mach Punch
-- Thunder Punch
-- Facade
+- Bullet Seed
+- Rock Tomb
 
-Blaziken @ Chesto Berry
+Blaziken @ Life Orb
+Ability: Speed Boost
+Nature: Adamant
 Level: 54
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hi Jump Kick
-- Thunder Punch
 - Protect
 - Blaze Kick
+- High Jump Kick
+- Thunder Punch
 
-Annihilape @ Silk Scarf
+Annihilape @ Lum Berry
+Ability: Defiant
+Nature: Jolly
 Level: 53
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Claw
-- Rock Slide
-- Cross Chop
 - Bulk Up
+- Rage Fist
+- Drain Punch
+- Ice Punch
 
-Scizor @ Chesto Berry
+Scizor @ Leftovers
+Ability: Technician
+Nature: Adamant
 Level: 54
+EVs: 252 Atk / 156 HP / 27 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Quick Attack
-- Steel Wing
-- Brick Break
 - Swords Dance
+- Bullet Punch
+- U-turn
+- Roost
 
-Steelix @ Quick Claw
+Steelix @ Leftovers
+Ability: Sturdy
+Nature: Impish
 Level: 55
+EVs: 252 HP / 156 Def / 27 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
 - Earthquake
-- Iron Tail
-- Rock Slide
-- Explosion
+- Heavy Slam
+- Toxic
 
-Heracross @ Quick Claw
+Heracross @ Flame Orb
+Ability: Guts
+Nature: Jolly
 Level: 55
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat
 - Megahorn
 - Facade
-- Rock Slide
-- Superpower
+- Knock Off
 
 === TRAINER_BRUNO_2_HNS ===
 Name: BRUNO
@@ -11448,53 +12053,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Orange
 Items: Full Restore / Full Restore
 
-Breloom @ Focus Band
+Breloom @ Focus Sash
+Ability: Technician
+Nature: Jolly
 Level: 70
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Spore
 - Mach Punch
 - Bullet Seed
-- Substitute
+- Rock Tomb
 
-Blaziken @ Chesto Berry
+Blaziken @ Life Orb
+Ability: Speed Boost
+Nature: Adamant
 Level: 70
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hi Jump Kick
-- Swords Dance
 - Protect
-- Blaze Kick
+- Swords Dance
+- Flare Blitz
+- High Jump Kick
 
-Annihilape @ Silk Scarf
+Annihilape @ Leftovers
+Ability: Defiant
+Nature: Jolly
 Level: 70
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Claw
-- Rock Slide
-- Cross Chop
 - Bulk Up
+- Rage Fist
+- Drain Punch
+- Taunt
 
-Steelix @ Quick Claw
+Steelix @ Leftovers
+Ability: Sturdy
+Nature: Impish
 Level: 71
+EVs: 252 HP / 252 Def / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
 - Earthquake
-- Iron Tail
-- Rock Slide
-- Explosion
+- Heavy Slam
+- Toxic
 
-Regirock @ Hard Stone
+Electivire @ Life Orb
+Ability: Motor Drive
+Nature: Jolly
 Level: 72
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Punch
+- Ice Punch
 - Earthquake
-- Explosion
-- Superpower
-- Rock Slide
+- Cross Chop
 
-Heracross @ Quick Claw
+Heracross @ Flame Orb
+Ability: Guts
+Nature: Jolly
 Level: 72
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat
 - Megahorn
 - Facade
-- Rock Slide
-- Superpower
+- Knock Off
 
 === TRAINER_KAREN_1_HNS ===
 Name: KAREN
@@ -11508,52 +12131,71 @@ Mugshot: Yellow
 Items: Full Restore / Full Restore
 
 Sableye @ Leftovers
+Ability: Prankster
+Nature: Careful
 Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 156 SpD / 27 Def
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Will O Wisp
 - Taunt
-- Toxic
-- Night Shade
 - Recover
+- Knock Off
 
-Umbreon @ Lum Berry
+Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
+EVs: 252 HP / 156 SpD / 27 Def
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Foul Play
 - Toxic
+- Wish
 - Protect
-- Curse
 
-Starmie @ Leftovers
+Houndoom @ Life Orb
+Ability: Flash Fire
+Nature: Timid
 Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Thunderbolt
-- Ice Beam
-- Recover
+EVs: 252 SpA / 180 Spe / 3 SpD
+IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+- Nasty Plot
+- Dark Pulse
+- Flamethrower
+- Sludge Bomb
 
 Honchkrow @ Scope Lens
+Ability: Super Luck
+Nature: Jolly
 Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Drill Peck
-- Steel Wing
-- Thunder Wave
+EVs: 252 Atk / 180 Spe / 3 SpD
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Brave Bird
+- Night Slash
+- Sucker Punch
+- Superpower
+
+Milotic @ Leftovers
+Ability: Competitive
+Nature: Bold
+Level: 56
+EVs: 252 HP / 156 Def / 27 SpD
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
+- Scald
+- Ice Beam
+- Recover
 - Haze
 
-Arcanine @ Charcoal
+Tyranitar @ Lum Berry
+Ability: Sand Stream
+Nature: Jolly
 Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Crunch
-- Sacred Fire
-- Play Rough
-
-Tyranitar @ Leftovers
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
-- Earthquake
-- Rock Slide
+EVs: 252 Atk / 180 Spe / 3 SpD
+IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Dragon Dance
+- Stone Edge
+- Crunch
+- Fire Punch
+
 
 === TRAINER_KAREN_2_HNS ===
 Name: KAREN
@@ -11566,53 +12208,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Yellow
 Items: Full Restore / Full Restore
 
-Umbreon @ Sitrus Berry
+Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 70
+EVs: 252 HP / 252 SpD / 6 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
+- Foul Play
 - Toxic
+- Wish
 - Protect
-- Curse
+
+Sableye @ Leftovers
+Ability: Prankster
+Nature: Careful
+Level: 70
+EVs: 252 HP / 252 SpD / 6 Def
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Will O Wisp
+- Taunt
+- Recover
+- Knock Off
+
+Houndoom @ Life Orb
+Ability: Flash Fire
+Nature: Timid
+Level: 70
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
+- Dark Pulse
+- Fire Blast
+- Sludge Bomb
+
+Honchkrow @ Scope Lens
+Ability: Super Luck
+Nature: Jolly
+Level: 71
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Night Slash
+- Sucker Punch
+- Superpower
 
 Lugia @ Leftovers
-Level: 70
+Ability: Multiscale
+Nature: Bold
+Level: 72
+EVs: 252 HP / 252 Def / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aeroblast
 - Calm Mind
-- Psychic
-- Recover
+- Roost
+- Ice Beam
 
-Sableye @ Leftovers
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Taunt
-- Will O Wisp
-- Night Shade
-- Recover
-
-Honchkrow @ Scope Lens
-Level: 71
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Drill Peck
-- Steel Wing
-- Thunder Wave
-- Haze
-
-Arcanine @ Charcoal
+Tyranitar @ Lum Berry
+Ability: Sand Stream
+Nature: Jolly
 Level: 72
+EVs: 252 Atk / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Crunch
-- Sacred Fire
-- Play Rough
-
-Tyranitar @ Leftovers
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Crunch
-- Earthquake
-- Rock Slide
 - Dragon Dance
+- Stone Edge
+- Crunch
+- Fire Punch
 
 === TRAINER_KOGA_1_HNS ===
 Name: KOGA
@@ -11626,52 +12286,70 @@ Mugshot: Purple
 Items: Full Restore / Full Restore
 
 Forretress @ Leftovers
+Ability: Sturdy
+Nature: Relaxed
 Level: 54
+EVs: 252 HP / 156 Def / 27 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Explosion
 - Spikes
-- Flash Cannon
-- Earthquake
+- Rapid Spin
+- Gyro Ball
+- Explosion
 
-Tentacruel @ Leftovers
+Tentacruel @ Black Sludge
+Ability: Liquid Ooze
+Nature: Timid
 Level: 54
+EVs: 252 HP / 144 Spe / 39 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
+- Scald
 - Sludge Bomb
-- Ice Beam
-- Toxic
+- Rapid Spin
+- Toxic Spikes
 
-Crobat @ Kings Rock
+Crobat @ Black Sludge
+Ability: Infiltrator
+Nature: Jolly
 Level: 54
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Air Slash
-- Poison Jab
-- Steel Wing
+- Brave Bird
+- Cross Poison
+- U Turn
 - Taunt
 
-Gengar @ Bright Powder
+Gengar @ Life Orb
+Ability: Levitate
+Nature: Timid
 Level: 54
+EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
+- Sludge Wave
 - Focus Blast
-- Thunderbolt
-- Will O Wisp
+- Destiny Bond
 
-Nidoking @ Poison Barb
+Nidoking @ Life Orb
+Ability: Sheer Force
+Nature: Timid
 Level: 54
+EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Poison Jab
-- Thunder
+- Earth Power
+- Sludge Wave
 - Ice Beam
+- Flamethrower
 
-Dugtrio @ Soft Sand
-Level: 54
+Muk @ Black Sludge
+Ability: Poison Touch
+Nature: Careful
+Level: 55
+EVs: 252 HP / 156 SpD / 27 Atk
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sand Tomb
-- Earthquake
-- Toxic
-- Aerial Ace
+- Knock Off
+- Poison Jab
+- Shadow Sneak
+- Curse
 
 === TRAINER_KOGA_2_HNS ===
 Name: KOGA
@@ -11684,53 +12362,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Purple
 Items: Full Restore / Full Restore
 
-Forretress @ Leftovers
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Explosion
-- Spikes
-- Flash Cannon
-- Earthquake
-
-Tentacruel @ Leftovers
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Sludge Bomb
-- Ice Beam
-- Toxic
-
-Crobat @ Kings Rock
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Air Slash
-- Poison Jab
-- Steel Wing
-- Taunt
-
-Gengar @ Spell Tag
-Level: 71
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Focus Blast
-- Thunderbolt
-- Will O Wisp
-
-Nidoking @ Poison Barb
+Deoxys Speed @ Focus Sash
+Ability: Pressure
+Nature: Timid
 Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Poison Jab
-- Thunder
-- Ice Beam
-
-Deoxys Speed @ Lum Berry
-Level: 72
+EVs: 252 SpA / 252 Spe / 6 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
 - Thunderbolt
 - Ice Beam
-- Brick Break
+- Taunt
+
+Forretress @ Leftovers
+Ability: Sturdy
+Nature: Relaxed
+Level: 70
+EVs: 252 HP / 252 Def / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spikes
+- Rapid Spin
+- Gyro Ball
+- Explosion
+
+Tentacruel @ Black Sludge
+Ability: Liquid Ooze
+Nature: Timid
+Level: 70
+EVs: 252 HP / 160 Def / 96 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Sludge Bomb
+- Rapid Spin
+- Toxic Spikes
+
+Crobat @ Black Sludge
+Ability: Infiltrator
+Nature: Jolly
+Level: 70
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Cross Poison
+- U Turn
+- Taunt
+
+Gengar @ Life Orb
+Ability: Levitate
+Nature: Timid
+Level: 71
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Sludge Wave
+- Focus Blast
+- Destiny Bond
+
+Nidoking @ Life Orb
+Ability: Sheer Force
+Nature: Timid
+Level: 72
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earth Power
+- Sludge Wave
+- Ice Beam
+- Flamethrower
+
 
 === TRAINER_LANCE_1_HNS ===
 Name: LANCE
@@ -11743,53 +12440,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Items: Full Restore / Full Restore
 Mugshot: Blue
 
-Gyarados @ Salac Berry
+Gyarados @ Lum Berry
+Ability: Moxie
+Nature: Jolly
 Level: 56
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
 - Waterfall
 - Earthquake
 - Crunch
 
-Kingdra @ Dragon Fang
+Kingdra @ Life Orb
+Ability: Sniper
+Nature: Modest
 Level: 56
+EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
 - Dragon Pulse
-- Surf
 - Ice Beam
-- Rain Dance
+- Flash Cannon
 
 Charizard @ Charcoal
+Ability: Blaze
+Nature: Timid
 Level: 57
+EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flamethrower
-- Steel Wing
-- Dragon Claw
-- Roar
+- Air Slash
+- Dragon Pulse
+- Roost
 
 Salamence @ Sitrus Berry
+Ability: Moxie
+Nature: Jolly
 Level: 56
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
 - Dragon Claw
-- Steel Wing
-- Fire Blast
+- Earthquake
+- Substitute
 
 Aerodactyl @ Scope Lens
+Ability: Pressure
+Nature: Jolly
 Level: 56
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
-- Steel Wing
 - Earthquake
 - Taunt
+- Roost
 
 Dragonite @ Choice Band
+Ability: Multiscale
+Nature: Adamant
 Level: 57
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Outrage
 - Extreme Speed
-- Fire Blast
-- Thunder
+- Earthquake
+- Fire Punch
 
 === TRAINER_LANCE_2_HNS ===
 Name: LANCE
@@ -13397,53 +14112,71 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Kangaskhan
+Kangaskhan @ Assault Vest
+Ability: Scrappy
+Nature: Adamant
 Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dizzy Punch
-- Fire Punch
-- Safeguard
-- Mega Punch
-
-Honchkrow
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dark Pulse
-- Air Slash
-- Thief
-- Double Team
-
-Nidoqueen
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Punch
-- Sludge Bomb
-- Surf
-- Body Slam
-
-Persian
-Level: 61
+EVs: 252 HP / 252 Atk / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
-- Slash
-- Thunderbolt
-- Shadow Ball
-
-Ursaluna
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Sandstorm
-- Play Rough
 - Double Edge
-
-Nidoking
-Level: 62
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Punch
 - Earthquake
-- Rock Slide
-- Thrash
+- Sucker Punch
+
+Honchkrow @ Life Orb
+Ability: Moxie
+Nature: Jolly
+Level: 61
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- Sucker Punch
+- Superpower
+- Roost
+
+Nidoqueen @ Life Orb
+Ability: Sheer Force
+Nature: Modest
+Level: 61
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earth Power
+- Sludge Wave
+- Ice Beam
+- Thunderbolt
+
+Persian @ Silk Scarf
+Ability: Technician
+Nature: Jolly
+Level: 61
+EVs: 252 Atk / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Return
+- Knock Off
+- U-turn
+
+Ursaluna @ Flame Orb
+Ability: Guts
+Nature: Adamant
+Level: 60
+EVs: 252 Atk / 252 HP / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Facade
+- Earthquake
+- Crunch
+- Protect
+
+Nidoking @ Life Orb
+Ability: Sheer Force
+Nature: Timid
+Level: 62
+EVs: 252 SpA / 252 Spe / 6 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earth Power
+- Sludge Wave
+- Ice Beam
+- Flamethrower
 
 === TRAINER_PROTON_1_HNS ===
 Name: PROTON
@@ -13455,29 +14188,72 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 
-Koffing
+Koffing @ Oran Berry
+Ability: Levitate
+Nature: Bold
 Level: 12
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 20 HP
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Smog
+- Tackle
+- Smokescreen
+- Poison Gas
 
-Slowpoke
+Slowpoke @ Oran Berry
+Ability: Regenerator
+Nature: Bold
 Level: 13
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 20 HP / 20 Def
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Water Pulse
+- Confusion
+- Yawn
+- Disable
 
-Houndour
+Houndour @ Oran Berry
+Ability: Flash Fire
+Nature: Timid
 Level: 15
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 40 SpA
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Ember
+- Bite
+- Smog
+- Roar
 
-Zubat
+Zubat @ Oran Berry
+Ability: Inner Focus
+Nature: Jolly
 Level: 14
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 20 Atk / 20 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Wing Attack
+- Bite
+- Supersonic
+- Poison Fang
 
-Nidorino
+Nidorino @ Poison Barb
+Ability: Hustle
+Nature: Adamant
 Level: 16
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 40 Atk
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Sting
+- Double Kick
+- Peck
+- Fury Attack
 
-Rhyhorn
+Rhyhorn @ Eviolite
+Ability: Rock Head
+Nature: Adamant
 Level: 16
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 40 HP
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Rock Tomb
+- Bulldoze
+- Horn Attack
+- Scary Face
+
 
 === TRAINER_PROTON_2_HNS ===
 Name: PROTON
@@ -13490,53 +14266,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Muk
+Muk @ Black Sludge
+Ability: Poison Touch
+Nature: Careful
 Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Sludge Bomb
-- Thunderbolt
-- Acid Armor
-- Flamethrower
-
-Nidoqueen
-Level: 37
+EVs: 120 HP / 60 SpD / 20 Atk
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Sludge Bomb
-- Flamethrower
-- Thunderbolt
+- Poison Jab
+- Knock Off
+- Curse
+- Protect
+
+Nidoqueen @ Black Sludge
+Ability: Sheer Force
+Nature: Modest
+Level: 37
+EVs: 120 HP / 60 SpA / 20 SpD
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Earth Power
+- Sludge Wave
+- Ice Beam
+- Flamethrower
 
-Weezing
+Weezing @ Black Sludge
+Ability: Levitate
+Nature: Bold
 Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Sludge Bomb
-- Explosion
-- Dark Pulse
-- Heat Wave
-
-Nidoking
-Level: 37
+EVs: 120 HP / 80 Def / 20 SpD
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Toxic Spikes
+- Will O Wisp
 - Sludge Bomb
-- Earthquake
-- Ice Punch
-- Thrash
+- Pain Split
 
-Rhyperior
+Nidoking @ Life Orb
+Ability: Sheer Force
+Nature: Timid
+Level: 37
+EVs: 120 SpA / 80 Spe / 20 HP
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Earth Power
+- Sludge Wave
+- Ice Beam
+- Thunderbolt
+
+Rhyperior @ Leftovers
+Ability: Solid Rock
+Nature: Adamant
 Level: 38
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 120 HP / 80 Atk / 20 Def
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Stealth Rock
 - Earthquake
-- Surf
-- Fissure
-- Rock Slide
+- Rock Blast
+- Megahorn
 
-Crobat
+Crobat @ Black Sludge
+Ability: Infiltrator
+Nature: Jolly
 Level: 37
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Toxic
-- Confuse Ray
-- Wing Attack
-- Bite
+EVs: 120 Atk / 80 Spe / 20 HP
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Brave Bird
+- Cross Poison
+- Taunt
+- U-turn
+
 
 === TRAINER_ARCHER_HNS ===
 Name: ARCHER
@@ -13549,53 +14344,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Umbreon
+Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 42
+EVs: 120 HP / 80 SpD / 20 Def
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Faint Attack
+- Foul Play
 - Toxic
-- Moonlight
-- Pursuit
+- Wish
+- Protect
 
-Porygon-Z
+Porygon-Z @ Life Orb
+Ability: Adaptability
+Nature: Timid
 Level: 42
+EVs: 120 SpA / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Tri Attack
 - Thunderbolt
-- Flamethrower
 - Ice Beam
+- Nasty Plot
 
-Tauros
+Tauros @ Silk Scarf
+Ability: Intimidate
+Nature: Jolly
 Level: 42
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Body Slam
 - Earthquake
-- Double Edge
-- Blaze Kick
+- Rock Slide
 - Pursuit
 
-Gyarados
+Gyarados @ Lum Berry
+Ability: Intimidate
+Nature: Jolly
 Level: 42
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Earthquake
 - Dragon Dance
-- Crunch
 - Waterfall
+- Ice Fang
+- Crunch
 
-Houndoom
+Houndoom @ Charcoal
+Ability: Flash Fire
+Nature: Timid
 Level: 42
+EVs: 120 SpA / 80 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Flamethrower
 - Dark Pulse
+- Flamethrower
 - Sludge Bomb
-- Roar
+- Nasty Plot
 
-Slaking
+Slaking @ Choice Band
+Ability: Truant
+Nature: Adamant
 Level: 42
+EVs: 120 Atk / 80 HP / 20 Spe
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Return
 - Earthquake
-- Double Edge
-- Aerial Ace
-- Shadow Claw
+- Night Slash
+- Giga Impact
+
 
 === TRAINER_ARCHER_1_HNS ===
 Name: ARCHER
@@ -13608,53 +14422,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Weezing
+Weezing @ Black Sludge
+Ability: Levitate
+Nature: Bold
 Level: 39
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+EVs: 120 HP / 60 Def / 20 SpD
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Sludge Bomb
-- Dark Pulse
+- Will O Wisp
+- Pain Split
 - Explosion
-- Destiny Bond
 
-Tauros
+Tauros @ Silk Scarf
+Ability: Intimidate
+Nature: Jolly
 Level: 38
+EVs: 120 Atk / 60 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Headbutt
-- Rock Smash
-- Pursuit
-- Frustration
-
-Houndoom
-Level: 38
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Bite
-- Smog
-- Roar
-- Flamethrower
-
-Golbat
-Level: 38
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Toxic
-- Confuse Ray
-- Wing Attack
-- Bite
-
-Nidoking
-Level: 39
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Sludge Bomb
+- Body Slam
 - Earthquake
-- Ice Punch
-- Thunder Punch
+- Rock Tomb
+- Pursuit
 
-Muk
+Houndoom @ Charcoal
+Ability: Flash Fire
+Nature: Timid
 Level: 38
+EVs: 120 SpA / 60 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Sludge Bomb
-- Thunderbolt
-- Acid Armor
+- Flamethrower
+- Dark Pulse
+- Nasty Plot
+- Roar
+
+Golbat @ Eviolite
+Ability: Infiltrator
+Nature: Jolly
+Level: 38
+EVs: 120 HP / 60 Spe / 20 Atk
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Brave Bird
+- Cross Poison
 - Toxic
+- Taunt
+
+Nidoking @ Life Orb
+Ability: Sheer Force
+Nature: Timid
+Level: 39
+EVs: 120 SpA / 60 Spe / 20 HP
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Earth Power
+- Sludge Bomb
+- Ice Beam
+- Thunderbolt
+
+Muk @ Black Sludge
+Ability: Poison Touch
+Nature: Careful
+Level: 38
+EVs: 120 HP / 60 SpD / 20 Atk
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Poison Jab
+- Knock Off
+- Curse
+- Protect
+
 
 === TRAINER_ARCHER_4_HNS ===
 Name: ARCHER
@@ -13667,53 +14500,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Umbreon
+Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 42
+EVs: 120 HP / 80 SpD / 20 Def
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Faint Attack
+- Foul Play
 - Toxic
-- Moonlight
-- Pursuit
+- Wish
+- Protect
 
-Porygon-Z
+Porygon-Z @ Life Orb
+Ability: Adaptability
+Nature: Timid
 Level: 42
+EVs: 120 SpA / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Tri Attack
 - Thunderbolt
-- Flamethrower
 - Ice Beam
+- Nasty Plot
 
-Tauros
+Tauros @ Silk Scarf
+Ability: Intimidate
+Nature: Jolly
 Level: 42
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Body Slam
 - Earthquake
-- Double Edge
-- Blaze Kick
+- Rock Slide
 - Pursuit
 
-Gyarados
+Gyarados @ Lum Berry
+Ability: Intimidate
+Nature: Jolly
 Level: 42
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Earthquake
 - Dragon Dance
-- Crunch
 - Waterfall
+- Ice Fang
+- Crunch
 
-Houndoom
+Houndoom @ Charcoal
+Ability: Flash Fire
+Nature: Timid
 Level: 42
+EVs: 120 SpA / 80 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Flamethrower
 - Dark Pulse
+- Nasty Plot
 - Sludge Bomb
-- Roar
 
-Slaking
+Slaking @ Choice Band
+Ability: Truant
+Nature: Adamant
 Level: 42
+EVs: 120 Atk / 80 HP / 20 Spe
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Return
 - Earthquake
-- Double Edge
-- Aerial Ace
-- Shadow Claw
+- Night Slash
+- Giga Impact
+
 
 === TRAINER_ARCHER_5_HNS ===
 Name: ARCHER
@@ -13726,53 +14578,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Umbreon
+Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 42
+EVs: 120 HP / 80 SpD / 20 Def
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Faint Attack
+- Foul Play
 - Toxic
-- Moonlight
-- Pursuit
+- Wish
+- Protect
 
-Porygon-Z
+Porygon-Z @ Life Orb
+Ability: Adaptability
+Nature: Timid
 Level: 42
+EVs: 120 SpA / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Tri Attack
 - Thunderbolt
-- Flamethrower
 - Ice Beam
+- Nasty Plot
 
-Tauros
+Tauros @ Silk Scarf
+Ability: Intimidate
+Nature: Jolly
 Level: 42
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Body Slam
 - Earthquake
-- Double Edge
-- Blaze Kick
+- Rock Slide
 - Pursuit
 
-Gyarados
+Gyarados @ Lum Berry
+Ability: Intimidate
+Nature: Jolly
 Level: 42
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Earthquake
 - Dragon Dance
-- Crunch
 - Waterfall
+- Ice Fang
+- Crunch
 
-Houndoom
+Houndoom @ Charcoal
+Ability: Flash Fire
+Nature: Timid
 Level: 42
+EVs: 120 SpA / 80 Spe / 20 HP
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Flamethrower
 - Dark Pulse
+- Nasty Plot
 - Sludge Bomb
-- Roar
 
-Slaking
+Slaking @ Choice Band
+Ability: Truant
+Nature: Adamant
 Level: 42
+EVs: 120 Atk / 80 HP / 20 Spe
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Return
 - Earthquake
-- Double Edge
-- Aerial Ace
-- Shadow Claw
+- Night Slash
+- Giga Impact
+
 
 === TRAINER_PETREL_1_HNS ===
 Name: PETREL
@@ -13785,53 +14656,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Forretress
+Forretress @ Leftovers
+Ability: Sturdy
+Nature: Relaxed
 Level: 31
+EVs: 80 HP / 40 Def
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-- Protect
-- Explosion
 - Spikes
-- Toxic
+- Rapid Spin
+- Gyro Ball
+- Explosion
 
-Pupitar
+Pupitar @ Eviolite
+Ability: Shed Skin
+Nature: Adamant
 Level: 30
+EVs: 80 HP / 40 Atk
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Rock Tomb
-- Dark Pulse
 - Bite
-- Thrash
+- Earthquake
+- Dragon Dance
 
-Magcargo
+Magcargo @ Eviolite
+Ability: Flame Body
+Nature: Bold
 Level: 30
+EVs: 80 HP / 20 Def / 20 SpA
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Ancient Power
-- Flamethrower
+- Lava Plume
 - Rock Slide
-- Curse
+- Yawn
+- Protect
 
-Cloyster
+Cloyster @ King's Rock
+Ability: Skill Link
+Nature: Adamant
 Level: 30
+EVs: 80 Atk / 40 HP
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Ice Beam
-- Hydro Pump
-- Spike Cannon
-- Surf
-
-Skarmory
-Level: 29
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Steel Wing
+- Icicle Spear
+- Rock Blast
+- Razor Shell
 - Spikes
-- Air Cutter
+
+Skarmory @ Leftovers
+Ability: Sturdy
+Nature: Impish
+Level: 29
+EVs: 80 HP / 40 Def
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Spikes
+- Roost
+- Steel Wing
 - Toxic
 
-Crobat
+Crobat @ Black Sludge
+Ability: Infiltrator
+Nature: Jolly
 Level: 30
+EVs: 80 Atk / 40 Spe
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Brave Bird
+- Cross Poison
 - Confuse Ray
-- Toxic
-- Air Cutter
-- Bite
+- Taunt
+
 
 === TRAINER_PETREL_2_HNS ===
 Name: PETREL
@@ -13844,53 +14734,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Forretress
+Forretress @ Leftovers
+Ability: Sturdy
+Nature: Relaxed
 Level: 38
+EVs: 120 HP / 60 Def / 20 SpD
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Pin Missile
+- Spikes
+- Rapid Spin
+- Gyro Ball
 - Explosion
-- Spikes
-- Spike Cannon
 
-Pupitar
+Pupitar @ Eviolite
+Ability: Shed Skin
+Nature: Adamant
 Level: 38
+EVs: 120 HP / 60 Atk / 20 SpD
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Dragon Dance
 - Rock Slide
-- Dark Pulse
-- Bite
-- Thrash
+- Crunch
+- Earthquake
 
-Magcargo
+Magcargo @ Eviolite
+Ability: Flame Body
+Nature: Bold
 Level: 39
+EVs: 120 HP / 60 Def / 20 SpA
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Lava Plume
 - Ancient Power
-- Flamethrower
-- Rock Slide
-- Curse
+- Yawn
+- Protect
 
-Cloyster
+Cloyster @ Leftovers
+Ability: Skill Link
+Nature: Adamant
 Level: 38
+EVs: 120 Atk / 60 HP / 20 SpD
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Ice Beam
-- Hydro Pump
-- Spike Cannon
-- Surf
-
-Skarmory
-Level: 38
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Steel Wing
+- Icicle Spear
+- Rock Blast
+- Razor Shell
 - Spikes
-- Air Cutter
-- Toxic
 
-Crobat
+Skarmory @ Leftovers
+Ability: Sturdy
+Nature: Impish
+Level: 38
+EVs: 120 HP / 60 Def / 20 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+- Spikes
+- Roost
+- Brave Bird
+- Whirlwind
+
+Crobat @ Black Sludge
+Ability: Infiltrator
+Nature: Jolly
 Level: 39
+EVs: 120 Atk / 60 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Confuse Ray
-- Toxic
-- Air Cutter
-- Bite
+- Brave Bird
+- Cross Poison
+- U-turn
+- Taunt
+
 
 === TRAINER_ARIANA_1_HNS ===
 Name: ARIANA
@@ -13903,53 +14812,72 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Arbok
+Arbok @ Black Sludge
+Ability: Intimidate
+Nature: Jolly
 Level: 31
+EVs: 80 Atk / 40 Spe
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 - Glare
-- Sludge Bomb
+- Poison Jab
 - Crunch
-- Poison Fang
+- Earthquake
 
-Persian
+Persian @ Silk Scarf
+Ability: Technician
+Nature: Jolly
 Level: 30
+EVs: 80 Atk / 40 Spe
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Faint Attack
-- Thunderbolt
-- Shadow Ball
+- Fake Out
 - Slash
-
-Vileplume
-Level: 30
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Poison Powder
-- Sleep Powder
-- Sludge Bomb
-- Giga Drain
-
-Crobat
-Level: 30
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Confuse Ray
-- Toxic
-- Wing Attack
 - Bite
+- U-turn
 
-Muk
-Level: 31
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Vileplume @ Black Sludge
+Ability: Effect Spore
+Nature: Modest
+Level: 30
+EVs: 80 SpA / 40 HP
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Sleep Powder
+- Giga Drain
 - Sludge Bomb
-- Thunderbolt
-- Acid Armor
-- Flamethrower
+- Moonlight
 
-Umbreon
+Crobat @ Black Sludge
+Ability: Infiltrator
+Nature: Jolly
+Level: 30
+EVs: 80 Atk / 40 Spe
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Brave Bird
+- Cross Poison
+- Taunt
+- U-turn
+
+Muk @ Assault Vest
+Ability: Poison Touch
+Nature: Careful
 Level: 31
+EVs: 80 HP / 40 Atk
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-- Faint Attack
+- Poison Jab
+- Knock Off
+- Brick Break
+- Shadow Sneak
+
+Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
+Level: 31
+EVs: 80 HP / 40 SpD
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+- Foul Play
 - Toxic
 - Moonlight
-- Pursuit
+- Protect
+
 
 === TRAINER_ARIANA_2_HNS ===
 Name: ARIANA
@@ -13962,52 +14890,70 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 Items: Full Restore / Full Restore
 
-Arbok
+Arbok @ Black Sludge
+Ability: Intimidate
+Nature: Jolly
 Level: 39
+EVs: 120 Atk / 60 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Dark Pulse
-- Bite
 - Glare
-- Sludge Bomb
+- Poison Jab
+- Crunch
+- Earthquake
 
-Persian
+Persian @ Silk Scarf
+Ability: Technician
+Nature: Jolly
 Level: 40
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Bite
 - Fake Out
-- Shadow Claw
-- Slash
+- Return
+- Bite
+- U-turn
 
-Vileplume
+Vileplume @ Black Sludge
+Ability: Effect Spore
+Nature: Modest
 Level: 39
+EVs: 120 SpA / 60 HP / 20 SpD
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Sleep Powder
-- Sludge Bomb
-- Stun Spore
 - Giga Drain
+- Sludge Bomb
+- Moonlight
 
-Gyarados
+Gyarados @ Lum Berry
+Ability: Intimidate
+Nature: Jolly
 Level: 40
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Hydro Pump
-- Thunderbolt
-- Earthquake
-- Surf
+- Dragon Dance
+- Waterfall
+- Crunch
+- Ice Fang
 
-Honchkrow
+Honchkrow @ Scope Lens
+Ability: Super Luck
+Nature: Jolly
 Level: 40
+EVs: 120 Atk / 80 Spe / 20 HP
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
-- Pursuit
-- Toxic
-- Heat Wave
-- Air Cutter
+- Night Slash
+- Drill Peck
+- Superpower
+- Sucker Punch
 
-Weezing
+Weezing @ Black Sludge
+Ability: Levitate
+Nature: Bold
 Level: 40
+EVs: 120 HP / 80 Def / 20 SpD
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 - Sludge Bomb
-- Self Destruct
-- Toxic
+- Will O Wisp
+- Pain Split
 - Haze
 
 === TRAINER_ANABEL_BF_BRAIN_HNS ===
@@ -17551,56 +18497,74 @@ Class: Elite Four
 Pic: Elite Four Will hns
 Gender: Male
 Music: Elite Four
-Items: Full Heal
+Items: Full Restore / Full Restore
 AI: Smart Trainer / Prediction / Assumptions
-Double Battle: No
+Double Battle: Yes
 
 Alakazam @ Twisted Spoon
+Ability: Magic Guard
+Nature: Timid
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 SpA / 60 Spe / 20 HP
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Psychic
-- Thunderbolt
-- Reflect
+- Shadow Ball
 - Calm Mind
+- Protect
 
 Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dark Pulse
-- Quick Attack
+EVs: 100 HP / 45 SpD / 20 Def
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Foul Play
+- Helping Hand
 - Moonlight
-- Toxic
+- Protect
 
 Espeon @ Twisted Spoon
+Ability: Magic Bounce
+Nature: Timid
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 SpA / 60 Spe / 20 HP
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Psychic
-- Quick Attack
-- Light Screen
-- Bite
+- Dazzling Gleam
+- Shadow Ball
+- Protect
 
-Houndoom @ Poison Barb
+Houndoom @ Charcoal
+Ability: Flash Fire
+Nature: Timid
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 SpA / 60 Spe / 20 HP
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Dark Pulse
 - Flamethrower
-- Sludge Bomb
-- Roar
+- Nasty Plot
+- Protect
 
-Slowking @ Mystic Water
+Slowking @ Sitrus Berry
+Ability: Regenerator
+Nature: Calm
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 45 SpA / 20 SpD
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Scald
 - Psychic
-- Water Pulse
-- Disable
 - Ice Beam
+- Protect
 
 Gengar @ Spell Tag
+Ability: Levitate
+Nature: Timid
 Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 85 SpA / 60 Spe / 20 HP
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Shadow Ball
-- Psychic
-- Thunderbolt
+- Sludge Bomb
+- Focus Blast
 - Hypnosis
 
 === TRAINER_CHAMPIONBLUE_2_HNS ===
@@ -17613,53 +18577,71 @@ Items: Full Restore / Full Restore
 AI: Smart Trainer / Prediction / Assumptions
 Double Battle: No
 
-Blastoise @ Sitrus Berry
+Blastoise @ White Herb
+Ability: Torrent
+Nature: Modest
 Level: 73
+EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
+- Shell Smash
 - Hydro Cannon
-- Yawn
-- Protect
+- Ice Beam
+- Dark Pulse
 
-Alakazam @ Twisted Spoon
+Alakazam @ Focus Sash
+Ability: Magic Guard
+Nature: Timid
 Level: 73
+EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunderbolt
-- Recover
 - Psychic
+- Focus Blast
 - Shadow Ball
+- Recover
 
 Umbreon @ Leftovers
+Ability: Synchronize
+Nature: Careful
 Level: 73
+EVs: 252 HP / 156 SpD / 27 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dark Pulse
+- Foul Play
 - Toxic
+- Wish
 - Protect
-- Charm
 
-Electivire @ Leftovers
+Electivire @ Expert Belt
+Ability: Motor Drive
+Nature: Adamant
 Level: 73
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wild Charge
 - Earthquake
-- Volt Tackle
-- Low Kick
-- Iron Tail
+- Ice Punch
+- Cross Chop
 
-Regidrago @ Leftovers
+Regidrago @ Dragon Fang
+Ability: Dragon's Maw
+Nature: Jolly
 Level: 73
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
 - Dragon Claw
 - Substitute
-- Superpower
+- Earthquake
 
 Arcanine @ Charcoal
+Ability: Intimidate
+Nature: Adamant
 Level: 73
+EVs: 252 Atk / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sacred Fire
-- Play Rough
-- Toxic
 - Extreme Speed
+- Wild Charge
+- Play Rough
 
 === TRAINER_WILL_ROUTE39_HNS ===
 Name: WILL
@@ -17667,54 +18649,50 @@ Class: Elite Four
 Pic: Elite Four Will hns
 Gender: Male
 Music: Elite Four
-Items: Full Heal
+Items: Full Restore
 AI: Smart Trainer / Prediction / Assumptions
-Double Battle: No
+Double Battle: Yes
 
 Alakazam @ Twisted Spoon
-Level: 31
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Ability: Synchronize
+Nature: Timid
+Level: 30
+EVs: 60 SpA / 40 Spe / 20 HP
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Psychic
 - Thunderbolt
 - Reflect
 - Calm Mind
 
 Umbreon @ Leftovers
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Dark Pulse
-- Quick Attack
+Ability: Synchronize
+Nature: Careful
+Level: 29
+EVs: 60 HP / 40 SpD / 20 Def
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Foul Play
+- Helping Hand
 - Moonlight
-- Toxic
+- Protect
 
-Espeon @ Twisted Spoon
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Psychic
-- Quick Attack
-- Light Screen
-- Bite
-
-Houndoom @ Poison Barb
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Houndoom @ Charcoal
+Ability: Flash Fire
+Nature: Timid
+Level: 29
+EVs: 60 SpA / 40 Spe / 20 HP
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Dark Pulse
 - Flamethrower
-- Sludge Bomb
-- Roar
-
-Slowking @ Mystic Water
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Psychic
-- Water Pulse
-- Disable
-- Ice Beam
+- Nasty Plot
+- Protect
 
 Gengar @ Spell Tag
+Ability: Levitate
+Nature: Timid
 Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 60 SpA / 40 Spe / 20 HP
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shadow Ball
-- Psychic
+- Sludge Bomb
 - Thunderbolt
 - Hypnosis
