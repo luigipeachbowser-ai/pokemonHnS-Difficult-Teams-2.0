@@ -13139,14 +13139,14 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Chip Away
 
 Quilava
-Ability: Flash Fire
+Ability: Earth Eater
 Level: 18
-Adamant Nature
+Modest Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Quick Attack
 - Smokescreen
 - Ember
-- Dig
+- Mud Bomb
 
 === TRAINER_RIVAL_CYNDAQUIL_3_HNS ===
 Name: {B_RIVAL_NAME}
@@ -13215,13 +13215,13 @@ IVs: 8 HP / 9 Atk / 8 Def / 8 SpA / 8 SpD / 9 Spe
 - Venoshock
 
 Quilava @ Charcoal
-Ability: Flash Fire
+Ability: Earth Eater
 Level: 28
-EVs: 40 Atk / 4 SpD / 40 Spe
+EVs: 40 SpA / 4 SpD / 40 Spe
 Timid Nature
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Flame Wheel
-- Dig
+- Incinerate
+- Mud Bomb
 - Quick Attack
 - Double Kick 
 
@@ -13292,7 +13292,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Cross Poison
 
 Typhlosion @ Charcoal
-Ability: Flash Fire
+Ability: Earth Eater
 Level: 45
 EVs: 112 SpA / 4 SpD / 112 Spe
 Timid Nature
@@ -13300,7 +13300,7 @@ IVs: 18 HP / 19 Atk / 18 Def / 19 SpA / 18 SpD / 19 Spe
 - Hidden Power
 - Fire Blast
 - Focus Blast
-- Attract
+- Earth Power
 
 === TRAINER_RIVAL_CYNDAQUIL_5_HNS ===
 Name: {B_RIVAL_NAME}
@@ -13357,14 +13357,14 @@ IVs: 22 HP / 21 Atk / 22 Def / 22 SpA / 22 SpD / 21 Spe
 - Sludge Bomb
 
 Typhlosion @ Choice Specs
-Ability: Flash Fire
+Ability: Earth Eater
 Level: 53
 EVs: 180 SpA / 4 SpD / 180 Spe
 Timid Nature
 IVs: 22 HP / 21 Atk / 23 Def / 21 SpA / 23 SpD / 21 Spe
 - Eruption
 - Focus Blast
-- Hidden Power
+- Earth Power
 - Extrasensory
 
 Tyranitar @ Hard Stone
@@ -13434,15 +13434,15 @@ IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
 - Sludge Bomb
 
 Typhlosion @ Choice Specs
-Ability: Flash Fire
+Ability: Earth Eater
 Level: 70
 EVs: 252 SpA / 4 SpD / 252 Spe
 Timid Nature
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 30 SpD / 31 Spe
 - Eruption
 - Focus Blast
-- Hidden Power
-- Extrasensory
+- Scorching Sands
+- Aura Sphere
 
 Tyranitar @ Quick Claw
 Ability: Sand Stream
@@ -13511,15 +13511,15 @@ IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
 - Sludge Bomb
 
 Typhlosion @ Choice Specs
-Ability: Flash Fire
+Ability: Earth Eater
 Level: 76
 EVs: 252 SpA / 4 SpD / 252 Spe
 Timid Nature
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 30 SpD / 31 Spe
 - Eruption
 - Focus Blast
-- Hidden Power
-- Extrasensory
+- Scorching Sands
+- Aura Sphere
 
 Tyranitar @ Choice Band
 Ability: Sand Stream
@@ -13543,7 +13543,7 @@ AI: Smart Trainer / Prediction / Assumptions
 Mugshot: Dark Red
 
 Totodile
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 6
 Adamant Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
@@ -13590,7 +13590,7 @@ IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 - Chip Away
 
 Croconaw
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 18
 Adamant Nature
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
@@ -13666,14 +13666,14 @@ IVs: 8 HP / 9 Atk / 8 Def / 8 SpA / 8 SpD / 9 Spe
 - Venoshock
 
 Croconaw @ Life Orb
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 28
 EVs: 4 HP / 44 Atk / 44 Spe
 Adamant Nature
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Bite
 - Ice Fang
-- Aqua Jet
+- Razor Shell
 - Leer
 
 === TRAINER_RIVAL_TOTODILE_4_HNS ===
@@ -13743,15 +13743,15 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Cross Poison
 
 Feraligatr @ Life Orb
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 45
 EVs: 4 Def / 110 Atk / 110 Spe 
 Adamant Nature
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Ice Fang
-- Liquidation
+- Razor Shell
 - Dragon Dance
-- Crunch
+- Jaw Lock
 
 === TRAINER_RIVAL_TOTODILE_5_HNS ===
 Name: {B_RIVAL_NAME}
@@ -13809,15 +13809,15 @@ IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 - Nasty Plot
 
 Feraligatr @ Life Orb
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 52
 EVs: 4 Def / 180 Atk / 180 Spe 
 Adamant Nature
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 - Ice Fang
-- Liquidation
+- Poison Fang
 - Dragon Dance
-- Crunch
+- Jaw Lock
 
 Tyranitar @ Hard Stone
 Ability: Sand Stream
@@ -13886,15 +13886,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Nasty Plot
 
 Feraligatr @ Life Orb
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 70
 EVs: 4 Def / 252 Atk / 252 Spe 
 Adamant Nature
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
-- Ice Fang
-- Liquidation
+- Fishious Rend
+- Poison Fang
 - Dragon Dance
-- Crunch
+- Jaw Lock
 
 Tyranitar @ Quick Claw
 Ability: Sand Stream
@@ -13963,15 +13963,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Nasty Plot
 
 Feraligatr @ Life Orb
-Ability: Sheer Force
+Ability: Strong Jaw
 Level: 76
 EVs: 4 Def / 252 Atk / 252 Spe 
 Adamant Nature
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
-- Ice Fang
-- Liquidation
+- Fishious Rend
+- Poison Fang
 - Dragon Dance
-- Crunch
+- Jaw Lock
 
 Tyranitar @ Quick Claw
 Ability: Sand Stream
@@ -13995,52 +13995,70 @@ AI: Basic Trainer
 Items: Full Restore / Full Restore
 
 Pikachu @ Light Ball
+Ability: Static
+Nature: Timid
 Level: 100
+EVs: 252 SpA / 252 Spe / 6 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nasty Plot
 - Thunderbolt
 - Surf
-- Iron Tail
-- Double Team
+- Grass Knot
 
 Snorlax @ Leftovers
+Ability: Thick Fat
+Nature: Careful
 Level: 100
+EVs: 252 HP / 252 SpD / 6 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Brick Break
 - Curse
 - Body Slam
 - Earthquake
+- Rest
 
-Charizard @ Charcoal
+Charizard @ Life Orb
+Ability: Drought
+Nature: Timid
 Level: 100
+EVs: 252 SpA / 252 Spe / 6 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Blast
-- Wing Attack
-- Outrage
-- Steel Wing
+- Solar Beam
+- Air Slash
+- Roost
 
-Venusaur @ Miracle Seed
+Venusaur @ Life Orb
+Ability: Chlorophyll
+Nature: Modest
 Level: 100
+EVs: 252 SpA / 252 Spe / 6 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Growth
 - Giga Drain
-- Body Slam
-- Sleep Powder
-- Leech Seed
+- Sludge Bomb
+- Weather Ball
 
-Blastoise @ Quick Claw
+Blastoise @ White Herb
+Ability: Mega Launcher
+Nature: Modest
 Level: 100
+EVs: 252 SpA / 252 Spe / 6 HP
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
+- Shell Smash
 - Hydro Pump
-- Body Slam
-- Earthquake
+- Dark Pulse
+- Aura Sphere
 
-Mewtwo @ Sitrus Berry
+Mewtwo @ Life Orb
+Ability: Unnerve
+Nature: Timid
 Level: 100
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Shadow Ball
+EVs: 252 SpA / 252 Spe / 6 HP
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psystrike
 - Ice Beam
-- Focus Blast
+- Aura Sphere
+- Calm Mind
 
 === TRAINER_EUSINE_HNS ===
 Name: EUSINE
@@ -14053,48 +14071,66 @@ AI: Basic Trainer
 Mugshot: Yellow
 Items: Full Restore / Full Restore
 
-Politoed
+Politoed @ Leftovers
+Ability: Drizzle
+Nature: Calm
 Level: 27
+EVs: 40 HP / 30 SpD / 20 SpA
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Surf
-- Rain Dance
 - Hypnosis
 - Icy Wind
+- Encore
 
-Hypno
+Hypno @ Sitrus Berry
+Ability: Insomnia
+Nature: Calm
 Level: 27
+EVs: 40 HP / 30 SpD / 20 SpA
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Psychic
 - Hypnosis
 - Disable
-- Psychic
-- Dream Eater
+- Reflect
 
-Electrode
+Electrode @ Magnet
+Ability: Soundproof
+Nature: Timid
 Level: 27
+EVs: 40 SpA / 40 Spe / 10 HP
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Thunder Wave
-- Sonic Boom
-- Body Slam
-- Thunderbolt
+- Thunder
+- Volt Switch
+- Taunt
+- Rain Dance
 
-Jynx
+Jynx @ Never-Melt Ice
+Ability: Dry Skin
+Nature: Timid
 Level: 29
+EVs: 40 SpA / 40 Spe / 10 HP
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Psychic
-- Ice Punch
+- Ice Beam
 - Lovely Kiss
-- Light Screen
+- Fake Tears
 
-Gengar
+Gengar @ Spell Tag
+Ability: Cursed Body
+Nature: Timid
 Level: 29
+EVs: 40 SpA / 40 Spe / 10 HP
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Shadow Ball
-- Psychic
-- Thunderbolt
 - Sludge Bomb
+- Thunder
+- Hypnosis
 
-Alakazam
+Alakazam @ Twisted Spoon
+Ability: Magic Guard
+Nature: Timid
 Level: 31
+EVs: 50 SpA / 50 Spe / 20 HP
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Psychic
 - Thunderbolt
