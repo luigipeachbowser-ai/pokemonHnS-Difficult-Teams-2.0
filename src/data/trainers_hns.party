@@ -9781,7 +9781,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 - Zen Headbutt
 
 Farfetch'd @ Bright Powder
-Ability: Super Luck
+Ability: Inner Focus
 Level: 21
 Nature: Jolly
 EVs: 20 Atk / 40 Spe
@@ -10012,7 +10012,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Taunt
 
 Gengar @ Life Orb
-Ability: Cursed Body
+Ability: Levitate
 Level: 67
 Nature: Timid
 EVs: 4 Def / 252 SpA / 252 Spe
@@ -11063,7 +11063,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Extreme Speed
 - Roost
 
-Gyarados @ Flyinium Z
+Gyarados @ Lum Berry
 Ability: Intimidate
 Nature: Jolly
 Level: 66
@@ -12463,12 +12463,12 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flash Cannon
 
 Charizard @ Charcoal
-Ability: Blaze
+Ability: Drought
 Nature: Timid
 Level: 57
 EVs: 252 SpA / 180 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
+- Fire Storm
 - Air Slash
 - Dragon Pulse
 - Roost
