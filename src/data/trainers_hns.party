@@ -11498,7 +11498,7 @@ Nature: Timid
 Level: 68
 EVs: 252 SpA / 252 Spe / 6 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
+- Expanding Force
 - Focus Blast
 - Shadow Ball
 - Protect
@@ -11929,7 +11929,7 @@ EVs: 252 HP / 120 Def / 136 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rapid Spin
 - Stealth Rock
-- Psychic
+- Expanding Force
 - Earth Power
 
 Gallade @ Life Orb
@@ -18830,10 +18830,10 @@ AI: Smart Trainer / Prediction / Assumptions
 Double Battle: No
 
 Blastoise @ White Herb
-Ability: Torrent
+Ability: Mega Launcher
 Nature: Modest
 Level: 73
-EVs: 252 SpA / 180 Spe / 3 SpD
+EVs: 252 SpA / 252 Spe / 3 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shell Smash
 - Hydro Cannon
@@ -18844,7 +18844,7 @@ Alakazam @ Focus Sash
 Ability: Magic Guard
 Nature: Timid
 Level: 73
-EVs: 252 SpA / 180 Spe / 3 SpD
+EVs: 252 SpA / 252 Spe / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
 - Focus Blast
@@ -18855,34 +18855,34 @@ Umbreon @ Leftovers
 Ability: Synchronize
 Nature: Careful
 Level: 73
-EVs: 252 HP / 156 SpD / 27 Def
+EVs: 252 HP / 252 SpD / 4 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Foul Play
 - Toxic
 - Wish
 - Protect
 
-Electivire @ Expert Belt
+Electivire @ Choice Scarf
 Ability: Motor Drive
 Nature: Adamant
 Level: 73
-EVs: 252 Atk / 180 Spe / 3 SpD
+EVs: 252 Atk / 252 Spe / 4 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wild Charge
 - Earthquake
 - Ice Punch
-- Cross Chop
+- Volt Switch
 
-Regidrago @ Dragon Fang
+Regidrago @ Choice Scarf
 Ability: Dragon's Maw
-Nature: Jolly
+Nature: Timid
 Level: 73
-EVs: 252 Atk / 180 Spe / 3 SpD
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Dragon Claw
-- Substitute
-- Earthquake
+EVs: 252 SpA / 252 Spe / 4 SpD
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Energy
+- Draco Meteor
+- Earth Power
+- Dragon Pulse
 
 Arcanine @ Charcoal
 Ability: Intimidate

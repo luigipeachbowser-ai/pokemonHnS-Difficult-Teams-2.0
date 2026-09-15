@@ -629,10 +629,6 @@
 #define TRAINER_MUALANI_HNS                           614
 #define TRAINER_WESSEL_HNS                            615
 #define TRAINER_SKYLAR_HNS                            616
-#define TRAINER_WILL_ROUTE39_STRONG_HNS               621
-#define TRAINER_WILL_ROUTE39_HNS                      619
-#define TRAINER_CHAMPIONBLUE_2_HNS                    620
-
 
 // Phone rematch tiers for Irwin, Derek and Beverly. Appended at the end of the list
 // on purpose: trainer IDs index FLAG_TRAINER_FLAG_START, so inserting mid-list
@@ -650,8 +646,13 @@
 #define TRAINER_BEVERLY_4_HNS                 629
 #define TRAINER_BEVERLY_5_HNS                 630
 
+// Definitions for additional trainers
+#define TRAINER_WILL_ROUTE39_STRONG_HNS               631
+#define TRAINER_WILL_ROUTE39_HNS                      632
+#define TRAINER_CHAMPIONBLUE_2_HNS                    633
+
 // 618 is TRAINER_TANYA_HNS, relocated out of the TRAINER_FRONTIER_BRAIN slot (330).
-#define TRAINERS_COUNT_HNS                       631
+#define TRAINERS_COUNT_HNS                       634
 #define MAX_TRAINERS_COUNT_HNS                   864
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_HNS_H
